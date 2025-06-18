@@ -33,7 +33,7 @@ const Banner = () => {
                   <div className="container hover_plx">
                     <div className="hero-content-1 slider-animated-1 text-center layer">
                       <h1 className="title animated">
-                        Elevate Your Space with DekorLane
+                        Elevate Your Space with DECOSMITH
                       </h1>
                       <p className="animated">
                         Where Design Meets Individuality
@@ -57,7 +57,7 @@ const Banner = () => {
                     >
                       <h1 className="title animated">Your Space, Your Story</h1>
                       <p className="animated">
-                        Unleash Creativity with DekorLane
+                        Unleash Creativity with DECOSMITH
                       </p>
                     </div>
                   </div>

@@ -138,7 +138,7 @@ const Steps = () => {
           
           <div className="row  text-center  Furnishing-lastText">
           
-                  <h3 className="text-white"><span className="spanTitle">At Dekorlane,</span> Each step of our process is meticulously crafted to ensure your journey is smooth, inspiring, and ultimately transformative.</h3>
+                  <h3 className="text-white"><span className="spanTitle">At DECOSMITH,</span> Each step of our process is meticulously crafted to ensure your journey is smooth, inspiring, and ultimately transformative.</h3>
               </div>
 
           

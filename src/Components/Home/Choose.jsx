@@ -6,7 +6,7 @@ const Choose = () => {
       <div className="why">
         <div className="container">
           <h1 className="why-head text-center">
-            Why Choose <span className="why-span"> Dekorlane</span>
+            Why Choose <span className="why-span"> DECOSMITH</span>
           </h1>
           <div className="service-details-list-wrap">
             <div className="row">

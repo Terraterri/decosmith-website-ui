@@ -43,9 +43,9 @@ const Header = () => {
                 <Link to="/">
                   <img
                     src="assets/images/work/main-logo1.png"
-                    alt="Dekorlane-Logo"
+                    alt="DECOSMITH-Logo"
                   />
-                  {/* <img src="assets/images/work/logo-text.png" className="logText" alt="Dekorlane-Logo" /> */}
+                  {/* <img src="assets/images/work/logo-text.png" className="logText" alt="DECOSMITH-Logo" /> */}
                   {/* <span><h2 className="doklogo">Dekor<span className="logoSpan">Lane</span></h2></span> */}
                 </Link>
               </div>
@@ -161,7 +161,7 @@ const Header = () => {
               <div className="aside-contact-info">
                 <ul>
                   <li>
-                    <i className="dlicon ui-1_email-84"></i>info@dekorlane.com
+                    <i className="dlicon ui-1_email-84"></i>info@DECOSMITH.com
                   </li>
                 </ul>
               </div>
@@ -254,7 +254,7 @@ const Header = () => {
                 <div className="aside-contact-info">
                   <ul>
                     <li>
-                      <i className="dlicon ui-1_email-84"></i>info@dekorlane.com
+                      <i className="dlicon ui-1_email-84"></i>info@DECOSMITH.com
                     </li>
                   </ul>
                 </div>
@@ -269,7 +269,7 @@ const Header = () => {
                   <Link
                     className="twitter"
                     target="_blank"
-                    to="https://twitter.com/DekorLane"
+                    to="https://twitter.com/DECOSMITH"
                   >
                     <FaXTwitter />
                   </Link>

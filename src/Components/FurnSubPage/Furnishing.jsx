@@ -9,7 +9,7 @@ const Furnishing = () => {
         <div className="container">
           <div className="row text-center mb-3 pb-2 ">
       <h1 className='mainTitle'>Furnishing and <span>Furniture solutions</span></h1>
-            <p className='furni-p'>Dekorlane proudly presents comprehensive Furnishing and Furniture solutions under one roof, ensuring a seamless experience for our clients</p>
+            <p className='furni-p'>Decosmith proudly presents comprehensive Furnishing and Furniture solutions under one roof, ensuring a seamless experience for our clients</p>
             </div>
           </div>
       </section>
@@ -171,7 +171,7 @@ const Furnishing = () => {
               
         <div className="row  text-center  Furnishing-lastText mb-3 pb-2">
           
-                  <h3> <span className='spanTitle'>At Dekorlane,</span> We strive to elevate your living experience by providing unparalleled access to premium furnishings and expert guidance every step of the way</h3>
+                  <h3> <span className='spanTitle'>At Decosmith,</span> We strive to elevate your living experience by providing unparalleled access to premium furnishings and expert guidance every step of the way</h3>
               </div>      
           </section>
 

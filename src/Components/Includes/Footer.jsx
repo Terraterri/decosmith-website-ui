@@ -21,12 +21,12 @@ const Footer = () => {
                     <Link to="/">
                       <img
                         src="assets/images/work/main-logo1.png"
-                        alt="Dekorlane-Logo"
+                        alt="DECOSMITH-Logo"
                       />
                       {/* <img
                         src="assets/images/work/logo-text.png"
                         className="logText"
-                        alt="Dekorlane-Logo"
+                        alt="DECOSMITH-Logo"
                       /> */}
                       {/* <span><h2 className="doklogo">Dekor<span className="logoSpan">Lane</span></h2></span> */}
                     </Link>
@@ -53,11 +53,11 @@ const Footer = () => {
                       <span className="title">Email:</span>
                       <span className="desc">
                         <Link to="mailto:info@dekolane.com" target="_blank">
-                          info@dekorlane.com
+                          info@DECOSMITH.com
                         </Link>
                         <br />
-                        <Link to="mailto:navin@dekorlane.com" target="_blank">
-                          navin@dekorlane.com
+                        <Link to="mailto:navin@DECOSMITH.com" target="_blank">
+                          navin@DECOSMITH.com
                         </Link>
                       </span>
                     </li>
@@ -73,7 +73,7 @@ const Footer = () => {
                     <Link
                       className="twitter"
                       target="_blank"
-                      to="https://twitter.com/DekorLane"
+                      to="https://twitter.com/DECOSMITH"
                     >
                       <FaXTwitter />
                     </Link>
@@ -194,11 +194,11 @@ const Footer = () => {
               {/* <p>
                 Copyright ©2024 All rights reserved | Made with{" "}
                 <i className="fa fa-heart"></i> by{" "}
-                <Link to="https://dekorlane.com/"> Dekorlane </Link>.
+                <Link to="https://DECOSMITH.com/"> DECOSMITH </Link>.
               </p> */}
               <p>
                 Copyright ©2024 All rights
-                <Link to="https://dekorlane.com/"> Dekorlane </Link>.
+                <Link to="https://DECOSMITH.com/"> DECOSMITH </Link>.
               </p>
             </div>
           </div>
