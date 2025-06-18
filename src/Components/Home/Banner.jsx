@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const Banner = () => {
+const Banner = ({ imageUrl, speed = 0.5 }) => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -21,6 +21,19 @@ const Banner = () => {
       items: 1,
     },
   };
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setOffset(window.pageYOffset);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -28,8 +41,10 @@ const Banner = () => {
         <div className="hero-area">
           <div className="hero-slider-active swiper">
             <div className="swiper-wrapper">
-              <div className="swiper-slide">
-                <div className="intro-section height-100vh slider-content-center bg-img single-animation-wrap slider-bg-color-1 overly-style-1 opacity-point-4 background-slider1">
+              <div className="swiper-slide parallax-container">
+                <div className="intro-section height-100vh slider-content-center bg-img single-animation-wrap slider-bg-color-1 overly-style-1 opacity-point-4 background-slider1 parallax-bg" style={{
+                transform: `translate3d(0, ${offset * speed}px, 0)`
+              }}>
                   <div className="container hover_plx">
                     <div className="hero-content-1 slider-animated-1 text-center layer">
                       <h1 className="title animated">
@@ -48,8 +63,10 @@ const Banner = () => {
         <div className="hero-area">
           <div className="hero-slider-active swiper">
             <div className="swiper-wrapper">
-              <div className="swiper-slide">
-                <div className="intro-section height-100vh slider-content-center bg-img single-animation-wrap slider-bg-color-1 overly-style-1 opacity-point-4 background-slider2">
+              <div className="swiper-slide parallax-container">
+                <div className="intro-section height-100vh slider-content-center bg-img single-animation-wrap slider-bg-color-1 overly-style-1 opacity-point-4 background-slider2 parallax-bg" style={{
+                transform: `translate3d(0, ${offset * speed}px, 0)`
+              }}>
                   <div className="container hover_plx">
                     <div
                       className="hero-content-1 slider-animated-1 text-center layer"
@@ -69,8 +86,10 @@ const Banner = () => {
         <div className="hero-area">
           <div className="hero-slider-active swiper">
             <div className="swiper-wrapper">
-              <div className="swiper-slide">
-                <div className="intro-section height-100vh slider-content-center bg-img single-animation-wrap slider-bg-color-1 overly-style-1 opacity-point-4 background-slider3">
+              <div className="swiper-slide parallax-container">
+                <div className="intro-section height-100vh slider-content-center bg-img single-animation-wrap slider-bg-color-1 overly-style-1 opacity-point-4 background-slider3 parallax-bg" style={{
+                transform: `translate3d(0, ${offset * speed}px, 0)`
+              }}>
                   <div className="container hover_plx">
                     <div
                       className="hero-content-1 slider-animated-1 text-center layer"
@@ -90,6 +109,28 @@ const Banner = () => {
           </div>
         </div>
       </Carousel>
+      {/* <div className="hero-area parallax-container">
+        <div className="hero-slider-active swiper">
+          <div className="swiper-wrapper">
+            <div className="swiper-slide parallax-container">
+              <div className="intro-section height-100vh slider-content-center bg-img single-animation-wrap slider-bg-color-1 overly-style-1 opacity-point-4 background-slider1 parallax-bg" style={{
+                transform: `translate3d(0, ${offset * speed}px, 0)`
+              }}>
+                <div className="container hover_plx">
+                  <div className="hero-content-1 slider-animated-1 text-center layer">
+                    <h1 className="title animated">
+                      Elevate Your Space with DECOSMITH
+                    </h1>
+                    <p className="animated">
+                      Where Design Meets Individuality
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
     </>
   );
 };

@@ -37,8 +37,8 @@ const Header = () => {
       <header className="header-area header-transparent-bar nav">
         {/* <div className="leyeroptity"></div> */}
         <div className="container-fluid">
-          <div className="row align-items-center text-center">
-            <div className="col-lg-4 col-md-5 col-4">
+          <div className="row align-items-center">
+            <div className="col-lg-3 col-md-4 col-4">
               <div className="logo">
                 <Link to="/">
                   <img
@@ -50,13 +50,16 @@ const Header = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-7 d-none d-lg-block d-flex">
+            <div className="col-lg-8 d-none d-lg-block d-flex">
               <div className="main-menu">
                 <nav>
                   <ul>
                     <li>
                       <Link to="/">Home</Link>
                     </li>
+                      <li >
+                        <Link to="/about">About Us</Link>
+                      </li>
                     <li>
                       <Link to="/services">Services</Link>
                     </li>
@@ -73,22 +76,11 @@ const Header = () => {
                     <li>
                       <Link to="/quote">Get a Free Quote</Link>
                     </li>
-                    {/* <Link className="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    Our Works
-  </Link>
-                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><Link className="dropdown-item dropDeko" to="/">DekoLens</Link></li>
-    
-                      <li><Link className="dropdown-item" to="/DekoMatch">DekoMatch</Link></li>
-    
-   
-  </ul> */}
-                    {/* <li>
-                      <Link to="/Dekolen">DekoLens</Link>
-                    </li>
-                    <li>
-                      <Link to="/DekoMatch">Dekomatch</Link>
-                    </li> */}
+                   
+                      <li>
+                        <Link to="/contact">Contact Us</Link>
+                      </li>
+                    
                   </ul>
                 </nav>
               </div>
@@ -111,78 +103,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-      {/* {hamburger && (
-        <div className="header-aside-active  in-left">
-          <div className="header-aside-wrap">
-            <button
-              className="aside-close hamburger-menu-btn"
-              onClick={closeHamburger}
-            >
-              <i className="dlicon ui-1_simple-remove"></i>
-            </button>
-            <div className="header-aside-content">
-              <div className="mobile-menu-area">
-                <div className="mobile-menu-wrap ">
-                  <div className="mobile-navigation">
-                    <nav>
-                      <ul className="mobile-menu">
-                        <li className="menu-item-has-children">
-                          <Link to="/">HOME</Link>
-                        </li>
-                        <li className="menu-item-has-children">
-                          <Link to="/services">SERVICE</Link>
-                        </li>
-                        <li className="menu-item-has-children">
-                          <Link to="/quote">GET A FREE QUOTE</Link>
-                        </li>
-                        <li>
-                          <Link to="/contact">CONTACT </Link>
-                        </li>
-                        <li>
-                          <Link to="/about">ABOUT US</Link>
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
-                </div>
-              </div>
-              <div className="header-aside-menu">
-                <nav>
-                  <ul className="sideUi">
-                    <li className="sideLi">
-                      <Link to="/about">About Us</Link>
-                    </li>
-                    <li className="sideLi">
-                      <Link to="/contact">Help Center</Link>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <div className="aside-contact-info">
-                <ul>
-                  <li>
-                    <i className="dlicon ui-1_email-84"></i>info@DECOSMITH.com
-                  </li>
-                </ul>
-              </div>
-              <div className="social-icon-style">
-                <Link className="facebook" to="/">
-                  <i className="fa-brands fa-facebook-f"></i>
-                </Link>
-                <Link className="twitter" to="/">
-                  <i className="fa-brands fa-twitter"></i>
-                </Link>
-                <Link className="google-plus" to="/">
-                  <i className="fa-brands fa-google-plus-g"></i>
-                </Link>
-                <Link className="behance" to="/">
-                  <i className="fa-brands fa-square-instagram"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      )} */}
 
       <div
         class="offcanvas offcanvas-end"

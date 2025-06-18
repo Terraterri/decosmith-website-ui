@@ -7,8 +7,22 @@ const About = () => {
       <div className="section section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-md-6 col-sm-12 align-self-center">
-              <div className="about-content">
+            <div className="col-lg-6 col-md-6 col-sm-12 ">
+              <div className="about-banner w-100">
+                <img
+                  src="assets/images/banner/ban.png"
+                  className="blog6"
+                  alt="banner"
+                />
+                <img
+                  src="assets/images/banner/form.jpg"
+                  className="blog6 mt-5"
+                  alt="banner"
+                />
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6 col-sm-12 align-self-center ps-10">
+              <div className="about-content ps-10">
                 <h2 className="title">
                 Welcome to <span>DECOSMITH</span>
                 </h2>
@@ -21,7 +35,7 @@ const About = () => {
                 </p>
                 <h3 className="sub-title">Completed Projects</h3>
               </div>
-              <div className="row">
+              <div className="row ps-10">
                 <div className="col-md-6">
                   <div className="funfact">
                     <CountUp
@@ -36,15 +50,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-12">
-              <div className="about-banner">
-                <img
-                  src="assets/images/banner/banner10.jpg"
-                  className="blog6"
-                  alt="banner"
-                />
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
