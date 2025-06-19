@@ -1,6 +1,26 @@
 import React from "react";
 
+
 const Steps = () => {
+
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 
   const projects = [
     {
@@ -9,7 +29,7 @@ const Steps = () => {
       categories: ["Decor", "Lighting"],
       description: "Connect with our expert designers to discuss your vision, preferences, and requirements.",
       imageUrl: "assets/images/banner/ban.png",
-      link: "#"
+      step: "STEP 1"
     },
     {
       id: 2,
@@ -17,7 +37,7 @@ const Steps = () => {
       categories: ["Lighting"],
       description: "Immerse yourself in our interactive Experience Center, where you can explore design inspirations and material samples firsthand.",
       imageUrl: "assets/images/banner/form.jpg",
-      link: "#"
+      step: "STEP 2"
     },
     {
       id: 3,
@@ -25,7 +45,7 @@ const Steps = () => {
       categories: ["Lighting"],
       description: "Step into the virtual realm of the metaverse, where you can visualize and customize your space in real-time, experimenting with layouts, colors, and furnishings.",
       imageUrl: "assets/images/banner/banner10.jpg",
-      link: "#"
+      step: "STEP 3"
     },
     {
       id: 4,
@@ -33,32 +53,32 @@ const Steps = () => {
       categories: ["Lighting"],
       description: "Collaborate with our team to refine your design, ensuring every detail reflects your unique style and needs.",
       imageUrl: "assets/images/project/bathroom3.jpg",
-      link: "#"
+      step: "STEP 4"
     },
-    // {
-    //   id: 5,
-    //   title: "Quotation Approval",
-    //   categories: ["Lighting"],
-    //   description: "Review and approve the comprehensive quotation tailored to your project specifications and budget.",
-    //   imageUrl: "assets/images/project/bathroom3.jpg",
-    //   link: "#"
-    // },
-    // {
-    //   id: 6,
-    //   title: "Project Execution",
-    //   categories: ["Lighting"],
-    //   description: "Watch as your vision comes to life, with our skilled craftsmen and project managers overseeing every detail of the construction and installation process.",
-    //   imageUrl: "assets/images/project/bathroom3.jpg",
-    //   link: "#"
-    // },
-    // {
-    //   id: 7,
-    //   title: "Move In",
-    //   categories: ["Lighting"],
-    //   description: "Finally, step into your transformed space and experience the joy of living in a home that reflects your personality and aspirations.",
-    //   imageUrl: "assets/images/project/bathroom3.jpg",
-    //   link: "#"
-    // },
+    {
+      id: 5,
+      title: "Quotation Approval",
+      categories: ["Lighting"],
+      description: "Review and approve the comprehensive quotation tailored to your project specifications and budget.",
+      imageUrl: "assets/images/project/bathroom3.jpg",
+      step: "STEP 5"
+    },
+    {
+      id: 6,
+      title: "Project Execution",
+      categories: ["Lighting"],
+      description: "Watch as your vision comes to life, with our skilled craftsmen and project managers overseeing every detail of the construction and installation process.",
+      imageUrl: "assets/images/project/bathroom3.jpg",
+      step: "STEP 6"
+    },
+    {
+      id: 7,
+      title: "Move In",
+      categories: ["Lighting"],
+      description: "Finally, step into your transformed space and experience the joy of living in a home that reflects your personality and aspirations.",
+      imageUrl: "assets/images/project/bathroom3.jpg",
+      step: "STEP 7"
+    },
 
 
   ];
@@ -200,36 +220,41 @@ const Steps = () => {
             </div>
 
           </div> */}
+
           <div className="swiper-wrapper flex-wrap">
-            {projects.map(project => (
-              <div className="column-item project-entries" key={project.id}>
-                <article className="project">
-                  <div className="project-inner">
-                    <div className="project-post-thumbnail">
-                      <img
-                        src={project.imageUrl}
-                        alt={project.title}
-                        className="project-image"
-                      />
-                    </div>
-                    <div className="project-content">
-                      <h5 className="entry-title">
-                        <a href={project.link}>{project.title}</a>
-                      </h5>
-                      {/* <div className="entry-category">
+            <Carousel responsive={responsive} infinite={true}>
+              {projects.map(project => (
+                <div className="column-item project-entries" key={project.id}>
+                  <span className="projectStep">{project.step}</span>
+                  <article className="project">
+                    <div className="project-inner">
+                      <div className="project-post-thumbnail">
+                        <img
+                          src={project.imageUrl}
+                          alt={project.title}
+                          className="project-image"
+                        />
+                      </div>
+                      <div className="project-content">
+                        <h5 className="entry-title">
+                          <a href={project.link}>{project.title}</a>
+                        </h5>
+                        {/* <div className="entry-category">
                         {project.categories.join(" / ")}
                       </div> */}
-                      <div className="entry-desc">{project.description}</div>
-                      {/* <div className="more-link">
+                        <div className="entry-desc">{project.description}</div>
+                        {/* <div className="more-link">
                   <a href={project.link}>View project</a>
                   <i className="arrow-icon">→</i>
                 </div> */}
+                      </div>
                     </div>
-                  </div>
-                </article>
-              </div>
-            ))}
+                  </article>
+                </div>
+              ))}
+            </Carousel>
           </div>
+
         </div>
       </div>
     </>
