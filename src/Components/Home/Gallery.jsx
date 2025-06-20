@@ -22,7 +22,7 @@ const Gallery = () => {
     <>
       <div className="section section-padding" id="design-gallery">
         <div className="container">
-          <div className="section-title text-center mb-lg-8 mb-md-6 mb-4">
+          <div className="section-title text-center ">
             <h2 className="title">
               Design <span> Gallery</span>
             </h2>

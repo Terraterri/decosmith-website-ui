@@ -878,14 +878,17 @@ button.btn-close.text-reset svg {
 
 .footer-widget .footer-title {
   color: #000;
-  margin: 0 0 23px;
-  font-size: 24px;
+  margin: 0 0 9px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .footer-widget.footer-list ul li {
   list-style: none;
   display: flex;
-  margin: 0 0 7px;
+  margin: 0 0 3px;
 }
 
 .footer-widget.footer-list ul li:last-child {
@@ -1249,7 +1252,7 @@ button.btn-close.text-reset svg {
 .section-title .title {
   font-size: 40px;
   text-transform: capitalize;
-  margin: 0 0 17px;
+  margin: 0 ;
   line-height: 34px;
 }
 
@@ -3121,6 +3124,7 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 15px !important;
+  padding-right: 110px;
 }
 
 .why-head {
@@ -3467,7 +3471,7 @@ textarea {
   border-bottom: 1px solid #dee2e6;
   display: flex;
   justify-content: center;
-  margin-top: 110px !important;
+  margin-top: 30px !important;
 }
 
 .nav-link:focus,
@@ -3966,6 +3970,7 @@ background: linear-gradient(90deg, rgba(255,207,191,1) 0%, rgba(255,207,191,1) 5
 
 .footermail .title {
   margin-right: 10px;
+  font-weight: 600;
 }
 
 .social-icon-style a:hover {
@@ -4693,7 +4698,7 @@ select.form-control option {
 
 .column-item {
   /* flex: 1  calc(50% - 30px); */
-  width: 25%;
+  /* width: 25%; */
   margin-bottom: 30px;
   position: relative;
 }
@@ -4847,3 +4852,6 @@ select.form-control option {
   text-shadow: 4px 0 #000000, 0 1px #000000, 0px 0 #000000, 0 -2px #000000;
 }
 
+.desc a {
+  font-size: 14px;
+}

@@ -9,9 +9,9 @@ const Footer = () => {
   return (
     <>
       <footer className="section bg-black">
-        <div className="footer-top section-padding pt-3">
+        <div className="footer-top section-padding pt-4 pb-4">
           <div className="container-fluid">
-            <div className="row p-3">
+            <div className="row">
               <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                 <div className="footer-widget footer-about">
                   {/* <div className="footer-logo">
@@ -33,7 +33,7 @@ const Footer = () => {
                   </div>
 
                   <div className="offices-footer">
-                    <div className="widget-title pt-3 d-flex align-items-center">
+                    {/* <div className="widget-title pt-3 d-flex align-items-center">
                       <h5 className="braches">Our Branches :</h5>
 
                       <select
@@ -47,9 +47,9 @@ const Footer = () => {
                         <option value="Vizag">Vizag</option>
                         <option value="Hyderabad">Hyderabad</option>
                       </select>
-                    </div>
+                    </div> */}
 
-                    <li className="footermail">
+                    <li className="footermail mt-4">
                       <span className="title">Email:</span>
                       <span className="desc">
                         <Link to="mailto:info@dekolane.com" target="_blank">
@@ -89,7 +89,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-6 col-xs-6">
-                <div className="footer-widget footer-list mt-5 margin-left">
+                <div className="footer-widget footer-list margin-left">
                   <h3 className="footer-title"> Support</h3>
                   <ul>
                     <li>
@@ -111,7 +111,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-6 col-xs-6">
-                <div className="footer-widget footer-list mt-5">
+                <div className="footer-widget footer-list ">
                   <h3 className="footer-title">Our Services</h3>
                   <ul>
                     <li>
@@ -143,10 +143,11 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-2 col-md-3 col-sm-6 col-xs-6">
-                <div className="footer-widget footer-list mt-5">
+              <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <div className="footer-widget footer-list">
                   <h3 className="footer-title">Our Offerings</h3>
-                  <ul>
+                  <div className="row">
+                  <ul className="col-md-6">
                     <li>
                       <Link to="/product">Living Room Interior Design</Link>
                     </li>
@@ -159,6 +160,8 @@ const Footer = () => {
                     <li>
                       <Link to="/product">Bedroom</Link>
                     </li>
+                  </ul>
+                  <ul className="col-md-6">
                     <li>
                       <Link to="/product">Home Office</Link>
                     </li>
@@ -175,9 +178,10 @@ const Footer = () => {
                       <Link to="/commercial">Hotels</Link>
                     </li>
                   </ul>
+                  </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-2">
                 <div className="footer-widget footer-newsletter">
                   <img
                     src="assets/images/brand-logo/chair.png"

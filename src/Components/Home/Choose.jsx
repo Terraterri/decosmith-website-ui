@@ -6,7 +6,7 @@ const Choose = () => {
       <div className="why">
         <div className="container">
           <h1 className="why-head text-center">
-            Why Choose <span className="why-span"> DECOSMITH</span>
+            Why Choose <span className="why-span"> Decosmith</span>
           </h1>
           <div className="service-details-list-wrap">
             <div className="row">
@@ -19,7 +19,7 @@ const Choose = () => {
                           <span className="yspan">Creativity Unleashed</span>
                           <br /> Our designers bring fresh, innovative
                           perspectives to every project,
-                           ensuring a unique and inspired outcome.
+                          ensuring a unique and inspired outcome.
                         </p>
                       </div>
                     </div>
@@ -42,7 +42,7 @@ const Choose = () => {
                           </span>
                           <br />
                           We are dedicated to sustainable practices, integrating
-                          eco-friendly materials 
+                          eco-friendly materials
                           and methods to create beautiful spaces with a
                           conscience.
                         </p>
@@ -65,12 +65,26 @@ const Choose = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-5">
+              {/* <div className="col-lg-5">
                 <div className="service-details-list-img">
                   <img
                     src="assets/images/project/room.jpg"
                     className="service-imgg"
                     alt=""
+                  />
+                </div>
+              </div> */}
+              <div className="col-lg-5 col-md-5 col-sm-12 ">
+                <div className="about-banner w-100">
+                  <img
+                    src="assets/images/banner/ban.png"
+                    className="blog6"
+                    alt="banner"
+                  />
+                  <img
+                    src="assets/images/banner/form.jpg"
+                    className="blog6 mt-5"
+                    alt="banner"
                   />
                 </div>
               </div>
