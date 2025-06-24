@@ -1,73 +1,93 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,
 } from "react-compare-slider";
 
 const Commercial = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  const location = useLocation();
+  const [activeTab, setActiveTab] = useState("nav-office-space");
+
+  useEffect(() => {
+    // Set active tab based on URL hash or navigation state
+    const hash = window.location.hash;
+    if (hash) {
+      const tabId = hash.replace("#", "");
+      setActiveTab(tabId);
+    } else if (location.state?.activeTab) {
+      setActiveTab(location.state.activeTab);
+    }
+  }, [location]);
+
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabId);
+    window.history.replaceState({}, "", `#${tabId}`);
+  };
+
+  const isTabActive = (tabId) => {
+    return activeTab === tabId ? "show active" : "";
+  };
+
   return (
     <>
       <nav aria-label="breadcrumb mt-5 mb-5">
         <ol className="breadcrumb">
-          {/* <li className="breadcrumb-item">
-            <a href="/">Home </a>
-          </li>
-          <li className="breadcrumb-item">
-            <a href="/commercial"> / commertial</a>
-          </li>
-          <li className="breadcrumb-item active" aria-current="page">
-            / Data
-          </li> */}
+          {/* Breadcrumb items can be added here if needed */}
         </ol>
       </nav>
       <nav>
         <div className="nav nav-tabs mt-5" id="nav-tab" role="tablist">
           <button
-            className="nav-link active"
-            id="nav-home-tab"
+            className={`nav-link ${activeTab === "nav-office-space" ? "active" : ""}`}
+            id="nav-office-space-tab"
             data-bs-toggle="tab"
-            data-bs-target="#nav-home"
+            data-bs-target="#nav-office-space"
             type="button"
             role="tab"
-            aria-controls="nav-home"
-            aria-selected="true"
+            aria-controls="nav-office-space"
+            aria-selected={activeTab === "nav-office-space"}
+            onClick={() => handleTabClick("nav-office-space")}
           >
-            Office Space{" "}
+            Office Space
           </button>
           <button
-            className="nav-link"
-            id="nav-profile-tab"
+            className={`nav-link ${activeTab === "nav-mall" ? "active" : ""}`}
+            id="nav-mall-tab"
             data-bs-toggle="tab"
-            data-bs-target="#nav-profile"
+            data-bs-target="#nav-mall"
             type="button"
             role="tab"
-            aria-controls="nav-profile"
-            aria-selected="false"
+            aria-controls="nav-mall"
+            aria-selected={activeTab === "nav-mall"}
+            onClick={() => handleTabClick("nav-mall")}
           >
-            Shopping Malls{" "}
+            Shopping Malls
           </button>
           <button
-            className="nav-link"
-            id="nav-ward-tab"
+            className={`nav-link ${activeTab === "nav-hotel" ? "active" : ""}`}
+            id="nav-hotel-tab"
             data-bs-toggle="tab"
-            data-bs-target="#nav-ward"
+            data-bs-target="#nav-hotel"
             type="button"
             role="tab"
-            aria-controls="nav-ward"
-            aria-selected="false"
+            aria-controls="nav-hotel"
+            aria-selected={activeTab === "nav-hotel"}
+            onClick={() => handleTabClick("nav-hotel")}
           >
             Hotels
           </button>
         </div>
       </nav>
       <div className="tab-content" id="nav-tabContent">
+        {/* Office Space Tab */}
         <div
-          className="tab-pane fade show active"
-          id="nav-home"
+          className={`tab-pane fade ${isTabActive("nav-office-space")}`}
+          id="nav-office-space"
           role="tabpanel"
-          aria-labelledby="nav-home-tab"
-          tabindex="0"
+          aria-labelledby="nav-office-space-tab"
+          tabIndex="0"
         >
           <div className="section section-padding">
             <div className="container">
@@ -79,60 +99,33 @@ const Commercial = () => {
                       <h2 className="title">
                         Office Space <span className="DekorLane">Gallery</span>
                       </h2>
-                      {/* <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
-                      </p> */}
-                      {/* <p>
-                        There are many variations of passages of Lorem Ipsum
-                        available, but majority have suffered alteration in some
-                        form, by injected humour, or randomised words which
-                        don't going to use a passage of Lorem Ipsum, you need to
-                        be sure there isn't anything embarrassing hidden in the
-                        middle of text.
-                      </p> */}
                     </div>
                   </div>
                 </div>
                 <div className="row row-cols-lg-3 row-cols-md-3 row-cols-sm-3 row-cols-1 mb-n6">
-                  <div className="col mb-6">
-                    <div className="project-details-img">
-                      <img
-                        src="assets/images/project/office-mall1.jpg"
-                        alt="Project Image"
-                      />
+                  {[1, 2, 3].map((num) => (
+                    <div className="col mb-6" key={`office-${num}`}>
+                      <div className="project-details-img">
+                        <img
+                          src={`assets/images/project/office-mall${num}.jpg`}
+                          alt={`Office Space ${num}`}
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className="col mb-6">
-                    <div className="project-details-img">
-                      <img
-                        src="assets/images/project/office-mall2.jpg"
-                        alt="Project Image"
-                      />
-                    </div>
-                  </div>
-                  <div className="col mb-6">
-                    <div className="project-details-img">
-                      <img
-                        src="assets/images/project/office-mall3.jpg"
-                        alt="Project Image"
-                      />
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Shopping Malls Tab */}
         <div
-          className="tab-pane fade show active"
-          id="nav-profile"
+          className={`tab-pane fade ${isTabActive("nav-mall")}`}
+          id="nav-mall"
           role="tabpanel"
-          aria-labelledby="nav-profile-tab"
-          tabindex="0"
+          aria-labelledby="nav-mall-tab"
+          tabIndex="0"
         >
           <div className="section section-padding">
             <div className="container">
@@ -142,52 +135,22 @@ const Commercial = () => {
                     <div className="project-details-content mb-4 mb-md-9">
                       <span className="category">Interior</span>
                       <h2 className="title">
-                        Shopping Malls{" "}
-                        <span className="DekorLane"> Gallery</span>
+                        Shopping Malls <span className="DekorLane">Gallery</span>
                       </h2>
-                      {/* <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
-                      </p>
-                      <p>
-                        There are many variations of passages of Lorem Ipsum
-                        available, but majority have suffered alteration in some
-                        form, by injected humour, or randomised words which
-                        don't going to use a passage of Lorem Ipsum, you need to
-                        be sure there isn't anything embarrassing hidden in the
-                        middle of text.
-                      </p> */}
                     </div>
                   </div>
                 </div>
                 <div className="row row-cols-lg-3 row-cols-md-3 row-cols-sm-3 row-cols-1 mb-n6">
-                  <div className="col mb-6">
-                    <div className="project-details-img">
-                      <img
-                        src="assets/images/project/MallsGallery1.jpg"
-                        alt="Project Image"
-                      />
+                  {[1, 2, 3].map((num) => (
+                    <div className="col mb-6" key={`mall-${num}`}>
+                      <div className="project-details-img">
+                        <img
+                          src={`assets/images/project/MallsGallery${num}.jpg`}
+                          alt={`Shopping Mall ${num}`}
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className="col mb-6">
-                    <div className="project-details-img">
-                      <img
-                        src="assets/images/project/MallsGallery2.jpg"
-                        alt="Project Image"
-                      />
-                    </div>
-                  </div>
-                  <div className="col mb-6">
-                    <div className="project-details-img">
-                      <img
-                        src="assets/images/project/MallsGallery3.jpg"
-                        alt="Project Image"
-                      />
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -197,15 +160,9 @@ const Commercial = () => {
             <div className="container">
               <div className="section-title text-center mb-lg-9 mb-md-7 mb-5">
                 <h2 className="title">
-                  Interior Design <span> renovation</span>
+                  Interior Design <span>renovation</span>
                 </h2>
-                {/* <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text.
-                </p> */}
               </div>
-
               <div className="complir_sec">
                 <ReactCompareSlider
                   changePositionOnHover={false}
@@ -213,14 +170,14 @@ const Commercial = () => {
                     <ReactCompareSliderImage
                       src="assets/images/project/MallsGallery3.jpg"
                       srcSet="assets/images/project/MallsGallery3.jpg"
-                      alt="Image one"
+                      alt="Before renovation"
                     />
                   }
                   itemTwo={
                     <ReactCompareSliderImage
                       src="assets/images/project/MallsGallery2.jpg"
                       srcSet="assets/images/project/MallsGallery2.jpg"
-                      alt="Image two"
+                      alt="After renovation"
                     />
                   }
                 />
@@ -228,12 +185,14 @@ const Commercial = () => {
             </div>
           </div>
         </div>
+
+        {/* Hotels Tab */}
         <div
-          className="tab-pane fade"
-          id="nav-ward"
+          className={`tab-pane fade ${isTabActive("nav-hotel")}`}
+          id="nav-hotel"
           role="tabpanel"
-          aria-labelledby="nav-ward-tab"
-          tabindex="0"
+          aria-labelledby="nav-hotel-tab"
+          tabIndex="0"
         >
           <div className="section section-padding">
             <div className="container">
@@ -245,66 +204,32 @@ const Commercial = () => {
                       <h2 className="title">
                         Hotels <span className="DekorLane">Gallery</span>
                       </h2>
-                      {/* <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
-                      </p>
-                      <p>
-                        There are many variations of passages of Lorem Ipsum
-                        available, but majority have suffered alteration in some
-                        form, by injected humour, or randomised words which
-                        don't going to use a passage of Lorem Ipsum, you need to
-                        be sure there isn't anything embarrassing hidden in the
-                        middle of text.
-                      </p> */}
                     </div>
                   </div>
                 </div>
                 <div className="row row-cols-lg-3 row-cols-md-3 row-cols-sm-3 row-cols-1 mb-n6">
-                  <div className="col mb-6">
-                    <div className="project-details-img">
-                      <img
-                        src="assets/images/project/hotel-gallery1.jpg"
-                        alt="Project Image"
-                      />
+                  {[1, 2, 3].map((num) => (
+                    <div className="col mb-6" key={`hotel-${num}`}>
+                      <div className="project-details-img">
+                        <img
+                          src={`assets/images/project/hotel-gallery${num}.jpg`}
+                          alt={`Hotel ${num}`}
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className="col mb-6">
-                    <div className="project-details-img">
-                      <img
-                        src="assets/images/project/hotel-gallery2.jpg"
-                        alt="Project Image"
-                      />
-                    </div>
-                  </div>
-                  <div className="col mb-6">
-                    <div className="project-details-img">
-                      <img
-                        src="assets/images/project/hotel-gallery3.jpg"
-                        alt="Project Image"
-                      />
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
+
           <div className="section section-padding pt-0">
             <div className="container">
               <div className="section-title text-center mb-lg-9 mb-md-7 mb-5">
                 <h2 className="title">
-                  Interior Design <span> renovation</span>
+                  Interior Design <span>renovation</span>
                 </h2>
-                {/* <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text.
-                </p> */}
               </div>
-
               <div className="complir_sec">
                 <ReactCompareSlider
                   changePositionOnHover={false}
@@ -312,14 +237,14 @@ const Commercial = () => {
                     <ReactCompareSliderImage
                       src="assets/images/project/hotel-gallery3.jpg"
                       srcSet="assets/images/project/hotel-gallery3.jpg"
-                      alt="Image one"
+                      alt="Before renovation"
                     />
                   }
                   itemTwo={
                     <ReactCompareSliderImage
                       src="assets/images/project/hotel-gallery4.jpg"
                       srcSet="assets/images/project/hotel-gallery4.jpg"
-                      alt="Image two"
+                      alt="After renovation"
                     />
                   }
                 />

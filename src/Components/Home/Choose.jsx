@@ -83,7 +83,7 @@ const Choose = () => {
                   />
                   <img
                     src="assets/images/banner/form.jpg"
-                    className="blog6 mt-5"
+                    className="blog6 mt-98"
                     alt="banner"
                   />
                 </div>

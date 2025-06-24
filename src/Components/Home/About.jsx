@@ -24,7 +24,7 @@ const About = () => {
             <div className="col-lg-6 col-md-6 col-sm-12 align-self-center ps-10">
               <div className="about-content ps-10">
                 <h2 className="title">
-                Welcome to <span>Decosmith</span>
+                Welcome to Decosmith
                 </h2>
                 <p>
                   Welcome to Decosmith, where we transform spaces into

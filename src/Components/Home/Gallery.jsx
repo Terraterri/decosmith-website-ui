@@ -1,215 +1,177 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Gallery = () => {
-  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-  // const [residential, setResidential] = useState(true);
-  // const [commeritial, setCommercial] = useState(false);
+  const [activeTab, setActiveTab] = useState("residential");
 
-  // function handleResidential() {
-  //   setResidential(true);
-  //   setCommercial(false);
-  // }
-  // function handleCommerial() {
-  //   setCommercial(true);
-  //   setResidential(false);
-  // }
-  // useEffect(() => {
-  //   handleTabs();
-  // }, []);
+  // Scroll to top on component mount
+  useState(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, []);
+
+  const residentialItems = [
+    {
+      id: "living-room",
+      title: "Living Room Interior Design",
+      image: "assets/images/project/living.jpg",
+      tab: "nav-home"
+    },
+    {
+      id: "modular-kitchen",
+      title: "Modular Kitchen",
+      image: "assets/images/project/kitchen.jpg",
+      tab: "nav-profile"
+    },
+    {
+      id: "wardrobe",
+      title: "Wardrobe",
+      image: "assets/images/project/wordrobe.jpg",
+      tab: "nav-ward"
+    },
+    {
+      id: "bedroom",
+      title: "Bedroom",
+      image: "assets/images/project/bedroom.jpg",
+      tab: "nav-bed"
+    },
+    {
+      id: "home-office",
+      title: "Home Office",
+      image: "assets/images/project/office.jpg",
+      tab: "nav-office"
+    },
+    {
+      id: "bathroom",
+      title: "Bathroom",
+      image: "assets/images/project/bathroom.jpg",
+      tab: "nav-bath"
+    }
+  ];
+
+  const commercialItems = [
+    {
+      id: "office-space",
+      title: "Office Space",
+      image: "assets/images/project/officehall.jpg",
+      tab: "nav-office-space"
+    },
+    {
+      id: "shopping-malls",
+      title: "Shopping Malls",
+      image: "assets/images/project/mall.jpg",
+      tab: "nav-mall"
+    },
+    {
+      id: "hotels",
+      title: "Hotels",
+      image: "assets/images/project/hotel.jpg",
+      tab: "nav-hotel"
+    }
+  ];
+
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+  };
 
   return (
-    <>
-      <div className="section section-padding" id="design-gallery">
-        <div className="container">
-          <div className="section-title text-center ">
-            <h2 className="title">
-              Design <span> Gallery</span>
-            </h2>
-          </div>
+    <div className="section section-padding" id="design-gallery">
+      <div className="container">
+        <div className="section-title text-center">
+          <h2 className="title">
+            Design <span>Gallery</span>
+          </h2>
+        </div>
 
-          <nav>
-            <div className="nav nav-tabs" id="nav-tab" role="tablist">
-              <button
-                className="nav-link active"
-                id="nav-home-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-home"
-                type="button"
-                role="tab"
-                aria-controls="nav-home"
-                aria-selected="true"
-              >
-                Residential
-              </button>
-              <button
-                className="nav-link"
-                id="nav-profile-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-profile"
-                type="button"
-                role="tab"
-                aria-controls="nav-profile"
-                aria-selected="false"
-              >
-                Commercial
-              </button>
-            </div>
-          </nav>
-          <div className="tab-content" id="nav-tabcontent">
-            <div
-              className="tab-pane fade show active"
-              id="nav-home"
-              role="tabpanel"
-              aria-labelledby="nav-home-tab"
-              tabindex="0"
+        <nav>
+          <div className="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+              className={`nav-link ${activeTab === "residential" ? "active" : ""}`}
+              id="residential-tab"
+              type="button"
+              role="tab"
+              aria-controls="residential"
+              aria-selected={activeTab === "residential"}
+              onClick={() => handleTabChange("residential")}
             >
-              <div className="residential">
-                <div>
-                  <div className="row pt-3 justify-content-center">
-                    <div className="card1 col-lg-4 col-md-6 col-sm-12">
-                    <Link to="product">
-                      <img
-                        src="assets/images/project/living.jpg"
-                        alt="Blog Image"
-                      />
+              Residential
+            </button>
+            <button
+              className={`nav-link ${activeTab === "commercial" ? "active" : ""}`}
+              id="commercial-tab"
+              type="button"
+              role="tab"
+              aria-controls="commercial"
+              aria-selected={activeTab === "commercial"}
+              onClick={() => handleTabChange("commercial")}
+            >
+              Commercial
+            </button>
+          </div>
+        </nav>
+
+        <div className="tab-content" id="nav-tabcontent">
+          {/* Residential Tab Content */}
+          <div
+            className={`tab-pane fade ${activeTab === "residential" ? "show active" : ""}`}
+            id="residential"
+            role="tabpanel"
+            aria-labelledby="residential-tab"
+            tabIndex="0"
+          >
+            <div className="residential">
+              <div className="row pt-3 justify-content-center">
+                {residentialItems.slice(0, 3).map((item) => (
+                  <div className="card1 col-lg-4 col-md-6 col-sm-12" key={item.id}>
+                    <Link to="/product" state={{ activeTab: item.tab }}>
+                      <img src={item.image} alt={item.title} />
                       <div className="contentt">
-                        <h3 className="livin">
-                          <Link to="product">Living Room Interior Design</Link>
-                        </h3>
-                        </div>
-                        </Link>
-                    </div>
-                    <div className="card1 col-lg-4 col-md-6 col-sm-12">
-                      <Link to="product">
-                      <img
-                        src="assets/images/project/kitchen.jpg"
-                        alt="Blog Image"
-                      />
-                      <div className="contentt">
-                        <h3 className="livin">
-                          <Link to="product">Modular Kitchen</Link>
-                        </h3>
-                        </div>
-                        </Link>
-                    </div>
-                    <div className="card1 col-lg-4 col-md-6 col-sm-12">
-                    <Link to="product">
-                      <img
-                        src="assets/images/project/wordrobe.jpg"
-                        alt="Blog Image"
-                      />
-                      <div className="contentt">
-                        <h3 className="livin">
-                          <Link to="product">Wardrobe</Link>
-                        </h3>
-                        </div>
-                        </Link>
-                    </div>
+                        <h3 className="livin">{item.title}</h3>
+                      </div>
+                    </Link>
                   </div>
-                </div>
-                <div>
-                  <div className="row pt-5 justify-content-center">
-                    <div className="card1 col-lg-4 col-md-6 col-sm-12">
-                    <Link to="product">
-                      <img
-                        src="assets/images/project/bedroom.jpg"
-                        alt="Blog Image"
-                      />
+                ))}
+              </div>
+              <div className="row pt-5 justify-content-center">
+                {residentialItems.slice(3).map((item) => (
+                  <div className="card1 col-lg-4 col-md-6 col-sm-12" key={item.id}>
+                    <Link to="/product" state={{ activeTab: item.tab }}>
+                      <img src={item.image} alt={item.title} />
                       <div className="contentt">
-                        <h3 className="livin">
-                          <Link to="product">Bedroom</Link>
-                        </h3>
-                        </div>
-                        </Link>
-                    </div>
-                    <div className="card1 col-lg-4 col-md-6 col-sm-12">
-                    <Link to="product">
-                      <img
-                        src="assets/images/project/office.jpg"
-                        alt="Blog Image"
-                      />
-                      <div className="contentt">
-                        <h3 className="livin">
-                          <Link to="product">Home Office</Link>
-                        </h3>
-                        </div>
-                        </Link>
-                    </div>
-                    <div className="card1 col-lg-4 col-md-6 col-sm-12">
-                    <Link to="product">
-                      <img
-                        src="assets/images/project/bathroom.jpg"
-                        alt="Blog Image"
-                      />
-                      <div className="contentt">
-                        <h3 className="livin">
-                          <Link to="product">Bathroom</Link>
-                        </h3>
-                        </div>
-                        </Link>
-                    </div>
+                        <h3 className="livin">{item.title}</h3>
+                      </div>
+                    </Link>
                   </div>
-                </div>
+                ))}
               </div>
             </div>
-            <div
-              className="tab-pane fade"
-              id="nav-profile"
-              role="tabpanel"
-              aria-labelledby="nav-profile-tab"
-              tabindex="0"
-            >
-              <div className="Commercial">
-                <div>
-                  <div className="row pt-5 justify-content-center">
-                    <div className="card1 col-lg-4 col-md-6 col-sm-12">
-                    <Link to="commercial">
-                      <img
-                        src="assets/images/project/officehall.jpg"
-                        alt="Blog Image"
-                      />
+          </div>
+
+          {/* Commercial Tab Content */}
+          <div
+            className={`tab-pane fade ${activeTab === "commercial" ? "show active" : ""}`}
+            id="commercial"
+            role="tabpanel"
+            aria-labelledby="commercial-tab"
+            tabIndex="0"
+          >
+            <div className="Commercial">
+              <div className="row pt-5 justify-content-center">
+                {commercialItems.map((item) => (
+                  <div className="card1 col-lg-4 col-md-6 col-sm-12" key={item.id}>
+                    <Link to="/commercial" state={{ activeTab: item.tab }}>
+                      <img src={item.image} alt={item.title} />
                       <div className="contentt">
-                        <h3 className="livin">
-                          <Link to="commercial">Office Space</Link>
-                        </h3>
-                        </div>
-                        </Link>
-                    </div>
-                    <div className="card1 col-lg-4 col-md-6 col-sm-12">
-                    <Link to="commercial">
-                      <img
-                        src="assets/images/project/mall.jpg"
-                        alt="Blog Image"
-                      />
-                      <div className="contentt">
-                        <h3 className="livin">
-                          <Link to="commercial">Shopping Malls</Link>
-                        </h3>
-                        </div>
-                        </Link>
-                    </div>
-                    <div className="card1 col-lg-4 col-md-6 col-sm-12">
-                    <Link to="commercial">
-                      <img
-                        src="assets/images/project/hotel.jpg"
-                        alt="Blog Image"
-                      />
-                      <div className="contentt">
-                        <h3 className="livin">
-                          <Link to="commercial">Hotels</Link>
-                        </h3>
-                        </div>
-                        </Link>
-                    </div>
+                        <h3 className="livin">{item.title}</h3>
+                      </div>
+                    </Link>
                   </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

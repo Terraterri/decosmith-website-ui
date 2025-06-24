@@ -52,7 +52,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2;
   margin-top: 0;
   color: #111111;
@@ -1137,7 +1137,7 @@ button.btn-close.text-reset svg {
 }
 
 .about-content .title {
-  font-size: 40px;
+  font-size: 35px;
   line-height: 45px;
   letter-spacing: 1px;
   /* text-transform: uppercase; */
@@ -1202,6 +1202,9 @@ button.btn-close.text-reset svg {
 .about-banner img {
   width: 50%;
   border-radius: 4px;
+}
+.mt-98{
+  margin-top: 98px !important;
 }
 
 .funfact .count-style {
@@ -3113,7 +3116,7 @@ img {
 .yspan {
   color: #000000;
   font-size: 19px;
-  font-weight: 700;
+  font-weight: 500;
   background-color: #1d181636;
   padding: 3px 20px 3px 20px;
   border-radius: 52px;
@@ -4764,6 +4767,7 @@ select.form-control option {
   color: #fff !important;
   text-decoration: none;
   font-size: 30px;
+  font-weight: 500 !important;
 }
 
 .entry-category {
@@ -4842,7 +4846,7 @@ select.form-control option {
   transform: rotate(180deg);
   white-space: nowrap;
   writing-mode: vertical-rl;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 800;
   letter-spacing: 5px;
   left: 0px;

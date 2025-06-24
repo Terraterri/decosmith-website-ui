@@ -1,12 +1,31 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation} from "react-router-dom";
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,
 } from "react-compare-slider";
 
 const Product = () => {
-  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+
+ window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  const location = useLocation();
+  const [activeTab, setActiveTab] = useState("nav-home");
+
+  useEffect(() => {
+    if (location.state?.activeTab) {
+      setActiveTab(location.state.activeTab);
+    }
+  }, [location.state]);
+
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabId);
+  };
+
+  // Helper function to determine if a tab should be active
+  const isTabActive = (tabId) => {
+    return activeTab === tabId ? "show active" : "";
+  };
+
   return (
     <>
       <nav aria-label="breadcrumb mt-5 mb-5">
@@ -22,85 +41,94 @@ const Product = () => {
           </li> */}
         </ol>
       </nav>
+
       <nav>
-        <div class="nav nav-tabs mt-5" id="nav-tab" role="tablist">
+        <div className="nav nav-tabs mt-5" id="nav-tab" role="tablist">
           <button
-            class="nav-link active"
+            className={`nav-link ${activeTab === "nav-home" ? "active" : ""}`}
             id="nav-home-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-home"
             type="button"
             role="tab"
             aria-controls="nav-home"
-            aria-selected="true"
+            aria-selected={activeTab === "nav-home"}
+            onClick={() => handleTabClick("nav-home")}
           >
             Living room
           </button>
           <button
-            class="nav-link"
+            className={`nav-link ${activeTab === "nav-profile" ? "active" : ""}`}
             id="nav-profile-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-profile"
             type="button"
             role="tab"
             aria-controls="nav-profile"
-            aria-selected="false"
+            aria-selected={activeTab === "nav-profile"}
+            onClick={() => handleTabClick("nav-profile")}
           >
             Modular kitchen
           </button>
           <button
-            class="nav-link"
+            className={`nav-link ${activeTab === "nav-ward" ? "active" : ""}`}
             id="nav-ward-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-ward"
             type="button"
             role="tab"
             aria-controls="nav-ward"
-            aria-selected="false"
+            aria-selected={activeTab === "nav-ward"}
+            onClick={() => handleTabClick("nav-ward")}
           >
             Wardrobe
           </button>
           <button
-            class="nav-link"
+            className={`nav-link ${activeTab === "nav-bed" ? "active" : ""}`}
             id="nav-bed-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-bed"
             type="button"
             role="tab"
             aria-controls="nav-bed"
-            aria-selected="false"
+            aria-selected={activeTab === "nav-bed"}
+            onClick={() => handleTabClick("nav-bed")}
           >
             Bedroom
           </button>
           <button
-            class="nav-link"
+            className={`nav-link ${activeTab === "nav-office" ? "active" : ""}`}
             id="nav-office-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-office"
             type="button"
             role="tab"
             aria-controls="nav-office"
-            aria-selected="false"
+            aria-selected={activeTab === "nav-office"}
+            onClick={() => handleTabClick("nav-office")}
           >
             Home office
           </button>
           <button
-            class="nav-link"
+            className={`nav-link ${activeTab === "nav-bath" ? "active" : ""}`}
             id="nav-bath-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-bath"
             type="button"
             role="tab"
             aria-controls="nav-bath"
-            aria-selected="false"
+            aria-selected={activeTab === "nav-bath"}
+            onClick={() => handleTabClick("nav-bath")}
           >
             Bathroom
           </button>
         </div>
       </nav>
+
       <div class="tab-content" id="nav-tabContent">
+
         <div
-          class="tab-pane fade show active"
+          className={`tab-pane fade ${isTabActive("nav-home")}`}
           id="nav-home"
           role="tabpanel"
           aria-labelledby="nav-home-tab"
@@ -182,7 +210,7 @@ const Product = () => {
                   changePositionOnHover={false}
                   itemOne={
                     <ReactCompareSliderImage
-                    src="assets/images/project/living3.jpg"
+                      src="assets/images/project/living3.jpg"
                       srcSet="assets/images/project/living3.jpg"
                       alt="Image one"
                     />
@@ -199,8 +227,9 @@ const Product = () => {
             </div>
           </div>
         </div>
+
         <div
-          class="tab-pane fade show active"
+          className={`tab-pane fade ${isTabActive("nav-profile")}`}
           id="nav-profile"
           role="tabpanel"
           aria-labelledby="nav-profile-tab"
@@ -298,8 +327,9 @@ const Product = () => {
             </div>
           </div>
         </div>
+
         <div
-          class="tab-pane fade"
+          className={`tab-pane fade ${isTabActive("nav-ward")}`}
           id="nav-ward"
           role="tabpanel"
           aria-labelledby="nav-ward-tab"
@@ -394,8 +424,9 @@ const Product = () => {
             </div>
           </div>
         </div>
+
         <div
-          class="tab-pane fade"
+          className={`tab-pane fade ${isTabActive("nav-bed")}`}
           id="nav-bed"
           role="tabpanel"
           aria-labelledby="nav-bed-tab"
@@ -492,7 +523,7 @@ const Product = () => {
         </div>
 
         <div
-          class="tab-pane fade"
+          className={`tab-pane fade ${isTabActive("nav-office")}`}
           id="nav-office"
           role="tabpanel"
           aria-labelledby="nav-office-tab"
@@ -591,8 +622,9 @@ const Product = () => {
             </div>
           </div>
         </div>
+
         <div
-          class="tab-pane fade"
+          className={`tab-pane fade ${isTabActive("nav-bath")}`}
           id="nav-bath"
           role="tabpanel"
           aria-labelledby="nav-bath-tab"
@@ -689,6 +721,7 @@ const Product = () => {
             </div>
           </div>
         </div>
+
       </div>
     </>
   );
