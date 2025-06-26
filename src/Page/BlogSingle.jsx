@@ -20,7 +20,7 @@ const BlogSingle = () => {
       <div className="section section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-lg-9">
+            <div className="col-lg-8">
               <div className="tab-content" id="myTabContent">
                 <div
                   className="tab-pane fade show active"
@@ -29,7 +29,7 @@ const BlogSingle = () => {
                   aria-labelledby="home-tab"
                 >
                   <div className="blog-details-wrap">
-                    <div className="blog-details-img mb-4 mb-md-6">
+                    <div className="mb-4 mb-md-6">
                       <h1 className="archHead">Architecture Design</h1>
                       <img src="assets/images/blog/blog-details-1.jpg" alt="" />
                     </div>
@@ -89,7 +89,7 @@ const BlogSingle = () => {
                   aria-labelledby="profile-tab"
                 >
                   <div className="blog-details-wrap">
-                    <div className="blog-details-img mb-4 mb-md-6">
+                    <div className="mb-4 mb-md-6">
                       <h1 className="archHead">Home Interior Design</h1>
 
                       <img src="assets/images/blog/blog-details-1.jpg" alt="" />
@@ -154,7 +154,7 @@ const BlogSingle = () => {
                   aria-labelledby="contact-tab"
                 >
                   <div className="blog-details-wrap">
-                    <div className="blog-details-img mb-4 mb-md-6">
+                    <div className="mb-4 mb-md-6">
                       <h1 className="archHead"> Office Interior Design</h1>
 
                       <img src="assets/images/blog/blog-details-1.jpg" alt="" />
@@ -213,11 +213,11 @@ const BlogSingle = () => {
               </div>
             </div>
 
-            <div className="col-lg-3">
-              <div className="sidebar-wrap sidebar-margin-left">
+            <div className="col-lg-4">
+              <div className="sidebar-wrap sidebar-margin-left blog-singlep">
                 <div className="sidebar-widget mb-10">
                   <h3 className="sidebar-widget-title">Recent Post </h3>
-                  <ul className="nav nav-tabs" id="myTab" role="tablist">
+                  <ul className="nav nav-tabs d-block" id="myTab" role="tablist">
                     <li className="nav-item" role="presentation">
                       <button
                         className="nav-link active"

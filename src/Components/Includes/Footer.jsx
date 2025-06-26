@@ -53,12 +53,9 @@ const Footer = () => {
                       <span className="title">Email:</span>
                       <span className="desc">
                         <Link to="mailto:info@dekolane.com" target="_blank">
-                          info@DECOSMITH.com
+                          info@decosmith.com
                         </Link>
-                        <br />
-                        <Link to="mailto:navin@DECOSMITH.com" target="_blank">
-                          navin@DECOSMITH.com
-                        </Link>
+                       
                       </span>
                     </li>
                   </div>
