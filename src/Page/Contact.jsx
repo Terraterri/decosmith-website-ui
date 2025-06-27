@@ -4,11 +4,12 @@ import { FaXTwitter, FaFacebookF, FaInstagram } from "react-icons/fa6";
 import { Country, State, City } from "country-state-city";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import { apiClient } from "../Utills/httpClient";
 
 const Contact = () => {
-  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  window.scrollTo({ top: 0, left: 0, behavior: "instant" });
 
+  // State declarations
   const [countries, setCountries] = useState([]);
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [selectedState, setSelectedState] = useState(null);
@@ -27,6 +28,7 @@ const Contact = () => {
   const [otpTimer, setOtpTimer] = useState(60);
   const [canResend, setCanResend] = useState(false);
 
+  // Form data state
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
@@ -39,11 +41,13 @@ const Contact = () => {
     type: "contact",
   });
 
+  // Initialize countries
   useEffect(() => {
     const allCountries = Country.getAllCountries();
     setCountries(allCountries);
   }, []);
 
+  // OTP timer logic
   useEffect(() => {
     let timer;
     if (isModalOpen && otpTimer > 0) {
@@ -60,6 +64,7 @@ const Contact = () => {
     return () => clearInterval(timer);
   }, [isModalOpen, otpTimer]);
 
+  // Handle country selection
   useEffect(() => {
     if (selectedCountry) {
       const pc = countries.find(
@@ -82,6 +87,7 @@ const Contact = () => {
     }
   }, [selectedCountry, countries]);
 
+  // Handle state selection
   useEffect(() => {
     if (selectedState && selectedCountry) {
       setCities(
@@ -92,12 +98,14 @@ const Contact = () => {
     }
   }, [selectedState, selectedCountry]);
 
+  // Handle city selection
   useEffect(() => {
     if (selectedCity) {
       setFormData((prev) => ({ ...prev, city: selectedCity }));
     }
   }, [selectedCity]);
 
+  // Input change handler
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -112,6 +120,7 @@ const Contact = () => {
     }
   };
 
+  // OTP request handler
   const handleOtpRequest = async () => {
     if (!formData.mobile || formData.mobile.length !== 10) {
       toast.error("Please enter a valid 10-digit mobile number");
@@ -119,25 +128,23 @@ const Contact = () => {
     }
 
     setLoading(true);
-    // Replace this with your actual API call
     try {
-      // Simulate API call
-      setTimeout(() => {
-        const mockOtp = Math.floor(100000 + Math.random() * 900000).toString();
-        console.log("Generated OTP:", mockOtp);
-        setGeneratedOtp(mockOtp);
-        setIsModalOpen(true);
-        setOtpTimer(60);
-        setCanResend(false);
-        toast.success("OTP sent to your mobile number");
-        setLoading(false);
-      }, 1000);
+      // Actual OTP generation would go here
+      const mockOtp = Math.floor(100000 + Math.random() * 900000).toString();
+      console.log("Generated OTP:", mockOtp);
+      setGeneratedOtp(mockOtp);
+      setIsModalOpen(true);
+      setOtpTimer(60);
+      setCanResend(false);
+      toast.success("OTP sent to your mobile number");
+      setLoading(false);
     } catch (err) {
       toast.error("Something went wrong! Please try after sometime");
       setLoading(false);
     }
   };
 
+  // OTP verification handler
   const handleVerifyOtp = async () => {
     if (!otp || otp.length !== 6) {
       toast.error("Please enter a valid 6-digit OTP");
@@ -145,23 +152,19 @@ const Contact = () => {
     }
 
     setLoading(true);
-    // Replace this with your actual API call
     try {
-      // Simulate API verification
-      setTimeout(() => {
-        if (otp === generatedOtp) {
-          setVerificationStatus("success");
-          setIsOtpVerified(true);
-          setIsNumberVerified(true);
-          toast.success("OTP verified successfully!");
-          setIsModalOpen(false);
-          setOtp("");
-        } else {
-          setVerificationStatus("error");
-          toast.error("Invalid OTP. Please try again.");
-        }
-        setLoading(false);
-      }, 1000);
+      if (otp === generatedOtp) {
+        setVerificationStatus("success");
+        setIsOtpVerified(true);
+        setIsNumberVerified(true);
+        toast.success("OTP verified successfully!");
+        setIsModalOpen(false);
+        setOtp("");
+      } else {
+        setVerificationStatus("error");
+        toast.error("Invalid OTP. Please try again.");
+      }
+      setLoading(false);
     } catch (err) {
       setVerificationStatus("error");
       toast.error("Error verifying OTP. Please try after sometime");
@@ -169,30 +172,30 @@ const Contact = () => {
     }
   };
 
+  // Resend OTP handler
   const handleResendOtp = async () => {
     setLoading(true);
     try {
-      // Simulate API call for resend
-      setTimeout(() => {
-        const mockOtp = Math.floor(100000 + Math.random() * 900000).toString();
-        console.log("New OTP:", mockOtp);
-        setGeneratedOtp(mockOtp);
-        setOtpTimer(60);
-        setCanResend(false);
-        toast.success("New OTP sent successfully!");
-        setLoading(false);
-      }, 1000);
+      const mockOtp = Math.floor(100000 + Math.random() * 900000).toString();
+      console.log("New OTP:", mockOtp);
+      setGeneratedOtp(mockOtp);
+      setOtpTimer(60);
+      setCanResend(false);
+      toast.success("New OTP sent successfully!");
+      setLoading(false);
     } catch (err) {
       toast.error("Failed to resend OTP. Please try again.");
       setLoading(false);
     }
   };
 
- const handleSubmit = async (e) => {
+  // Form submission handler
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const newErrors = {};
     const fullMobile = phoneCode + formData.mobile;
 
+    // Validation checks
     if (!isOtpVerified) {
       toast.error("Please verify your mobile number with OTP before submitting.");
       return;
@@ -213,25 +216,21 @@ const Contact = () => {
       return;
     }
 
-    // Create the submission data object
+    // Prepare submission data
     const submissionData = {
       ...formData,
       mobile: fullMobile,
     };
 
-    // Log the data to console
-    console.log("Form submission data:", submissionData);
-
     setLoading(true);
     try {
-      // Replace this with your actual API call
-      // const response = await postContactDetails(submissionData);
-      
-      // Simulate API call
-      setTimeout(() => {
+      // Submit form data
+      const response = await apiClient.post("/submissions", submissionData);
+
+      if (response.data.status) {
         toast.success("Form submitted successfully!");
-        console.log("Submission successful, response would be:", { status: 200, message: "Success" });
-        
+
+        // Reset form
         setFormData({
           name: "",
           mobile: "",
@@ -245,11 +244,17 @@ const Contact = () => {
         });
         setIsNumberVerified(false);
         setIsOtpVerified(false);
-        setLoading(false);
-      }, 1000);
+      } else {
+        toast.error(response.data.message || "Form submission failed");
+      }
     } catch (error) {
       console.error("Submission error:", error);
-      toast.error("An error occurred while submitting the form. Please try again.");
+      const errorMsg =
+        error.response?.data?.message ||
+        error.message ||
+        "An error occurred while submitting the form";
+      toast.error(errorMsg);
+    } finally {
       setLoading(false);
     }
   };
@@ -257,17 +262,22 @@ const Contact = () => {
   return (
     <>
       <nav aria-label="breadcrumb mt-5 mb-5">
-        <ol className="breadcrumb">
-          {/* Breadcrumb items if needed */}
-        </ol>
+        <ol className="breadcrumb"></ol>
       </nav>
+
       <div className="section section-padding">
         <div className="container">
           <div className="row">
             <h2 className="text-center underLineContact">Contact Us</h2>
+
+            {/* Contact Information Card */}
             <div className="col-lg-5 col-md-6">
               <div className="contact-card">
-                <img src="assets/images/project/contact.jpg" alt="Contact" />
+                <img 
+                  src="assets/images/project/contact.jpg" 
+                  alt="Contact" 
+                  className="img-fluid"
+                />
                 <div className="card-cont">
                   <div className="row">
                     <div className="cont1 col-md-6">
@@ -278,13 +288,25 @@ const Contact = () => {
                     </div>
                     <div className="cont2 col-md-6">
                       <div className="social-icon-style mt-4">
-                        <Link className="facebook" target="_blank" to="https://www.facebook.com/profile.php?id=61556083902320">
+                        <Link
+                          className="facebook"
+                          target="_blank"
+                          to="https://www.facebook.com/profile.php?id=61556083902320"
+                        >
                           <FaFacebookF />
                         </Link>
-                        <Link className="twitter" target="_blank" to="https://twitter.com/DekorLane">
+                        <Link
+                          className="twitter"
+                          target="_blank"
+                          to="https://twitter.com/DekorLane"
+                        >
                           <FaXTwitter />
                         </Link>
-                        <Link className="behance" target="_blank" to="https://www.instagram.com/dekor_lane/">
+                        <Link
+                          className="behance"
+                          target="_blank"
+                          to="https://www.instagram.com/dekor_lane/"
+                        >
                           <FaInstagram />
                         </Link>
                       </div>
@@ -293,10 +315,13 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+
+            {/* Contact Form */}
             <div className="col-lg-7 col-md-6">
               <div className="contact-from-wrap">
                 <form onSubmit={handleSubmit}>
                   <div className="row">
+                    {/* Name Field */}
                     <div className="col-md-6 pe-0">
                       <input
                         name="name"
@@ -304,12 +329,16 @@ const Contact = () => {
                         placeholder="Name"
                         value={formData.name}
                         onChange={handleChange}
-                        className={`${errors.name ? 'is-invalid' : ''}`}
+                        className={`form-control ${errors.name ? "is-invalid" : ""}`}
                       />
                       {errors.name && (
-                        <div className="invalid-feedback">{errors.name}</div>
+                        <div className="invalid-feedback d-block">
+                          {errors.name}
+                        </div>
                       )}
                     </div>
+
+                    {/* Email Field */}
                     <div className="col-md-6">
                       <input
                         name="email"
@@ -317,19 +346,21 @@ const Contact = () => {
                         placeholder="Email"
                         value={formData.email}
                         onChange={handleChange}
-                        className={`${errors.email ? 'is-invalid' : ''}`}
+                        className={`form-control ${errors.email ? "is-invalid" : ""}`}
                       />
                       {errors.email && (
-                        <div className="invalid-feedback">{errors.email}</div>
+                        <div className="invalid-feedback d-block">
+                          {errors.email}
+                        </div>
                       )}
                     </div>
+
+                    {/* Country Select */}
                     <div className="col-md-4 form-group pe-0 mb-3">
                       <select
-                        className={`form-control ${errors.country ? 'is-invalid' : ''}`}
+                        className={`form-control ${errors.country ? "is-invalid" : ""}`}
                         value={
-                          selectedCountry
-                            ? JSON.stringify(selectedCountry)
-                            : ""
+                          selectedCountry ? JSON.stringify(selectedCountry) : ""
                         }
                         onChange={(e) =>
                           setSelectedCountry(JSON.parse(e.target.value))
@@ -344,12 +375,16 @@ const Contact = () => {
                         ))}
                       </select>
                       {errors.country && (
-                        <div className="invalid-feedback">{errors.country}</div>
+                        <div className="invalid-feedback d-block">
+                          {errors.country}
+                        </div>
                       )}
                     </div>
+
+                    {/* State Select */}
                     <div className="col-md-4 form-group pe-0 mb-3">
                       <select
-                        className={`form-control ${errors.state ? 'is-invalid' : ''}`}
+                        className={`form-control ${errors.state ? "is-invalid" : ""}`}
                         value={
                           selectedState ? JSON.stringify(selectedState) : ""
                         }
@@ -367,12 +402,16 @@ const Contact = () => {
                         ))}
                       </select>
                       {errors.state && (
-                        <div className="invalid-feedback">{errors.state}</div>
+                        <div className="invalid-feedback d-block">
+                          {errors.state}
+                        </div>
                       )}
                     </div>
+
+                    {/* City Select */}
                     <div className="col-md-4 form-group mb-3">
                       <select
-                        className={`form-control ${errors.city ? 'is-invalid' : ''}`}
+                        className={`form-control ${errors.city ? "is-invalid" : ""}`}
                         value={selectedCity || ""}
                         onChange={(e) => setSelectedCity(e.target.value)}
                         disabled={!cities.length}
@@ -386,11 +425,14 @@ const Contact = () => {
                         ))}
                       </select>
                       {errors.city && (
-                        <div className="invalid-feedback">{errors.city}</div>
+                        <div className="invalid-feedback d-block">
+                          {errors.city}
+                        </div>
                       )}
                     </div>
 
-                    <div className="col-md-8 pe-0 ">
+                    {/* Mobile Field with OTP Button */}
+                    <div className="col-md-8 pe-0">
                       <input
                         name="mobile"
                         type="text"
@@ -399,28 +441,39 @@ const Contact = () => {
                         onChange={handleChange}
                         maxLength="10"
                         disabled={isNumberVerified}
-                        className={`${errors.mobile ? 'is-invalid' : ''}`}
+                        className={`form-control ${errors.mobile ? "is-invalid" : ""}`}
                       />
                       {errors.mobile && (
-                        <div className="invalid-feedback">{errors.mobile}</div>
+                        <div className="invalid-feedback d-block">
+                          {errors.mobile}
+                        </div>
                       )}
                     </div>
-                    <div className="col-md-4 ">
+                    <div className="col-md-4">
                       {isNumberVerified ? (
-                        <button className="form-control verified" disabled>
+                        <button
+                          className="form-control verified btn-success"
+                          disabled
+                        >
                           ✓ Verified
                         </button>
                       ) : (
                         <button
-                          className="form-control"
+                          className="form-control btn-primary"
                           type="button"
                           onClick={handleOtpRequest}
-                          disabled={loading || !formData.mobile || formData.mobile.length !== 10}
+                          disabled={
+                            loading ||
+                            !formData.mobile ||
+                            formData.mobile.length !== 10
+                          }
                         >
-                          {loading ? 'Sending...' : 'Get OTP'}
+                          {loading ? "Sending..." : "Get OTP"}
                         </button>
                       )}
                     </div>
+
+                    {/* Subject Field */}
                     <div className="col-md-12">
                       <input
                         name="subject"
@@ -428,12 +481,16 @@ const Contact = () => {
                         placeholder="Subject"
                         value={formData.subject}
                         onChange={handleChange}
-                        className={`${errors.subject ? 'is-invalid' : ''}`}
+                        className={`form-control ${errors.subject ? "is-invalid" : ""}`}
                       />
                       {errors.subject && (
-                        <div className="invalid-feedback">{errors.subject}</div>
+                        <div className="invalid-feedback d-block">
+                          {errors.subject}
+                        </div>
                       )}
                     </div>
+
+                    {/* Message Field */}
                     <div className="col-md-12">
                       <textarea
                         name="message"
@@ -441,13 +498,14 @@ const Contact = () => {
                         placeholder="Your message"
                         value={formData.message}
                         onChange={handleChange}
+                        className="form-control"
                       />
                       <button
-                        className="submit"
+                        className="submit btn btn-primary w-100 mt-3"
                         type="submit"
                         disabled={loading}
                       >
-                        {loading ? 'Sending...' : 'Send Message'}
+                        {loading ? "Sending..." : "Send Message"}
                       </button>
                     </div>
                   </div>
@@ -455,8 +513,15 @@ const Contact = () => {
               </div>
             </div>
           </div>
+
+          {/* Google Map */}
           <div className="map mt-6 mt-md-12">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.25176871577!2d78.40804555!3d17.4123487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1707457499416!5m2!1sen!2sin"></iframe>
+            <iframe
+              title="Google Maps Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.25176871577!2d78.40804555!3d17.4123487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1707457499416!5m2!1sen!2sin"
+              style={{ border: 0, width: "100%", height: "450px" }}
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </div>
@@ -481,7 +546,8 @@ const Contact = () => {
             </div>
             <div className="otp-modal-body">
               <p className="text-center mb-3">
-                We've sent an OTP to {phoneCode}{formData.mobile}
+                We've sent an OTP to {phoneCode}
+                {formData.mobile}
               </p>
 
               <div className="form-group mb-3">
@@ -490,7 +556,7 @@ const Contact = () => {
                   placeholder="Enter 6-digit OTP"
                   value={otp}
                   onChange={(e) => {
-                    const value = e.target.value.replace(/\D/g, '');
+                    const value = e.target.value.replace(/\D/g, "");
                     if (value.length <= 6) {
                       setOtp(value);
                     }
@@ -520,7 +586,7 @@ const Contact = () => {
                   onClick={handleVerifyOtp}
                   disabled={loading || otp.length !== 6}
                 >
-                  {loading ? 'Verifying...' : 'Verify OTP'}
+                  {loading ? "Verifying..." : "Verify OTP"}
                 </button>
               </div>
 

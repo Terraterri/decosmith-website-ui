@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "https://dev.terraterri.com/",
   plugins: [
-    react({
+    react({ 
       fastRefresh: false,
     }),
   ],
