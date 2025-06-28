@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { apiClient } from "../Utills/httpClient";
 
 const Contact = () => {
-  window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  // window.scrollTo({ top: 0, left: 0, behavior: "instant" });
 
   // State declarations
   const [countries, setCountries] = useState([]);
@@ -226,8 +226,8 @@ const Contact = () => {
     try {
       // Submit form data
       const response = await apiClient.post("/submissions", submissionData);
-
-      if (response.data.status) {
+      console.log("Form submission response:", response);
+      if (response.data.status == true) {
         toast.success("Form submitted successfully!");
 
         // Reset form
@@ -459,7 +459,7 @@ const Contact = () => {
                         </button>
                       ) : (
                         <button
-                          className="form-control btn-primary"
+                          className="form-control"
                           type="button"
                           onClick={handleOtpRequest}
                           disabled={
@@ -501,7 +501,7 @@ const Contact = () => {
                         className="form-control"
                       />
                       <button
-                        className="submit btn btn-primary w-100 mt-3"
+                        className="submit"
                         type="submit"
                         disabled={loading}
                       >
