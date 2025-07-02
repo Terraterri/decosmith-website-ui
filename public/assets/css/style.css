@@ -777,7 +777,7 @@ button.btn-close.text-reset svg {
 }
 
 .social-icon-style a.facebook {
-  /* background-color: #3b5998; */
+  background-color: #d3f8f4;
 }
 
 .social-icon-style a.facebook:hover {
@@ -786,7 +786,7 @@ button.btn-close.text-reset svg {
 }
 
 .social-icon-style a.twitter {
-  /* background-color: #1da1f2; */
+  background-color: #d3f8f4;
 }
 
 .social-icon-style a.twitter:hover {
@@ -795,11 +795,11 @@ button.btn-close.text-reset svg {
 }
 
 .social-icon-style a.google-plus {
-  /* background-color: #dd4b39; */
+  background-color: #d3f8f4;
 }
 
 .social-icon-style a.behance {
-  /* background-color: #ff17b4; */
+  background-color: #d3f8f4;
 }
 
 .social-icon-style a.behance:hover {
@@ -4938,4 +4938,12 @@ select.form-control option {
 .verified {
   background-color: #28a745;
   color: white;
+}
+.contact-card{
+  height: 400px;
+}
+.contact-card img{
+  width: 100%;
+  object-fit:cover ;
+  border-radius: 20px 0px 20px 0px;
 }
