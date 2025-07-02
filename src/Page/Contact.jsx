@@ -283,7 +283,7 @@ const Contact = () => {
                     <div className="cont1 col-md-6">
                       <div className="info-content">
                         <h3 className="etitle">Email</h3>
-                        <p className="support">info@dekorlane.com</p>
+                        <p className="support">info@decosmith.com</p>
                       </div>
                     </div>
                     <div className="cont2 col-md-6">

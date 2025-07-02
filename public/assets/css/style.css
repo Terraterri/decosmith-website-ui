@@ -481,7 +481,7 @@ hr {
 button.btn-close.text-reset {
   position: relative;
   top: 115px;
-  background: #fff !important;
+  /* background: #fff ; */
   color: #fff;
   content: "x";
   left: 309px;
@@ -1140,7 +1140,7 @@ button.btn-close.text-reset svg {
 }
 
 .about-content .title {
-  font-size: 35px;
+  font-size: 30px;
   line-height: 45px;
   letter-spacing: 1px;
   /* text-transform: uppercase; */
@@ -3016,7 +3016,7 @@ ul:last-child {
   width: 100%;
   padding: 5px 10px;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.75;
   color: #212529;
   background-color: #fff;
@@ -4442,9 +4442,9 @@ background: linear-gradient(90deg, rgba(255,207,191,1) 0%, rgba(255,207,191,1) 5
   font-size: 51px;
 }
 
-.footer-logo img {
+/* .footer-logo img {
   height: 80px;
-}
+} */
 
 .footer-logo .logText {
   width: 250px;
@@ -4679,8 +4679,9 @@ select.form-control option {
 
 .logo img {
   position: relative;
-  width: 75%;
+  width: 100%;
   height: auto;
+  padding: 10px;
 }
 
 /* .logo img {

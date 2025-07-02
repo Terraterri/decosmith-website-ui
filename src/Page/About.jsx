@@ -50,23 +50,35 @@ const About = () => {
                   a commitment to unparalleled craftsmanship, DekorLane is your
                   partner in creating environments that inspire and resonate.
                 </p>
-               
+
                 <h6 className="about-span">Vision </h6>
                 <p>
                   Our Vision is to inspire boundless creativity, enhance aesthetics, and shape environments into personalized masterpieces. Fueled by innovation and a steadfast commitment to sustainability, we seek to redefine the art of interior design, establishing new benchmarks for elegance and functionality.
                 </p>
-                
+
                 <h6 className="about-span">Mission </h6>
                 <p>
-                Our Mission is to passionately craft spaces that reflect the unique personalities and lifestyles of our clients through a blend of innovative design and sustainable practices. Committed to excellence,we create environments that not only meet the functional needs but also exceed clients aesthetic expectations.
+                  Our Mission is to passionately craft spaces that reflect the unique personalities and lifestyles of our clients through a blend of innovative design and sustainable practices. Committed to excellence,we create environments that not only meet the functional needs but also exceed clients aesthetic expectations.
                 </p>
               </div>
             </div>
             <div className="col mb-6">
-              <div className="about-banner">
+              {/* <div className="about-banner">
                 <img
                   src="assets/images/banner/ban.png"
                   className="blog6"
+                  alt="banner"
+                />
+              </div> */}
+              <div className="about-banner w-100">
+                <img
+                  src="assets/images/banner/ban.png"
+                  className="blog6"
+                  alt="banner"
+                />
+                <img
+                  src="assets/images/banner/form.jpg"
+                  className="blog6 mt-5"
                   alt="banner"
                 />
               </div>
@@ -275,7 +287,7 @@ const About = () => {
                   </div>
                 </div>
                 <p>
-                With DekorLane's expertise and experience, my dream and vision transformed into a beautifully designed space.
+                  With DekorLane's expertise and experience, my dream and vision transformed into a beautifully designed space.
                 </p>
                 <div class="quote">
                   <i class="fa fa-quote-left"></i>
@@ -311,7 +323,7 @@ const About = () => {
                   </div>
                 </div>
                 <p>
-                Our ideas, needs and questions were plenty. Their creativity was inspiring and their impeccably detailed knowledge was invaluable.
+                  Our ideas, needs and questions were plenty. Their creativity was inspiring and their impeccably detailed knowledge was invaluable.
                 </p>
                 <div class="quote">
                   <i class="fa fa-quote-left"></i>

@@ -18,11 +18,16 @@ const Steps = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 768 },
-      items: 2,
+      items: 3,
       partialVisibilityGutter: 30
     },
     mobile: {
       breakpoint: { max: 768, min: 0 },
+      items: 2,
+      partialVisibilityGutter: 20
+    },
+    minmobile: {
+      breakpoint: { max: 475, min: 0 },
       items: 1,
       partialVisibilityGutter: 20
     },
@@ -50,7 +55,7 @@ const Steps = () => {
       title: "Explore in Metaverse",
       categories: ["Lighting"],
       description: "Step into the virtual realm of the metaverse, where you can visualize and customize your space in real-time, experimenting with layouts, colors, and furnishings.",
-      imageUrl: "assets/images/banner/banner10.jpg",
+      imageUrl: "assets/images/banner/step3.jpg",
       step: "STEP 3"
     },
     {
@@ -58,7 +63,7 @@ const Steps = () => {
       title: "Design Finalization",
       categories: ["Lighting"],
       description: "Collaborate with our team to refine your design, ensuring every detail reflects your unique style and needs.",
-      imageUrl: "assets/images/project/bathroom3.jpg",
+      imageUrl: "assets/images/banner/step1.jpg",
       step: "STEP 4"
     },
     {
@@ -66,7 +71,7 @@ const Steps = () => {
       title: "Quotation Approval",
       categories: ["Lighting"],
       description: "Review and approve the comprehensive quotation tailored to your project specifications and budget.",
-      imageUrl: "assets/images/project/bathroom3.jpg",
+      imageUrl: "assets/images/banner/step2.jpg",
       step: "STEP 5"
     },
     {
@@ -82,7 +87,7 @@ const Steps = () => {
       title: "Move In",
       categories: ["Lighting"],
       description: "Finally, step into your transformed space and experience the joy of living in a home that reflects your personality and aspirations.",
-      imageUrl: "assets/images/project/bathroom3.jpg",
+      imageUrl: "assets/images/banner/step4.jpg",
       step: "STEP 7"
     },
 

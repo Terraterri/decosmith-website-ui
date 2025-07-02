@@ -37,7 +37,7 @@ const Header = () => {
       <header className="header-area header-transparent-bar nav">
         {/* <div className="leyeroptity"></div> */}
         <div className="container-fluid">
-          <div className="row align-items-center">
+          <div className="row align-items-center mb-res-ju-c">
             <div className="col-lg-3 col-md-4 col-4">
               <div className="logo">
                 <Link to="/">
@@ -153,9 +153,9 @@ const Header = () => {
                     <li className="dis-none">
                       <Link to="/DekoMatch">Dekomatch</Link>
                     </li> */}
-                      <li className="sideLi">
+                      {/* <li className="sideLi">
                         <Link to="/about">About Us</Link>
-                      </li>
+                      </li> */}
                       {/* <li className="sideLi">
                       <Link to="/contact">Help Center</Link>
                       </li> */}
@@ -165,9 +165,9 @@ const Header = () => {
                       <li className="sideLi">
                         <Link to="/Partners">Partner with us</Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link to="/contact">Contact Us</Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </nav>
                 </div>
