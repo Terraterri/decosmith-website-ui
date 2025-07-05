@@ -970,7 +970,8 @@
   .maincontainer>.back {
     width: 92% !important;
   }
-  .footer-logo img{
+
+  .footer-logo img {
     width: 80%;
   }
 
@@ -1090,17 +1091,17 @@
 
   .background-slider1 {
     /* background-image: url("../../images/slider/slider-1.jpg"); */
-    height: 300px;
+    height: 360px;
   }
 
   .background-slider2 {
     /* background-image: url("../../images/slider/slider-1.jpg"); */
-    height: 300px;
+    height: 360px;
   }
 
   .background-slider3 {
     /* background-image: url("../../images/slider/slider-1.jpg"); */
-    height: 300px;
+    height: 360px;
   }
 
   .hero-content-1 p {
@@ -1443,9 +1444,11 @@
   .leyeroptity {
     height: 89px;
   }
+
   .ypara {
     padding: 0px !important;
   }
+
   .about-content p {
     line-height: 25px;
   }
@@ -1516,9 +1519,10 @@
     line-height: 20px;
   }
 
+  /* 
   .height-100vh {
     height: 80vh;
-  }
+  } */
 
   .service-imgg {
     margin-top: 0px;
@@ -1614,6 +1618,7 @@
   .doklogo {
     font-size: 35px;
   }
+
   .about-content .title {
     font-size: 20px !important;
     margin-bottom: 10px;
@@ -1640,6 +1645,7 @@
   .header-aside-active .header-aside-wrap .header-aside-content .mobile-menu-area .mobile-menu-wrap .mobile-navigation nav .mobile-menu li a {
     font-size: 18px;
   }
+
   /* .about-banner.w-100{
     display: none;
   } */
@@ -1693,7 +1699,7 @@
 
   .offcanvas.offcanvas-end.show {
     background: rgb(5, 12, 14) !important;
-    z-index: 99;
+    z-index: 9999;
   }
 
   .offcanvas-body {
@@ -1855,7 +1861,8 @@
   .heading2 {
     font-size: 23px;
   }
-  .section.section-padding.mt-5{
+
+  .section.section-padding.mt-5 {
     margin-top: 0px !important;
     padding-top: 0px !important;
   }

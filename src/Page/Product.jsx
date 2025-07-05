@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation} from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,
@@ -7,7 +7,7 @@ import {
 
 const Product = () => {
 
- window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   const location = useLocation();
   const [activeTab, setActiveTab] = useState("nav-home");
 
@@ -195,7 +195,7 @@ const Product = () => {
             <div className="container">
               <div className="section-title text-center mb-lg-9 mb-md-7 mb-5">
                 <h2 className="title">
-                  Interior Design <span> renovation</span>
+                  Living Room Design <span> renovation</span>
                 </h2>
                 <p>
                   Step into the transformative journey of our interior designs
@@ -298,7 +298,7 @@ const Product = () => {
             <div className="container">
               <div className="section-title text-center mb-lg-9 mb-md-7 mb-5">
                 <h2 className="title">
-                  Interior Design <span> renovation</span>
+                 Modular Kitchen Design <span> renovation</span>
                 </h2>
                 <p>
                   Welcome to a world where your dream kitchen becomes a reality!
@@ -394,7 +394,7 @@ const Product = () => {
             <div className="container">
               <div className="section-title text-center mb-lg-9 mb-md-7 mb-5">
                 <h2 className="title">
-                  Interior Design <span> renovation</span>
+                  Wardrobe Design <span> renovation</span>
                 </h2>
                 <p>
                   your wardrobe is not just storage but a reflection of your
@@ -490,7 +490,7 @@ const Product = () => {
             <div className="container">
               <div className="section-title text-center mb-lg-9 mb-md-7 mb-5">
                 <h2 className="title">
-                  Interior Design <span> renovation</span>
+                  Bedroom Design <span> renovation</span>
                 </h2>
                 <p>
                   Scroll through these captivating before-and-after image to
@@ -592,7 +592,7 @@ const Product = () => {
             <div className="container">
               <div className="section-title text-center mb-lg-9 mb-md-7 mb-5">
                 <h2 className="title">
-                  Interior Design <span> renovation</span>
+                  Home office Design<span> renovation</span>
                 </h2>
                 <p>
                   Each image in our gallery showcases the versatility and
@@ -691,7 +691,7 @@ const Product = () => {
             <div className="container">
               <div className="section-title text-center mb-lg-9 mb-md-7 mb-5">
                 <h2 className="title">
-                  Interior Design <span> renovation</span>
+                  Bathroom Design<span> renovation</span>
                 </h2>
                 <p>
                   Embark on a visual journey of bathroom transformations with

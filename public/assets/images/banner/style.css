@@ -1140,7 +1140,7 @@ button.btn-close.text-reset svg {
 }
 
 .about-content .title {
-  font-size: 30px;
+  font-size: 26px;
   line-height: 45px;
   letter-spacing: 1px;
   /* text-transform: uppercase; */
@@ -1162,7 +1162,7 @@ button.btn-close.text-reset svg {
 }
 
 .about-content p {
-  line-height: 33px;
+font-size:14px;
   width: 90%;
   margin: 0px 0 20px;
 }
@@ -2159,7 +2159,7 @@ button.btn-close.text-reset svg {
 }
 
 .project-details-content .title {
-  font-size: 26px;
+  font-size: 26px !important;
   margin: 0 0 10px;
 }
 
@@ -3052,8 +3052,8 @@ ul:last-child {
 .videotitle {
   display: flex;
   justify-content: center;
-  margin-bottom: 28px;
-  font-size: 38px;
+  /* margin-bottom: 28px; */
+  font-size: 26px;
 }
 
 img {
@@ -3072,7 +3072,7 @@ img {
 }
 
 .livin {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .etitle {
@@ -3139,6 +3139,7 @@ img {
 
 .why-head {
   padding-bottom: 26px;
+  font-size: 26px;
 }
 
 .service-details-list-content-wrap {
@@ -3359,7 +3360,7 @@ h2:after {
 }
 
 .counter {
-  font-size: 31px;
+  font-size: 26px;
   font-weight: 600;
   color: #041b79;
 }
@@ -3782,7 +3783,6 @@ img {
   margin-bottom: 40px;
   padding-bottom: 10px;
   line-height: 45px;
-  font-size: 26px;
 }
 
 /* .mainTitle span {
@@ -3822,9 +3822,9 @@ background: linear-gradient(90deg, rgba(255,87,34,1) 0%, rgba(255,207,191,1) 50%
 background: linear-gradient(90deg, rgba(255,207,191,1) 0%, rgba(255,207,191,1) 50%, rgba(255,87,34,1) 100%);
   } */
 .furni-p {
-  /* font-weight: 00; */
+  font-weight: 500;
   color: #000;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 90px;
   letter-spacing: 0px;
   line-height: 32px;
@@ -3847,7 +3847,7 @@ background: linear-gradient(90deg, rgba(255,207,191,1) 0%, rgba(255,207,191,1) 5
 }
 
 .furn-content .title {
-  font-size: 23px;
+  font-size: 32px;
   line-height: 40px;
   letter-spacing: 1px;
   text-transform: capitalize;
@@ -3886,7 +3886,8 @@ background: linear-gradient(90deg, rgba(255,207,191,1) 0%, rgba(255,207,191,1) 5
 .Furnishing-lastText h3 {
   font-family: "Kaushan Script", cursive;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px !important;
+  letter-spacing: 1px;
 }
 
 .d_card:hover h2 {
@@ -4022,11 +4023,11 @@ background: linear-gradient(90deg, rgba(255,207,191,1) 0%, rgba(255,207,191,1) 5
 .card1 a {
   height: 100%;
   text-transform: capitalize;
+  font-size: 20px;
 }
 
 .underLineContact {
   margin-bottom: 40px;
-  font-size: 26px;
 }
 
 .underLineContact::after {
@@ -4800,7 +4801,7 @@ select.form-control option {
 .entry-title a {
   color: #fff !important;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 500 !important;
 }
 
@@ -4812,7 +4813,7 @@ select.form-control option {
 
 .entry-desc {
   color: #555;
-  font-size: 0.9375rem;
+  font-size: 14px;
   margin-bottom: 15px;
   line-height: 1.5;
 }
