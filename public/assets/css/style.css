@@ -3,8 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fredoka:wght@300..700&family=Protest+Revolution&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 *,
 *::after,
@@ -24,7 +24,8 @@ body {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Lato", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   font-style: normal;
@@ -37,12 +38,12 @@ body {
 }
 
 p {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   color: #3e3e3e;
   margin-bottom: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 h1,
@@ -51,7 +52,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 500;
   line-height: 1.2;
   margin-top: 0;
@@ -154,7 +155,7 @@ hr {
 }
 
 .bg-black {
-  background-color: #d3f8f4 !important;
+  background-color: #f5f5f5 !important;
 }
 
 .bg-white {
@@ -258,7 +259,7 @@ hr {
   justify-content: space-around;
   /* padding-left: 50px; */
   /* padding-right: 50px; */
-  border-bottom: 2px solid #041b79;
+  border-bottom: 2px solid #4d4d4d;
   /* padding: 10px 0px 10px 0px; */
 }
 
@@ -990,7 +991,7 @@ button.btn-close.text-reset svg {
   font-size: 35px;
   color: #ffffff;
   margin: 0 0 52px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .main-slider-nav {
@@ -1140,7 +1141,7 @@ button.btn-close.text-reset svg {
 }
 
 .about-content .title {
-  font-size: 30px;
+  font-size: 26px;
   line-height: 45px;
   letter-spacing: 1px;
   /* text-transform: uppercase; */
@@ -1161,11 +1162,11 @@ button.btn-close.text-reset svg {
   font-weight: bold;
 }
 
-.about-content p {
+/* .about-content p {
   line-height: 33px;
   width: 90%;
   margin: 0px 0 20px;
-}
+} */
 
 .working-away-wrap {
   margin: 0 0 33px;
@@ -1591,7 +1592,7 @@ button.btn-close.text-reset svg {
 .project-wrap .project-inner .project-content .category a {
   color: #ffffff;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   letter-spacing: 1px;
   transform: translateY(-10px);
   transition: all 0.4s ease-in-out 0s;
@@ -2202,7 +2203,7 @@ button.btn-close.text-reset svg {
   list-style: none;
   margin: 0 0 5px;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .project-wrapper-sticky {
@@ -3053,7 +3054,10 @@ ul:last-child {
   display: flex;
   justify-content: center;
   margin-bottom: 28px;
-  font-size: 38px;
+  font-size: 26px;
+}
+.blog-content h3{
+  font-size: 26px;
 }
 
 img {
@@ -3133,12 +3137,13 @@ img {
 .ypara {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 15px !important;
+  /* font-size: 1px !important; */
   padding-right: 110px;
 }
 
 .why-head {
   padding-bottom: 26px;
+  font-size: 26px;
 }
 
 .service-details-list-content-wrap {
@@ -3268,7 +3273,7 @@ h2:after {
 .back p {
   position: absolute;
   top: 150px;
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   padding: 0px 20px 20px 20px;
 }
@@ -3281,7 +3286,8 @@ h2:after {
   display: flex;
   justify-content: center;
   left: 33px;
-  font-weight: 600;
+  /* font-weight: 600; */
+  font-size: 24px;
 }
 
 .maincontainer>.front {
@@ -3326,11 +3332,12 @@ h2:after {
 }
 
 .titless {
-  color: #041b79;
+  color: #cfd8ff;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 23px;
+  font-size: 24px;
 }
 
 .image:before {
@@ -3824,20 +3831,17 @@ background: linear-gradient(90deg, rgba(255,207,191,1) 0%, rgba(255,207,191,1) 5
 .furni-p {
   /* font-weight: 00; */
   color: #000;
-  font-size: 14px;
+  /* font-size: 14px; */
   margin-bottom: 90px;
-  letter-spacing: 0px;
-  line-height: 32px;
+  /* letter-spacing: 0px;
+  line-height: 32px; */
 }
 
 .text-left {
   text-align: start;
 }
 
-.furni-black {
-  color: black;
-  font-size: 20px;
-}
+
 
 .furnImage img {
   width: 80%;
@@ -4800,7 +4804,7 @@ select.form-control option {
 .entry-title a {
   color: #fff !important;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 500 !important;
 }
 
@@ -4812,9 +4816,9 @@ select.form-control option {
 
 .entry-desc {
   color: #555;
-  font-size: 0.9375rem;
+  font-size: 16px;
   margin-bottom: 15px;
-  line-height: 1.5;
+  line-height: 26px;
 }
 
 .more-link {
@@ -4853,9 +4857,7 @@ select.form-control option {
   }
 }
 
-.project-content {
-  /* transition: 0.7s; */
-}
+
 
 
 .project-entries:hover .project-content {
@@ -4949,4 +4951,10 @@ select.form-control option {
   width: 100%;
   object-fit:cover ;
   border-radius: 20px 0px 20px 0px;
+}
+.blogSpan{
+  font-size: 23px;
+}
+.allTitle{
+  font-size: 26px !important;
 }

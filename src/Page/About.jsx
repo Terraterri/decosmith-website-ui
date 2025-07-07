@@ -72,8 +72,8 @@ const About = () => {
               </div> */}
               <div className="about-banner w-100">
                 <img
-                  // src="assets/images/banner/ban.png"
-                  src="assets/images/banner/immmmmm.jpeg"
+                  src="assets/images/banner/ban.png"
+                  // src="assets/images/banner/immmmmm.jpeg"
                   className="blog6"
                   alt="banner"
                 />

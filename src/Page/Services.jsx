@@ -43,11 +43,11 @@ const Services = () => {
       <div className="section section-paddingg">
         <div className="container">
           <div className="service-head pt-5 mt-5">
-            <h2 className="title text-center">
-              Our<span className="serv-span"> Services</span>
+            <h2 className="title text-center allTitle">
+              Our Services
             </h2>
             <p className="white text-center pb-2">
-              DekorLane offer a range of services to help clients enhance the
+              Decosmith offer a range of services to help clients enhance the
               aesthetic appeal, functionality, and overall ambiance of their
               spaces.
             </p>

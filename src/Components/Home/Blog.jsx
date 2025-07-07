@@ -8,7 +8,7 @@ const Blog = () => {
         <div className="container">
           <div className="section-title text-center mb-lg-9 mb-md-7 mb-5">
             <h2 className="title">
-              Our <span> Blogs</span>
+             Interior Insights
             </h2>
             {/* <p>
               Don’t let another year pass by without getting on top of your

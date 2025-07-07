@@ -160,7 +160,7 @@ const Commercial = () => {
             <div className="container">
               <div className="section-title text-center mb-lg-9 mb-md-7 mb-5">
                 <h2 className="title">
-                  Interior Design <span>renovation</span>
+                   Shopping Malls Design <span>renovation</span>
                 </h2>
               </div>
               <div className="complir_sec">
@@ -227,7 +227,7 @@ const Commercial = () => {
             <div className="container">
               <div className="section-title text-center mb-lg-9 mb-md-7 mb-5">
                 <h2 className="title">
-                  Interior Design <span>renovation</span>
+                  Hotels Design <span>renovation</span>
                 </h2>
               </div>
               <div className="complir_sec">

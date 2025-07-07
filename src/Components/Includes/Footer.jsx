@@ -135,7 +135,7 @@ const Footer = () => {
                       <Link to="/DekoMatch">DekoMatch</Link>
                     </li> */}
                     <li>
-                      <Link to="/">Connect Virtually</Link>
+                      <Link to="/">Connect in Metaverse</Link>
                     </li>
                   </ul>
                 </div>
