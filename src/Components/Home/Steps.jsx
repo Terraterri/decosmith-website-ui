@@ -149,7 +149,7 @@ const Steps = () => {
       <div className="section section-padding bg-img overly-style-1 opacity-point-7 opas">
         <div className="container-fluid m-auto">
         <div className="section-title text-center mb-lg-9 mb-md-7">
-          <h2 className="title white">
+          <h2 className="title white text-uppercase">
             How It<span> Works</span>
           </h2>
           <div className="row text-center Furnishing-lastText">

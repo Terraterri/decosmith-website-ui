@@ -972,7 +972,7 @@
   }
 
   .footer-logo img {
-    width: 80%;
+    width: 95%;
   }
 
   .project-post-thumbnail {
@@ -1320,7 +1320,7 @@
   }
 
   .footer-top .col-xs-6 {
-    width: 100%;
+    width: 50%;
   }
 }
 
@@ -1445,9 +1445,19 @@
     height: 89px;
   }
 
+  .col-lg-9.d-lg-block.col-md-8.d-flex {
+    width: 60%;
+  }
+
   .ypara {
     padding: 0px !important;
   }
+
+  .footer-logo {
+    width: 180px;
+    height: auto;
+  }
+
 
   .about-content p {
     line-height: 25px;
@@ -1483,7 +1493,7 @@
 
   .section-title .title {
     font-size: 30px;
-    margin: 0 0 8px;
+    margin: 20px 0 8px;
     line-height: 0px;
   }
 
@@ -1511,7 +1521,7 @@
   }
 
   .Furnishing-lastText h3 {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .about-content .title {
@@ -1538,8 +1548,8 @@
   }
 
   .footer-widget .footer-title {
-    margin: 0 0 10px;
-    font-size: 20px;
+    margin: 15px 0 10px;
+    font-size: 16px;
   }
 
   .footer-widget.footer-list ul li {
@@ -1619,6 +1629,11 @@
     font-size: 35px;
   }
 
+  .footer-logo {
+    width: 160px;
+    height: auto;
+  }
+
   .about-content .title {
     font-size: 20px !important;
     margin-bottom: 10px;
@@ -1644,6 +1659,15 @@
 @media only screen and (max-width: 992px) {
   .header-aside-active .header-aside-wrap .header-aside-content .mobile-menu-area .mobile-menu-wrap .mobile-navigation nav .mobile-menu li a {
     font-size: 18px;
+  }
+
+  .dlicon.ui-3_menu-left {
+    display: block;
+  }
+
+  .col-lg-9.d-lg-block.d-flex {
+    justify-content: end;
+    padding-right: 20px;
   }
 
   /* .about-banner.w-100{
@@ -1672,7 +1696,7 @@
     z-index: 999999;
     width: 10px;
     height: 10px;
-    left: 360px;
+    /* left: 0; */
   }
 
   .header-aside-active {
@@ -1694,7 +1718,7 @@
   }
 
   .offcanvas-end {
-    width: 330px !important;
+    width: 360px !important;
   }
 
   .offcanvas.offcanvas-end.show {
@@ -1860,6 +1884,14 @@
 @media only screen and (max-width: 576px) {
   .heading2 {
     font-size: 23px;
+  }
+
+  .col-lg-9.d-lg-block.col-md-8.d-flex {
+    width: 50%;
+  }
+
+  .card1 a img {
+    height: auto !important;
   }
 
   .section.section-padding.mt-5 {

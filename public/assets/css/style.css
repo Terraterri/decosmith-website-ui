@@ -215,8 +215,9 @@ hr {
 .overly-style-1.opacity-point-4:before {
   opacity: 0.7;
 }
-.overly-style-1.opacity-point-7.opas:before{
- opacity: 0.2 !important;
+
+.overly-style-1.opacity-point-7.opas:before {
+  opacity: 0.2 !important;
 }
 
 .overly-style-1.opacity-point-7:before {
@@ -3056,7 +3057,8 @@ ul:last-child {
   margin-bottom: 28px;
   font-size: 26px;
 }
-.blog-content h3{
+
+.blog-content h3 {
   font-size: 26px;
 }
 
@@ -3522,14 +3524,16 @@ h2:after {
   color: #6c757d;
   content: none;
 }
-.blog-singlep .nav-tabs .nav-item.show .nav-link, .blog-singlep
-.nav-tabs .nav-link.active {
+
+.blog-singlep .nav-tabs .nav-item.show .nav-link,
+.blog-singlep .nav-tabs .nav-link.active {
   color: #041b79;
   background-color: #fff;
   border: 1px solid #c8cee3;
   margin-bottom: 10px;
   width: 100%;
 }
+
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   color: #041b79;
@@ -3784,8 +3788,8 @@ img {
 
 .mainTitle {
   text-transform: capitalize;
-  border-bottom: 3px solid #000;
-  border-radius: 100px;
+  /* border-bottom: 3px solid #000; */
+  /* border-radius: 100px; */
   margin-bottom: 40px;
   padding-bottom: 10px;
   line-height: 45px;
@@ -3973,6 +3977,7 @@ background: linear-gradient(90deg, rgba(255,207,191,1) 0%, rgba(255,207,191,1) 5
 
 .mainColor {
   color: #000 !important;
+  font-size: 26px;
 }
 
 .dekomatchUl li svg {
@@ -4033,17 +4038,17 @@ background: linear-gradient(90deg, rgba(255,207,191,1) 0%, rgba(255,207,191,1) 5
   font-size: 26px;
 }
 
-.underLineContact::after {
+/* .underLineContact::after {
   content: "";
   position: absolute;
-  /* left: 38px; */
+  left: 38px;
   bottom: -3px;
   width: 190px;
   height: 3px;
   background-color: #041b79 !important;
-}
+} */
 
-.underLineContact::before {
+/* .underLineContact::before {
   content: "";
   position: absolute;
   left: 590px;
@@ -4053,7 +4058,7 @@ background: linear-gradient(90deg, rgba(255,207,191,1) 0%, rgba(255,207,191,1) 5
   background-color: #041b79 !important;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-}
+} */
 
 .offcanvas-header .btn-close:hover svg {
   background: #ff0000;
@@ -4102,12 +4107,12 @@ background: linear-gradient(90deg, rgba(255,207,191,1) 0%, rgba(255,207,191,1) 5
   font-weight: 500;
   margin-bottom: 10px;
   position: relative;
-  font-size: 45px;
-  color: #041b79;
+  font-size: 26px;
+  color: #e0e6ff;
 }
 
 .breadcrumb-content h4 {
-  font-size: 33px;
+  font-size: 22px;
   color: #fff;
   /* position: relative; */
   /* font-family: 'Meie Script', cursive; */
@@ -4143,7 +4148,7 @@ background: linear-gradient(90deg, rgba(255,207,191,1) 0%, rgba(255,207,191,1) 5
 }
 
 .cont .mainColor {
-  font-size: 28px;
+  font-size: 26px;
   margin-right: 10px;
 }
 
@@ -4164,11 +4169,11 @@ background: linear-gradient(90deg, rgba(255,207,191,1) 0%, rgba(255,207,191,1) 5
   list-style: none;
 }
 
-.partnerpara {
+/* .partnerpara {
   font-size: 18px;
   letter-spacing: 1px;
   line-height: 35px;
-}
+} */
 
 .book {
   position: relative;
@@ -4581,7 +4586,7 @@ select.form-control option {
   text-align: center;
   padding: 20px;
   border-radius: 15px;
-  /* box-shadow:  5px 5px 0px #041b79,-5px -5px 0px #0000ff; */
+  box-shadow: 5px 5px 0px #041b79, -5px -5px 0px #0000ff;
   margin-bottom: 30px;
   min-height: 310px;
   transition: all ease-in-out 0.3s;
@@ -4622,22 +4627,22 @@ select.form-control option {
   color: #fff;
 }
 
-.referFriend .underLineContact::after {
+/* .referFriend .underLineContact::after {
   content: "";
   position: absolute;
   left: 100px;
   bottom: -3px;
   width: 195px;
-}
+} */
 
-.referFriend .underLineContact::before {
+/* .referFriend .underLineContact::before {
   content: "";
   position: absolute;
   left: 190px;
   bottom: -6px;
   width: 10px;
   height: 10px;
-}
+} */
 
 .referFriend .underLineContact {
   margin-bottom: 20px;
@@ -4648,7 +4653,7 @@ select.form-control option {
 }
 
 .referCard {
-  background-image: url("../images/work/wood.jpg");
+  /* background-image: url("../images/work/wood.jpg"); */
   background-size: cover;
   max-width: 100%;
   height: 100%;
@@ -4944,17 +4949,35 @@ select.form-control option {
   background-color: #28a745;
   color: white;
 }
-.contact-card{
+
+.contact-card {
   height: 400px;
 }
-.contact-card img{
+
+.contact-card img {
   width: 100%;
-  object-fit:cover ;
+  object-fit: cover;
   border-radius: 20px 0px 20px 0px;
 }
-.blogSpan{
+
+.blogSpan {
   font-size: 23px;
 }
-.allTitle{
+
+.allTitle {
   font-size: 26px !important;
+}
+
+.footer-logo {
+  width: 270px;
+}
+
+.dlicon.ui-3_menu-left {
+  display: none;
+}
+.main-title{
+  font-size: 26px;
+}
+.main-titleSub{
+ font-size: 22px; 
 }

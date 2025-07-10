@@ -5,7 +5,7 @@ const Choose = () => {
     <>
       <div className="why">
         <div className="container">
-          <h1 className="why-head text-center">
+          <h1 className="why-head text-center text-uppercase">
             Why Choose <span className="why-span"> Decosmith</span>
           </h1>
           <div className="service-details-list-wrap">

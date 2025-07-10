@@ -77,7 +77,7 @@ const Gallery = () => {
     <div className="section section-padding" id="design-gallery">
       <div className="container">
         <div className="section-title text-center">
-          <h2 className="title">
+          <h2 className="title text-uppercase">
             Design <span>Gallery</span>
           </h2>
         </div>

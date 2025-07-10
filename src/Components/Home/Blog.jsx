@@ -7,7 +7,7 @@ const Blog = () => {
       <div className="section section-padding blogSec-bg">
         <div className="container">
           <div className="section-title text-center mb-lg-9 mb-md-7 mb-5">
-            <h2 className="title">
+            <h2 className="title text-uppercase">
              Interior Insights
             </h2>
             {/* <p>

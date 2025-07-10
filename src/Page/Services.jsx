@@ -43,7 +43,7 @@ const Services = () => {
       <div className="section section-paddingg">
         <div className="container">
           <div className="service-head pt-5 mt-5">
-            <h2 className="title text-center allTitle">
+            <h2 className="title text-center allTitle text-uppercase">
               Our Services
             </h2>
             <p className="white text-center pb-2">

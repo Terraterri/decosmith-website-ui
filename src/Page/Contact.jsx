@@ -268,7 +268,7 @@ const Contact = () => {
       <div className="section section-padding">
         <div className="container">
           <div className="row">
-            <h2 className="text-center underLineContact">Contact Us</h2>
+            <h2 className="text-center underLineContact text-uppercase">Contact Us</h2>
 
             {/* Contact Information Card */}
             <div className="col-lg-5 col-md-6">

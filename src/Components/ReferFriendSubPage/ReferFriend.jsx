@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { BsFillPersonPlusFill } from "react-icons/bs";
 import { RiUserStarFill } from "react-icons/ri";
 import { VscServerProcess } from "react-icons/vsc";
@@ -6,20 +6,72 @@ import { IoMdContacts } from "react-icons/io";
 import { FaCcAmazonPay } from "react-icons/fa";
 import { SiContactlesspayment } from "react-icons/si";
 import { IoMdClose } from "react-icons/io";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { apiClient } from '../../Utills/httpClient';
 
 
 
 const ReferFriend = () => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+
+
+    const [formData, setFormData] = useState({
+        yourName: '',
+        yourEmail: '',
+        yourNumber: '',
+        friendName: '',
+        friendEmail: '',
+        friendNumber: '',
+        message: '',
+        consent: false,
+    });
+
+    const handleChange = (e) => {
+        const { name, value, type, checked } = e.target;
+        setFormData((prev) => ({
+            ...prev,
+            [name]: type === 'checkbox' ? checked : value,
+        }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (!formData.consent) {
+            toast.error("You must confirm your friend's consent.");
+            return;
+        }
+
+        try {
+            const response = await apiClient.post("/referFrined", formData);
+            console.log('Success:', response.data);
+            toast.success("Form submitted successfully!");
+            // Optionally clear form
+            setFormData({
+                yourName: '',
+                yourEmail: '',
+                yourNumber: '',
+                friendName: '',
+                friendEmail: '',
+                friendNumber: '',
+                message: '',
+                consent: false,
+            });
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            toast.error("Please enter a valid 10-digit mobile number");
+        }
+    };
+
     return (
         <>
             <nav aria-label="breadcrumb mt-5 mb-5"><ol class="breadcrumb"></ol></nav>
             <section className='referFriend'>
                 <div className="container">
-                    <h1 className='mainTitle text-center mb-4'> Refer a Friend</h1>
+                    <h1 className='mainTitle text-center mb-4 text-uppercase'> Refer a Friend</h1>
                     <div className="row justify-center align-items-center">
                         <div className="col-lg-6 col-md-6 col-sm-12">
-                            <h2 className='underLineContact'><span className='pe-3 mainColor'></span>Refer a Friend:</h2>
+                            <h2 className='underLineContact mb-0'><span className='pe-3 mainColor'></span>Refer a Friend:</h2>
                             <p className='furni-p mb-3 fs-5'>The <span className='spanTitle '>DekorLane</span> referral program is a way for current or former <span className='spanTitle '>DekorLane</span> customers to refer friends or family members to <span className='spanTitle '>DekorLane</span> for their home interiors and earn rewards for successful referrals. Here's how it works:</p>
                             <div className='text-start'>
                                 <button type="button" className="become-btn mt-0 black" data-bs-toggle="modal" data-bs-target="#exampleModal">Refer Now</button>
@@ -38,7 +90,7 @@ const ReferFriend = () => {
             </section>
             <section className='referFriend2'>
                 <div className="container">
-                    <h2 className='text-center'>How it <span className='mainColor'>works</span></h2>
+                    <h2 className='text-center text-uppercase main-title'>How it works</h2>
                     <div className="row">
                         <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div className="referCard border-r1">
@@ -118,61 +170,134 @@ const ReferFriend = () => {
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"><IoMdClose /></button>
                         </div>
                         <div className="modal-body">
-                            <form method="post" >
+                            <form onSubmit={handleSubmit}>
                                 <div className="row">
-                                    <div className="col-md-6 col-sm-12">
+                                    {/* Your Name */}
+                                    <div className="col-md-4 col-sm-12 pe-0 mb-2">
                                         <div className="form-group">
-                                            <label htmlFor="name" className="form-label"> Name</label>
-                                            <input type="text" className="form-control" />
-
-
+                                            <label>Your Name</label>
+                                            <input
+                                                type="text"
+                                                name="yourName"
+                                                className="form-control"
+                                                value={formData.yourName}
+                                                onChange={handleChange}
+                                                required
+                                            />
                                         </div>
                                     </div>
-                                    <div className="col-md-6 col-sm-12">
+
+                                    {/* Your Email */}
+                                    <div className="col-md-4 col-sm-12 pe-0 mb-2">
                                         <div className="form-group">
-                                            <label htmlFor="email" className="form-label">Email</label>
-                                            <input type="text" className="form-control" />
+                                            <label>Your Email</label>
+                                            <input
+                                                type="email"
+                                                name="yourEmail"
+                                                className="form-control"
+                                                value={formData.yourEmail}
+                                                onChange={handleChange}
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+
+                                    {/* Your Number */}
+                                    <div className="col-md-4 col-sm-12 mb-2">
+                                        <div className="form-group">
+                                            <label>Your Number</label>
+                                            <input
+                                                type="text"
+                                                name="yourNumber"
+                                                className="form-control"
+                                                value={formData.yourNumber}
+                                                onChange={handleChange}
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+
+                                    {/* Friend Name */}
+                                    <div className="col-md-4 col-sm-12 pe-0 mb-2">
+                                        <div className="form-group">
+                                            <label>Friend Name</label>
+                                            <input
+                                                type="text"
+                                                name="friendName"
+                                                className="form-control"
+                                                value={formData.friendName}
+                                                onChange={handleChange}
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+
+                                    {/* Friend Email */}
+                                    <div className="col-md-4 col-sm-12 pe-0 mb-2">
+                                        <div className="form-group">
+                                            <label>Friend Email</label>
+                                            <input
+                                                type="email"
+                                                name="friendEmail"
+                                                className="form-control"
+                                                value={formData.friendEmail}
+                                                onChange={handleChange}
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+
+                                    {/* Friend Number */}
+                                    <div className="col-md-4 col-sm-12 mb-2">
+                                        <div className="form-group">
+                                            <label>Friend Number</label>
+                                            <input
+                                                type="text"
+                                                name="friendNumber"
+                                                className="form-control"
+                                                value={formData.friendNumber}
+                                                onChange={handleChange}
+                                                required
+                                            />
                                         </div>
                                     </div>
                                 </div>
-                                {/* <div className="row">
-                    <div className="col-md-6 col-sm-12">
-                        <div className="form-group">
-                        <label htmlFor="number" className="form-label">Phone number</label>
-                  <input type="text"  className="form-control"/>  
-                        </div>
-                    </div>
-                                              </div> */}
 
-                                <div className="row">
-                                    <div className="col-md-12">
-                                        <label htmlFor="service" className="form-label">Subject</label>
-                                        <input type="text" className="form-control" />
-
+                                {/* Message */}
+                                <div className="col-md-12 col-sm-12 mb-1">
+                                    <div className="form-group">
+                                        <label>Your Message</label>
+                                        <textarea
+                                            name="message"
+                                            className="form-control"
+                                            value={formData.message}
+                                            onChange={handleChange}
+                                            required
+                                        ></textarea>
                                     </div>
                                 </div>
-                                <div className="row">
 
-                                    <div className="col-md-12 col-sm-12">
+                                {/* Consent */}
+                                <label className="consent">
+                                    <input
+                                        type="checkbox"
+                                        name="consent"
+                                        className="me-2"
+                                        checked={formData.consent}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                    I confirm my friend has agreed to be contacted.
+                                </label>
 
-                                        <div className="form-group">
-
-                                            <label htmlFor="message" className="form-label">Your Message</label>
-                                            <textarea type="text" className="form-control"></textarea>
-
-                                        </div>
-                                    </div>
-                                </div>
+                                {/* Submit Button */}
                                 <div className="row">
                                     <div className="col-md-12 col-sm-12 mt-3">
                                         <div className="form-group text-center">
-
-
-                                            <button type="submit" className="con-sub-btn" >Submit</button>
+                                            <button type="submit" className="con-sub-btn">Submit</button>
                                         </div>
                                     </div>
                                 </div>
-
                             </form>
                             {/* <form method="post" onSubmit={handleSubmit(SubmitForm)}>
                 <div className="row">

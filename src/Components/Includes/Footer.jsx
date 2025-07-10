@@ -146,7 +146,7 @@ const Footer = () => {
                   <div className="row">
                   <ul className="col-md-6">
                     <li>
-                      <Link to="/product">Living Room Interior Design</Link>
+                      <Link to="/product">Living Room </Link>
                     </li>
                     <li>
                       <Link to="/product">Modular Kitchen</Link>
@@ -160,7 +160,7 @@ const Footer = () => {
                   </ul>
                   <ul className="col-md-6">
                     <li>
-                      <Link to="/product">Home Office</Link>
+                      {/* <Link to="/product">Home Office</Link> */}
                     </li>
                     <li>
                       <Link to="/product">Bathroom</Link>
@@ -198,8 +198,7 @@ const Footer = () => {
                 <Link to="https://DECOSMITH.com/"> DECOSMITH </Link>.
               </p> */}
               <p>
-                Copyright ©2024 All rights
-                <Link to="https://DECOSMITH.com/"> DECOSMITH </Link>.
+                <Link to="https://DECOSMITH.com/">   Copyright © Decosmith All rights reserved. </Link>.
               </p>
             </div>
           </div>

@@ -100,7 +100,7 @@ const Partners = () => {
             <h2 className='mainColor mb-0'>
               Inviting Business Associates
             </h2>
-            <h3 className='pt-0'> Together shaping the future of interior design! </h3>
+            <h3 className='pt-0 main-titleSub'> Together shaping the future of interior design! </h3>
             <p className='partnerpara mb-5'>Partner with DekorLane today and become part of a dynamic community committed to excellence, innovation, and success in the interior design market.Dekorlane offers numerous advantages and opportunities for professionals in the interior design industry. Here's why you should consider partnering with us:</p>
           </div>
           <div className="row justify-content-center">

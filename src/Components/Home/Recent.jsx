@@ -4,7 +4,7 @@ const Recent = () => {
   return (
     <>
       <div class="section video-banner">
-        <h2 class="videotitle">
+        <h2 class="videotitle text-uppercase ">
           Our Recent <span class="videohead">Interior Work</span>
         </h2>
         <div class="banner-content">

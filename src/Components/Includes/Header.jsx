@@ -50,56 +50,71 @@ const Header = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-8 d-none d-lg-block d-flex">
+            <div className="col-lg-9 d-lg-block col-md-8 d-flex">
               <div className="main-menu">
                 <nav>
                   <ul>
-                    <li>
+                    <li data-bs-dismiss="offcanvas"
+                      aria-label="Close">
                       <Link to="/">Home</Link>
                     </li>
-                      <li >
-                        <Link to="/about">About Us</Link>
-                      </li>
-                    <li>
+                    <li data-bs-dismiss="offcanvas"
+                      aria-label="Close">
+                      <Link to="/about">About Us</Link>
+                    </li>
+                    <li data-bs-dismiss="offcanvas"
+                      aria-label="Close">
                       <Link to="/services">Services</Link>
                     </li>
-                    <li>
+                    {/* <li data-bs-dismiss="offcanvas"
+                      aria-label="Close">
                       <Link to="/Furnishing">Furnishing</Link>
+                    </li> */}
+                    <li className="sideLi" data-bs-dismiss="offcanvas"
+                      aria-label="Close">
+                      <Link to="/ReferFrined">Refer A frined</Link>
+                    </li>
+                    <li className="sideLi" data-bs-dismiss="offcanvas"
+                      aria-label="Close">
+                      <Link to="/Partners">Partner with us</Link>
                     </li>
 
-                    <li>
+                    <li data-bs-dismiss="offcanvas"
+                      aria-label="Close">
                       <HashLink smooth to="/#design-gallery">
                         Design Gallery
                       </HashLink>
-                      {/* <Link to="/#design-gallery">DESIGN GALLERY</Link> */}
+
                     </li>
-                    <li>
-                      <Link to="/quote">Get a Free Quote</Link>
+                    <li data-bs-dismiss="offcanvas"
+                      aria-label="Close">
+                      <Link to="/quote">Get a Quote</Link>
                     </li>
-                   
-                      <li>
-                        <Link to="/contact">Contact Us</Link>
-                      </li>
-                    
+
+                    <li data-bs-dismiss="offcanvas"
+                      aria-label="Close">
+                      <Link to="/contact">Contact Us</Link>
+                    </li>
+
                   </ul>
                 </nav>
               </div>
-            </div>
-            <div className="col-lg-1 col-md-6 col-8">
-              <div className="header-action-wrap">
-                <div className="header-action-style">
-                  <button
-                    // onClick={handleHamburger}
-                    className="hamburger-menu-btn"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight"
-                  >
-                    <i className="dlicon ui-3_menu-left"></i>
-                  </button>
-                </div>
+              <div className="header-action-style">
+                <button
+                  className="hamburger-menu-btn"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
+                  <i className="dlicon ui-3_menu-left"></i>
+                </button>
               </div>
             </div>
+            {/* <div className="col-lg-1 col-md-6 col-8">
+              <div className="header-action-wrap">
+                
+              </div>
+            </div> */}
           </div>
         </div>
       </header>
@@ -128,23 +143,32 @@ const Header = () => {
                 <div className="header-aside-menu">
                   <nav>
                     <ul className="sideUi">
-                      <li className="dis-none">
+                      <li className="dis-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
                         <Link to="/">Home</Link>
                       </li>
-                      <li className="dis-none">
+                      <li className="dis-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
                         <Link to="/services">Services</Link>
                       </li>
-                      <li className="dis-none">
+                      {/* <li className="dis-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
                         <Link to="/Furnishing">Furnishing</Link>
+                      </li> */}
+                      <li data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                        <Link to="/about">About Us</Link>
                       </li>
 
-                      <li className="dis-none">
+                      <li className="dis-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
                         <HashLink smooth to="/#design-gallery">
                           Design Gallery
                         </HashLink>
                       </li>
-                      <li className="dis-none">
-                        <Link to="/quote">Get a Free Quote</Link>
+                      <li className="dis-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                        <Link to="/quote">Get a  Quote</Link>
                       </li>
 
                       {/* <li className="dis-none">
@@ -159,11 +183,17 @@ const Header = () => {
                       {/* <li className="sideLi">
                       <Link to="/contact">Help Center</Link>
                       </li> */}
-                      <li className="sideLi">
-                        <Link to="/ReferFrined">Refer And Earn</Link>
+                      <li className="sideLi" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                        <Link to="/ReferFrined">Refer A Frined</Link>
                       </li>
-                      <li className="sideLi">
+                      <li className="sideLi" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
                         <Link to="/Partners">Partner with us</Link>
+                      </li>
+                      <li data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                        <Link to="/contact">Contact Us</Link>
                       </li>
                       {/* <li>
                         <Link to="/contact">Contact Us</Link>
@@ -173,8 +203,9 @@ const Header = () => {
                 </div>
                 <div className="aside-contact-info">
                   <ul>
-                    <li>
-                      <i className="dlicon ui-1_email-84"></i>info@DECOSMITH.com
+                    <li data-bs-dismiss="offcanvas"
+                      aria-label="Close">
+                      <i className="dlicon ui-1_email-84"></i>info@decosmith.com
                     </li>
                   </ul>
                 </div>

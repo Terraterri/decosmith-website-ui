@@ -40,10 +40,10 @@ const Quote = () => {
       <div className="section section-padding">
         <div className="container">
           <div className="row">
-            <h2 className="text-center underLineContact">Get a Free Quote</h2>
+            <h2 className="text-center underLineContact text-uppercase">Get A Quote</h2>
             <div className="col-lg-5 col-md-6">
               <div className="contact-card">
-                <img src="assets//images//banner//form.jpg" />
+                <img src="assets//images//banner//quote.jpg" />
               </div>
             </div>
             <div className="col-lg-7 col-md-6">
@@ -53,7 +53,7 @@ const Quote = () => {
                   <input name="email" type="email" placeholder="Email" />
                   <input name="subject" type="text" placeholder="Subject" />
                   <textarea name="message" placeholder="Your message" />
-                  <input class="submit" type="submit" value="Send Message" />
+                  <input class="submit" type="submit" value="Get Quote" />
                 </form>
               </div>
             </div>
