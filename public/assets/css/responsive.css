@@ -1688,15 +1688,13 @@
 
   button.btn-close.text-reset {
     position: absolute;
-    top: 20px;
-    /* background: #fff !important; */
+    top: 20px;    
     color: #fff !important;
     content: "x";
     right: 20px;
     z-index: 999999;
     width: 10px;
-    height: 10px;
-    /* left: 0; */
+    height: 10px;    
   }
 
   .header-aside-active {

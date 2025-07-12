@@ -97,7 +97,7 @@ const Commercial = () => {
                     <div className="project-details-content mb-4 mb-md-9">
                       <span className="category">Interior</span>
                       <h2 className="title">
-                        Office Space <span className="DekorLane">Gallery</span>
+                        Office Space <span className="Decosmith">Gallery</span>
                       </h2>
                     </div>
                   </div>
@@ -135,7 +135,7 @@ const Commercial = () => {
                     <div className="project-details-content mb-4 mb-md-9">
                       <span className="category">Interior</span>
                       <h2 className="title">
-                        Shopping Malls <span className="DekorLane">Gallery</span>
+                        Shopping Malls <span className="Decosmith">Gallery</span>
                       </h2>
                     </div>
                   </div>
@@ -202,7 +202,7 @@ const Commercial = () => {
                     <div className="project-details-content mb-4 mb-md-9">
                       <span className="category">Interior</span>
                       <h2 className="title">
-                        Hotels <span className="DekorLane">Gallery</span>
+                        Hotels <span className="Decosmith">Gallery</span>
                       </h2>
                     </div>
                   </div>

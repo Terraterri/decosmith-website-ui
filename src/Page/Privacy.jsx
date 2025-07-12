@@ -22,14 +22,14 @@ const Privacy = () => {
           <div className="row">
             <h2 className="title text-center">Privacy Policy</h2>
             <p>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DekorLane is a brand
-              owned and managed by DekorLane Interior Services Private Limited,
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Decosmith is a brand
+              owned and managed by Decosmith Interior Services Private Limited,
               a company incorporated under the Companies Act, 1956 and having
               its registered office at 504, Magna's Lakeview, Hitex Road,
-              Khanammet, Telangana 500084 (“DekorLane”). DekorLane provides the
+              Khanammet, Telangana 500084 (“Decosmith”). Decosmith provides the
               interior services through its Website (“Website” or “Site”)
-              www.dekorlane.com and mobile application (“App”) and such other
-              electronic device(s). At DekorLane, we are highly committed to the
+              www.Decosmith.com and mobile application (“App”) and such other
+              electronic device(s). At Decosmith, we are highly committed to the
               privacy of your data and information and in providing excellent
               service to all of our customers and visitors of the Website & App.
               We have prepared this Privacy Policy ("Policy") to inform you of
@@ -38,11 +38,11 @@ const Privacy = () => {
             </p>
             <p>
               Unless restricted by applicable law, you agree that all your
-              personal information collected by DekorLane through the
+              personal information collected by Decosmith through the
               Website/App may be used and disclosed as set out in this
               Policy.You are advised to read this Policy carefully. By accessing
-              the services provided by DekorLane.com you agree to the collection
-              and use of your data by DekorLane .com and certain authorized
+              the services provided by Decosmith.com you agree to the collection
+              and use of your data by Decosmith .com and certain authorized
               third- party service providers in the manner provided in this
               Policy.
             </p>
@@ -53,7 +53,7 @@ const Privacy = () => {
               the Information Technology Act, 2000 and the rules made there
               under (as amended) and do not require any physical, electronic or
               digital signature and is a legally binding agreement between You
-              and DekorLane. Further, by sharing your details with us, you also
+              and Decosmith. Further, by sharing your details with us, you also
               agree to receive e-mails including newsletter, campaign updates,
               advertisements, inter-alia with regard to our services.
               <span className="privacySpan">
@@ -69,7 +69,7 @@ const Privacy = () => {
             <h5 className="privQues">What is covered in this Policy?</h5>
             <p>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This Policy covers
-              how DekorLane treats personal information that DekorLane collects,
+              how Decosmith treats personal information that Decosmith collects,
               receives, uses, stores, shares and protects including information
               related to your past use of the Website/App products and services.{" "}
               <br />
@@ -77,12 +77,12 @@ const Privacy = () => {
               information that is personally identifiable like your name,
               address, email address, or phone number, and other information
               that is not otherwise publicly available and is essentially
-              required for registering and receiving services from us.DekorLane
+              required for registering and receiving services from us.Decosmith
               is not responsible for any acts, deeds or things done or committed
-              by any person not being directly employed by DekorLane. In
-              addition, certain DekorLane.com associated/partner companies have
+              by any person not being directly employed by Decosmith. In
+              addition, certain Decosmith.com associated/partner companies have
               their own privacy statements which can be viewed by clicking on
-              their respective links.DekorLane follows a standard procedure of
+              their respective links.Decosmith follows a standard procedure of
               using log files.
               <br /> The information collected by log files may include:
               Internet Protocol (IP) addresses, Browser Type, Internet Service
@@ -91,7 +91,7 @@ const Privacy = () => {
             </p>
             <h2 className="tittle">Privacy – Our Commitment</h2>
             <p>
-              At DekorLane, we are extremely committed to protect your privacy.
+              At Decosmith, we are extremely committed to protect your privacy.
               We would like you to feel confident about us, use our services
               freely and recommend our services to your friends and family. We
               guarantee that we will not rent and sell your personal information
@@ -108,7 +108,7 @@ const Privacy = () => {
             </h5>
             <h6>Profile Information</h6>
             <p>
-              DekorLane collects the details provided by you on registration
+              Decosmith collects the details provided by you on registration
               (email address, name, password, phone number, address and some
               profile details and interests) together with information we learn
               about you from your use of our service and your visits to our
@@ -152,7 +152,7 @@ const Privacy = () => {
             <h5 className="privQues">Who collects the information?</h5>
 
             <p>
-              DekorLane collects personal information about you as part of the
+              Decosmith collects personal information about you as part of the
               registration process, which is voluntary. Other means of
               collecting personal information is through some contests, online
               events, surveys etc. We collect anonymous information like traffic
@@ -160,7 +160,7 @@ const Privacy = () => {
               Our advertisers and partners may collect their own anonymous
               information through their own cookies for which we are not
               responsible for.
-              <br /> DekorLane understands the importance of protecting
+              <br /> Decosmith understands the importance of protecting
               children's privacy, especially in an online environment. It is our
               policy never to knowingly collect or maintain information about
               anyone under the age of 18. Please ensure you’re 18 and above
@@ -175,21 +175,21 @@ const Privacy = () => {
               telephone, facsimile and e-mail, and to advise you of products and
               services which may be of interest to you, inviting you to be a
               participant or a respondent to an online event that is hosted by
-              DekorLane. Further, the relevant information is used by DekorLane
+              Decosmith. Further, the relevant information is used by Decosmith
               to (i) provide you with updates of your account; (ii) to
               communicate with you on any matter relating to the conduct of your
               account; and (iii) to communicate the details of any orders /
               processing of any orders placed by you relating to products
               displayed on the Website.
-              <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DekorLane may
+              <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Decosmith may
               also use aggregate information and statistics for the purposes of
               monitoring Website/App usage in order to help us develop the
               Website/App, our products and services and may provide such
               Aggregate iInformation to third parties. These statistics will not
               include information that can be used to identify any individual
               customer.
-              <br /> DekorLane may organize contests and surveys and the
-              information collected during these events may be used by DekorLane
+              <br /> Decosmith may organize contests and surveys and the
+              information collected during these events may be used by Decosmith
               to improve your overall customer experience. The information will
               only be shared with third parties on an aggregate basis. [For the
               purposes of this Policy, "Aggregate information" shall mean and
@@ -197,7 +197,7 @@ const Privacy = () => {
               into groups so that it no longer reflects or references an
               individually identifiable user. Such information does not identify
               you individually.] Personal data collected by the Website/App may
-              be transferred to other brands/sites of DekorLane where it is
+              be transferred to other brands/sites of Decosmith where it is
               necessary to meet the purpose for which you have submitted the
               information. By submitting data on this Website/App, you are
               providing explicit consent to transmission of data collected on
@@ -235,7 +235,7 @@ const Privacy = () => {
                 potential threat to the safety or security of any person or
                 organization or property or asset or rights of the Website/App
                 from unauthorized use or misuse of the Website/App, violations
-                of DekorLane terms and conditions or to defend against legal
+                of Decosmith terms and conditions or to defend against legal
                 claims/proceedings,
               </li>
               <li>
@@ -256,7 +256,7 @@ const Privacy = () => {
               </li>
               <li>
                 to protect the rights, property, or personal safety of
-                DekorLane, its users, or the general public.
+                Decosmith, its users, or the general public.
               </li>
             </ul>
             <p>
@@ -267,7 +267,7 @@ const Privacy = () => {
               information based on our instructions and in compliance with this
               Policy and any other appropriate confidentiality and security
               measures.
-              <br /> If DekorLane becomes involved in a merger, acquisition, or
+              <br /> If Decosmith becomes involved in a merger, acquisition, or
               any form of sale of some or all of its assets, we will inform you
               through e-mail before personal information is transferred and that
               may become subject to a different privacy policy.
@@ -277,7 +277,7 @@ const Privacy = () => {
 
             <h2 className="tittle">Third-Party Links</h2>
             <p>
-              DekorLane may have third-party links and this Privacy Policy does
+              Decosmith may have third-party links and this Privacy Policy does
               not apply to other advertisers or platforms which might have their
               link on our Website/App. These third-party sites have separate and
               independent privacy policies. We, therefore, have no
@@ -298,7 +298,7 @@ const Privacy = () => {
               collection,storage and processing practices and security measures,
               as well as physical security measures to guard against
               unauthorized access to systems where we store personal data. We
-              restrict access to personal information to DekorLane employees,
+              restrict access to personal information to Decosmith employees,
               contractors and agents who need to know that information in order
               to operate, develop or improve our services. These individuals are
               bound by confidentiality obligations and may be subject to
@@ -310,9 +310,9 @@ const Privacy = () => {
               will have no liability for disclosure of your information due to
               errors in transmission or unauthorized acts of third parties. You
               further agree that you are solely responsible and liable for, and
-              shall indemnify DekorLane against any and all costs, expenses,
+              shall indemnify Decosmith against any and all costs, expenses,
               damages, fees, etc. <br />
-              that DekorLane may incur or suffer due to any personal information
+              that Decosmith may incur or suffer due to any personal information
               or other materials that you post, upload, submit, and otherwise
               make available on the Website/App, including areas of the
               Website/App that are available to the public. We have no control
@@ -359,15 +359,15 @@ const Privacy = () => {
             </p>
             <h2 className="tittle">Policy Compliance</h2>
             <p>
-              DekorLane regularly reviews its compliance with this Policy.
+              Decosmith regularly reviews its compliance with this Policy.
               Please feel free to direct any questions or concerns regarding
-              this Policy or DekorLane treatment of personal information by
+              this Policy or Decosmith treatment of personal information by
               contacting us through this Website or by e-mailing to us at
-              info@dekorlane.com. When we receive complaints at this address, it
-              is DekorLane policy to contact the complaining user regarding his
+              info@Decosmith.com. When we receive complaints at this address, it
+              is Decosmith policy to contact the complaining user regarding his
               or her concerns. We will cooperate with the appropriate regulatory
               authorities to resolve any complaints regarding the transfer of
-              personal data that cannot be resolved between DekorLane and an
+              personal data that cannot be resolved between Decosmith and an
               individual
             </p>
             <h2 className="tittle">Governing Law & Jurisdiction</h2>
@@ -414,21 +414,21 @@ const Privacy = () => {
               as covered above at any time. In case, you choose to do so then
               your access to the Website and App may be limited, or we might not
               be able to provide the services to you. You may withdraw your
-              consent by sending an email to info@dekorlane.com.
+              consent by sending an email to info@Decosmith.com.
             </p>
             <h2 className="tittle">Your Rights Qua Personal Information</h2>
             <p>
               You may access your Personal Information from your user account
-              with DekorLane. You may also correct your personal information or
+              with Decosmith. You may also correct your personal information or
               delete such information (except some mandatory fields) from your
               user account directly. If you don’t have such a user account, then
-              you write to info@dekorlane.com.
+              you write to info@Decosmith.com.
             </p>
             <h2 className="tittle">Contact Us</h2>
             <p>
               If you have additional questions or require more information about
               our Privacy Policy or this Website/App and services, do not
-              hesitate to contact us through email at info@dekorlane.com.
+              hesitate to contact us through email at info@Decosmith.com.
             </p>
           </div>
         </div>

@@ -12,7 +12,7 @@ const DekoMatchSubPage = () => {
           <h1 className='mainTitle text-center mb-4'><span className='pe-3'>DekoMatch - Marketplace</span>for architects</h1>
           
             <p className='furni-p mb-3 fs-5'><span className='spanTitle '>DekoMatch</span> is the premier marketplace for architects, designers, modular manufacturers, civil work contractors and landscaping professionals.</p>
-            <p className='furni-p mb-3 fs-5'>The prevailing issue lies in the absence of a dedicated platform addressing global design challenges in a visually stunning manner. <span className='spanTitle '>DekoMatch,</span> a product of Dekorlane, offers a modern, responsive website equipped with essential functionalities.</p>
+            <p className='furni-p mb-3 fs-5'>The prevailing issue lies in the absence of a dedicated platform addressing global design challenges in a visually stunning manner. <span className='spanTitle '>DekoMatch,</span> a product of Decosmith, offers a modern, responsive website equipped with essential functionalities.</p>
           
          
          

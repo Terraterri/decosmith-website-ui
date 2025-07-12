@@ -69,10 +69,10 @@ const ReferFriend = () => {
             <section className='referFriend'>
                 <div className="container">
                     <h1 className='mainTitle text-center mb-4 text-uppercase'> Refer a Friend</h1>
-                    <div className="row justify-center align-items-center">
+                    <div className="row justify-center align-items-center mb-5">
                         <div className="col-lg-6 col-md-6 col-sm-12">
                             <h2 className='underLineContact mb-0'><span className='pe-3 mainColor'></span>Refer a Friend:</h2>
-                            <p className='furni-p mb-3 fs-5'>The <span className='spanTitle '>DekorLane</span> referral program is a way for current or former <span className='spanTitle '>DekorLane</span> customers to refer friends or family members to <span className='spanTitle '>DekorLane</span> for their home interiors and earn rewards for successful referrals. Here's how it works:</p>
+                            <p className='furni-p mb-3 fs-5'>The <span className='spanTitle '>Decosmith</span> referral program is a way for current or former <span className='spanTitle '>Decosmith</span> customers to refer friends or family members to <span className='spanTitle '>Decosmith</span> for their home interiors and earn rewards for successful referrals. Here's how it works:</p>
                             <div className='text-start'>
                                 <button type="button" className="become-btn mt-0 black" data-bs-toggle="modal" data-bs-target="#exampleModal">Refer Now</button>
                             </div>
@@ -109,7 +109,7 @@ const ReferFriend = () => {
 
                                 </div>
                                 <h3>Eligibility</h3>
-                                <p className=''>To be eligible for the referral program, the friends you refer must get their home interiors done by DekorLane, with a minimum project value of ₹3 lakh.</p>
+                                <p className=''>To be eligible for the referral program, the friends you refer must get their home interiors done by Decosmith, with a minimum project value of ₹3 lakh.</p>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12"> <div className="referCard border-r">
@@ -118,8 +118,8 @@ const ReferFriend = () => {
 
                             </div>
                             <h3>Referral Process</h3>
-                            <p className=''>To refer someone, the referrer fills out a form at DekorLane office with their own and their friend's details (name, phone number, and email ID).
-                                - ₹25,000 is rewarded when the referred friend finalizes the order with DekorLane with 25% payment.
+                            <p className=''>To refer someone, the referrer fills out a form at Decosmithoffice with their own and their friend's details (name, phone number, and email ID).
+                                - ₹25,000 is rewarded when the referred friend finalizes the order with Decosmithwith 25% payment.
                             </p>
                         </div></div>
                     </div>
@@ -149,7 +149,7 @@ const ReferFriend = () => {
 
                             </div>
                             <h3>Payout Issues</h3>
-                            <p className=''>If a referrer hasn't received their referral payouts despite eligibility and a successful referral, they can contact DekorLane customer support at care@DekorLane.com for assistance.</p>
+                            <p className=''>If a referrer hasn't received their referral payouts despite eligibility and a successful referral, they can contact Decosmithcustomer support at care@Decosmith.com for assistance.</p>
                         </div></div>
 
                         {/* <div class="card_box">
@@ -158,7 +158,7 @@ const ReferFriend = () => {
                     </div>
                     <div className="row  text-center  Furnishing-lastText">
 
-                        <h3> Overall, the <span className='spanTitle'>DekorLane</span> referral program incentivizes anyone to refer their friends and family to <span className='spanTitle'>DekorLane</span> for home interior projects and rewards them for successful referrals.</h3>
+                        <h3> Overall, the <span className='spanTitle'>Decosmith</span> referral program incentivizes anyone to refer their friends and family to <span className='spanTitle'>Decosmith</span> for home interior projects and rewards them for successful referrals.</h3>
                     </div>
                 </div>
             </section>

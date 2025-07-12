@@ -22,9 +22,9 @@ const Terms = () => {
             <h2 className="title text-center">Terms of Services</h2>
 
             <p>
-              Welcome to www.dekorlane.com, a brand owned and managed by
-              DekorLane Interior Services Private Limited (hereinafter referred
-              to as “DekorLane”, “we”, “us”, or “our”), a company registered
+              Welcome to www.Decosmith.com, a brand owned and managed by
+              Decosmith Interior Services Private Limited (hereinafter referred
+              to as “Decosmith”, “we”, “us”, or “our”), a company registered
               under the Companies Act, 2013 and with its registered address at
               504, Magna's Lakeview, Hitex Road, Khanammet, Telangana 500084.
               These Terms of Use (“T&Cs/ “Terms of Use” “Terms””) is an
@@ -39,21 +39,21 @@ const Terms = () => {
             <p>
               The Terms of Use contained herein along with the Privacy Policy
               form an Agreement regulating our relationship with regard to the
-              use of DekorLane services by you, the user (hereinafter referred
-              to a “you”, “your”, “user”), of the www.dekorlane.com (‘Website’)
-              and DekorLane mobile application (‘App’) and such other electronic
+              use of Decosmith services by you, the user (hereinafter referred
+              to a “you”, “your”, “user”), of the www.Decosmith.com (‘Website’)
+              and Decosmith mobile application (‘App’) and such other electronic
               device from which a user can access the Website or App, including
               any sub-domains of the Website, or top-level domains including
-              www.dekorlane.com, mobile sites, Apps and widgets (hereinafter
+              www.Decosmith.com, mobile sites, Apps and widgets (hereinafter
               referred to as “Platform”).
             </p>
             <p>
               You are advised to read this Terms carefully. If you are not
               agreeable to any terms or Privacy Policy, you should not proceed
               to use this Platform and underlined services. You can use
-              DekorLane services if you are agreeable to all the Terms of Use of
+              Decosmith services if you are agreeable to all the Terms of Use of
               this document in their entirety. If you accept this Terms of Use,
-              it will be a legally binding agreement between you and DekorLane.
+              it will be a legally binding agreement between you and Decosmith.
             </p>
             <p>
               The User is any person/ individual, who visits, uses, browses, or
@@ -93,23 +93,23 @@ const Terms = () => {
               who agrees to be bound by these Terms of Use.
             </p>
             <p>
-              DekorLane reserves the right to terminate your use and refuse to
-              provide you with access to the Platform if DekorLane discovers
+              Decosmith reserves the right to terminate your use and refuse to
+              provide you with access to the Platform if Decosmith discovers
               that you are under the age of 18 years. The Platform is not
               available to persons whose membership has been suspended or
-              terminated by DekorLane for any reason whatsoever.
+              terminated by Decosmith for any reason whatsoever.
             </p>
             <p>
               If you are registering as a business entity, you represent that
               you have the authority to bind the entity to these Terms. Unless
               otherwise specified, the products/services on this Platform are
               directed solely at those who use/avail the products/services
-              within India. DekorLane makes no representation that any products
+              within India. Decosmith makes no representation that any products
               or services referred to in the materials on this Platform are
               appropriate for use, or available outside India. Those who choose
               to access this Platform from outside India are responsible for
               compliance with local/international laws if and to the extent
-              local laws are applicable. DekorLane will deliver the products
+              local laws are applicable. Decosmith will deliver the products
               only within India and will not be liable for any claims relating
               to any products ordered from outside India.
             </p>
@@ -131,7 +131,7 @@ const Terms = () => {
               to date on the Platform at all times. You agree to notify us
               promptly if your mobile phone number or e-mail address changes by
               updating the same on the Platform through a one-time password
-              verification. You agree that DekorLane shall not be liable or
+              verification. You agree that Decosmith shall not be liable or
               responsible for the activities or consequences of use or misuse of
               any information that occurs under your Account in cases,
               including, where you have failed to update your revised mobile
@@ -140,20 +140,20 @@ const Terms = () => {
 
             <h2 className="tittle">What do we do? </h2>
             <p>
-              DekorLane is an IT-driven interior design company offering
+              Decosmith is an IT-driven interior design company offering
               comprehensive solutions for your home décor and furnishing
-              requirements ("Services"). By engaging with DekorLane, whether as
+              requirements ("Services"). By engaging with Decosmith, whether as
               a contractual user or a prospective customer seeking its services,
               you are deemed to have acknowledged and agreed to our Terms and
               Conditions (T&Cs) and other relevant agreements applicable to all
-              project-related tasks and services provided by DekorLane at
+              project-related tasks and services provided by Decosmith at
               various stages. These agreements collectively constitute part of
               our Terms of Use. All products, services, and information
-              showcased on any DekorLane platform are considered an "invitation
+              showcased on any Decosmith platform are considered an "invitation
               to offer." Your order constitutes an "offer," which is subject to
               the terms and conditions outlined in the final Quotation approved
               and accepted by you, along with the Works Contract (where
-              applicable). DekorLane reserves the right to accept or decline
+              applicable). Decosmith reserves the right to accept or decline
               your offer.
             </p>
             <h2 className="tittle">What do we do? </h2>
@@ -214,8 +214,8 @@ const Terms = () => {
                 You shall not make any negative, denigrating or defamatory
                 statement(s) or comment(s) about us or the brand name or domain
                 name used by us or otherwise engage in any conduct or action
-                that might tarnish the image or reputation, of DekorLane or
-                otherwise tarnish or dilute any DekorLane’s trade or service
+                that might tarnish the image or reputation, of Decosmith or
+                otherwise tarnish or dilute any Decosmith’s trade or service
                 marks, trade name and/or goodwill associated with such trade or
                 service marks, trade name as may be owned or used by us.
               </p>
@@ -260,8 +260,8 @@ const Terms = () => {
             <h2 className="tittle">6. Intellectual Property</h2>
 
             <p>
-              This Platform is controlled and operated by DekorLane and
-              products/services are sold by either DekorLane or other
+              This Platform is controlled and operated by Decosmith and
+              products/services are sold by either Decosmith or other
               manufacturers, as applicable. All material on this Platform,
               including images, logos, illustrations, audio clips, and video
               clips, are protected by copyrights, trademarks, and other
@@ -290,7 +290,7 @@ const Terms = () => {
               trademark laws, and various other intellectual property rights.
             </p>
             <p>
-              DekorLane may also contain and display third party trademark(s),
+              Decosmith may also contain and display third party trademark(s),
               logo(s), content(s) (“Third Party Marks”) under a valid license or
               in accordance with applicable law. The intellectual rights to such
               Third Party Marks shall belong to their respective owners. You are
@@ -319,7 +319,7 @@ const Terms = () => {
             </p>
             <p>
               Unless otherwise indicated, we own all intellectual property
-              rights to and into the trademark "DekorLane", or any other IP that
+              rights to and into the trademark "Decosmith", or any other IP that
               might be registered by us, and the Platform, including, without
               limitation, any and all rights, title and interest in and to
               copyright, trade mark, patents, utility models, designs, know-how,
@@ -336,7 +336,7 @@ const Terms = () => {
               We respect other people's intellectual property rights and if you
               believe that any content or material on our Platform infringes on
               your intellectual property rights, you can write and inform us
-              about the same at info@dekorlane.com
+              about the same at info@Decosmith.com
             </p>
 
             <h2 className="tittle">7. Third-Party Links and Content</h2>
@@ -375,7 +375,7 @@ const Terms = () => {
               you through this site are provided on "as is" and "as available"
               basis without any representation or warranties, express or implied
               except otherwise specified in writing. Without prejudice to the
-              forgoing paragraph, DekorLane does not warrant that:
+              forgoing paragraph, Decosmith does not warrant that:
               <p>
                 This Platform will be constantly available, or available at all;
               </p>
@@ -384,7 +384,7 @@ const Terms = () => {
                 non-misleading;
               </p>
               <p>
-                DekorLane will be liable to you in any way or in relation to the
+                Decosmith will be liable to you in any way or in relation to the
                 Contents of, or use of, or otherwise in connection with, the
                 Platform. We do not warrant that this site; information,
                 Content, materials, product or Services included on or otherwise
@@ -423,7 +423,7 @@ const Terms = () => {
               reasonable technological security measures and procedures in
               accordance with Information Technology Act, 2000 and Rules there
               under. Our current Privacy Policy is available at
-              https://dekorlane.com/privacypolicy
+              https://Decosmith.com/privacypolicy
             </p>
             <h2 className="tittle">10. Breach of the Terms</h2>
             <p>
@@ -444,7 +444,7 @@ const Terms = () => {
             <h2 className="tittle">11. Limitation of Liability</h2>
 
             <p>
-              You clearly understand and agree that DekorLane shall under no
+              You clearly understand and agree that Decosmith shall under no
               circumstances (including, without limitation, in contract,
               negligence or other tort), be liable for any direct, indirect,
               ancillary, special, incidental, consequential or exemplary
@@ -483,47 +483,47 @@ const Terms = () => {
               respect.
             </p>
             <p>
-              DekorLane does not make any representation or Warranty as to
+              Decosmith does not make any representation or Warranty as to
               specifics (such as quality, value, salability, etc.) of the
               products or Services proposed to be sold or offered to be sold or
-              purchased on the Platform. DekorLane does not implicitly or
+              purchased on the Platform. Decosmith does not implicitly or
               explicitly support or endorse the sale or purchase of any products
               or Services on the Platform and accepts no liability for any
-              errors or omissionse. DekorLane is not responsible for any
+              errors or omissionse. Decosmith is not responsible for any
               non-performance or breach of any contract entered into between
               Users and Sellers. We cannot and do not guarantee that the
               concerned Users/Buyers and/or Sellers will perform any transaction
-              concluded on the Platform. DekorLane shall not and is not required
+              concluded on the Platform. Decosmith shall not and is not required
               to mediate or resolve any dispute or disagreement between Buyers
               and Sellers
             </p>
             <p>
-              DekorLane is not responsible for any non-performance or breach of
+              Decosmith is not responsible for any non-performance or breach of
               any contract entered into between Users and Sellers. We cannot and
               do not guarantee that the concerned Users/Buyers and/or Sellers
-              will perform any transaction concluded on the Platform. DekorLane
+              will perform any transaction concluded on the Platform. Decosmith
               shall not and is not required to mediate or resolve any dispute or
               disagreement between Buyers and Sellers
             </p>
             <p>
-              DekorLane does not make any representation or warranty as to the
+              Decosmith does not make any representation or warranty as to the
               item-specifics (such as legal title, creditworthiness, identity,
               etc.) of any of its Users. You are advised to independently verify
               the bona fides of any particular User that you choose to deal with
               on the Platform and use your best judgment on that behalf.
             </p>
             <p>
-              DekorLane does not at any point of time during any transaction
+              Decosmith does not at any point of time during any transaction
               between User/Buyer and Seller on the Platform come into or take
               possession of any of the products or services offered by Seller
               nor does it at any point gain title to or have any rights or
               claims over the products or services offered by Seller to Buyer.
             </p>
             <p>
-              At no time shall DekorLane hold any right, title or interest over
-              the products nor shall DekorLane have any obligations or
+              At no time shall Decosmith hold any right, title or interest over
+              the products nor shall Decosmith have any obligations or
               liabilities in respect of such contract entered into between
-              Buyers and Sellers. DekorLane is not responsible for
+              Buyers and Sellers. Decosmith is not responsible for
               unsatisfactory or delayed performance of Services or damages or
               delays as a result of products which are out of stock,
               unavailable, back ordered and which are beyond reasonable control
@@ -574,7 +574,7 @@ const Terms = () => {
             <p>
               If you wish to contact us with general questions, feedback or to
               complain about any aspect of your dealings or transactions with us
-              or our services, please contact us at info@dekorlane.com, setting
+              or our services, please contact us at info@Decosmith.com, setting
               out your complaint/feedback in sufficient detail (if applicable).
             </p>
             <p>
@@ -662,7 +662,7 @@ const Terms = () => {
 
             <h2 className="tittle">15. Governing Law</h2>
             <p>
-              Any dispute or claim between you and DekorLane arising out of or
+              Any dispute or claim between you and Decosmith arising out of or
               in connection with this Platform or its subject matter (whether
               allegedly contractual or non-contractual disputes and claims)
               shall be governed by and construed in accordance with Indian law.
@@ -673,7 +673,7 @@ const Terms = () => {
             <p>
               If you have additional questions or require more information about
               our Terms of Use or this Platform and services, do not hesitate to
-              contact us through email at info@dekorlane.com
+              contact us through email at info@Decosmith.com
             </p>
           </div>
         </div>

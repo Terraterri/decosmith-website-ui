@@ -298,7 +298,7 @@ const Contact = () => {
                         <Link
                           className="twitter"
                           target="_blank"
-                          to="https://twitter.com/DekorLane"
+                          to="https://twitter.com/Decosmith"
                         >
                           <FaXTwitter />
                         </Link>
@@ -505,7 +505,7 @@ const Contact = () => {
                         type="submit"
                         disabled={loading}
                       >
-                        {loading ? "Sending..." : "Send Message"}
+                        {loading ? "Connecting..." : "Contact Now"}
                       </button>
                     </div>
                   </div>

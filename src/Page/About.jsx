@@ -41,13 +41,13 @@ const About = () => {
             <div className="col align-self-center mb-6">
               <div className="about-content">
                 <h2 className="title">
-                  WELCOME TO <span>DEKORLANE</span>
+                  WELCOME TO <span>Decosmith</span>
                 </h2>
                 <p>
-                  Welcome to DekorLane, where we transform spaces into
+                  Welcome to Decosmith, where we transform spaces into
                   personalized masterpieces that reflect the unique essence of
                   each client. Founded with a passion for exceptional design and
-                  a commitment to unparalleled craftsmanship, DekorLane is your
+                  a commitment to unparalleled craftsmanship, Decosmith is your
                   partner in creating environments that inspire and resonate.
                 </p>
 
@@ -288,7 +288,7 @@ const About = () => {
                   </div>
                 </div>
                 <p>
-                  With DekorLane's expertise and experience, my dream and vision transformed into a beautifully designed space.
+                  With Decosmith's expertise and experience, my dream and vision transformed into a beautifully designed space.
                 </p>
                 <div class="quote">
                   <i class="fa fa-quote-left"></i>

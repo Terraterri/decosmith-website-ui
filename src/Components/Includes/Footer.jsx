@@ -111,23 +111,23 @@ const Footer = () => {
                 <div className="footer-widget footer-list ">
                   <h3 className="footer-title">Our Services</h3>
                   <ul>
-                    <li>
+                    {/* <li>
                       <HashLink smooth to="/#design-gallery">
                         Design Gallery
                       </HashLink>
+                    </li> */}
+                    <li>
+                      <Link to="/quote">Get A Quote</Link>
                     </li>
                     <li>
-                      <Link to="/quote">Get a Free Quote</Link>
-                    </li>
-                    <li>
-                      <Link to="/ReferFrined">Refer & Earn</Link>
+                      <Link to="/ReferFrined">Refer A Friend</Link>
                     </li>
                     <li>
                       <Link to="/Partners">Partner With Us</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/Furnishing">Furnishing</Link>
-                    </li>
+                    </li> */}
                     {/* <li>
                       <Link to="/Dekolen">DekoLens</Link>
                     </li>

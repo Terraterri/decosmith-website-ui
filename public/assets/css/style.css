@@ -885,7 +885,7 @@ button.btn-close.text-reset svg {
   color: #041b79;
   margin: 0 0 9px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   /* text-decoration: underline; */
 }
@@ -1145,7 +1145,7 @@ button.btn-close.text-reset svg {
   font-size: 26px;
   line-height: 45px;
   letter-spacing: 1px;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -2067,13 +2067,13 @@ button.btn-close.text-reset svg {
 .cardd2 .quote {
   position: absolute;
   top: -6px;
-  right: 0px;
+  right: 6px;
 }
 
 .cardd2 .quote i {
   transform: rotateY(180deg);
-  font-size: 80px;
-  opacity: 0.06;
+  font-size: 70px;
+  opacity: 0.5;
 }
 
 .sidebar-margin-left {
@@ -2725,7 +2725,7 @@ button.btn-close.text-reset svg {
 
 .contact-from-wrap form .submit,
 .contact-from-wrap form textarea.submit {
-  background-color: green;
+  background-color: #041b79;
   color: #ffffff;
   cursor: pointer;
   /* height: 55px; */
@@ -2734,6 +2734,7 @@ button.btn-close.text-reset svg {
   border: none;
   width: max-content;
   padding: 5px 10px;
+  font-size: 14px;
 }
 
 .contact-from-wrap form .submit:hover,
@@ -2935,7 +2936,7 @@ button.btn-close.text-reset svg {
   margin-top: 34px;
 }
 
-.dekorlane {
+.Decosmith {
   color: #ef7b2b;
 }
 
@@ -3168,7 +3169,7 @@ img {
 
 .sub-frm {
   color: white;
-  background-color: green;
+  background-color: #041b79;
   border: none;
   border-radius: 5px;
   padding: 2px 35px 2px 35px;
@@ -4957,7 +4958,7 @@ select.form-control option {
 .contact-card img {
   width: 100%;
   object-fit: cover;
-  border-radius: 20px 0px 20px 0px;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .blogSpan {
@@ -4975,9 +4976,34 @@ select.form-control option {
 .dlicon.ui-3_menu-left {
   display: none;
 }
-.main-title{
+
+.main-title {
   font-size: 26px;
 }
-.main-titleSub{
- font-size: 22px; 
+
+.main-titleSub {
+  font-size: 22px;
+}
+
+.addBtn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 3px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 14px;
+
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: red;
+  margin-left: 10px;
+}
+.white{
+  color: #fff;
 }

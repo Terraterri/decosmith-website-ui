@@ -43,9 +43,9 @@ const Partners = () => {
                   {/* <div className="slider">
                                 <div className="slide-anim">
                                     <span className="slide slide1">Forge New Frontiers: <p></p></span>
-                                    <span className="slide slide2">Where Creativity Thrives: Partner with Dekorlane to Shape the Future of Design</span>
-                                    <span className="slide slide3">Transforming Visions: Partner with Dekorlane and Navigate the Future of Design</span>
-                      <span className="slide slide4">Innovate, Inspire, Partner: Dekorlane Paves the Way for Design Leadership</span>
+                                    <span className="slide slide2">Where Creativity Thrives: Partner with Decosmith to Shape the Future of Design</span>
+                                    <span className="slide slide3">Transforming Visions: Partner with Decosmith and Navigate the Future of Design</span>
+                      <span className="slide slide4">Innovate, Inspire, Partner: Decosmith Paves the Way for Design Leadership</span>
                       <span className="slide slide5">Unlock unprecedented growth in the industry </span>
                       <span className="slide slide6">Be at the forefront of next-gen innovation. </span>
                                 </div >
@@ -55,19 +55,19 @@ const Partners = () => {
                   <div className="fadetext">
                     <div className="item-fade1 inner-fade">
                       <h2>Forge New Frontiers</h2>
-                      <h4 className='text-center ps-4'>Join Dekorlane in Redefining Interior Design Innovation.</h4>
+                      <h4 className='text-center ps-4'>Join Decosmith in Redefining Interior Design Innovation.</h4>
                     </div>
                     <div className="item-fade2 inner-fade">
                       <h2>Where Creativity Thrives</h2>
-                      <h4 className='text-center ps-4'>Partner with Dekorlane to Shape the Future of Design.</h4>
+                      <h4 className='text-center ps-4'>Partner with Decosmith to Shape the Future of Design.</h4>
                     </div>
                     <div className="item-fade3 inner-fade">
                       <h2>Transforming Visions</h2>
-                      <h4 className='text-center ps-4'>Partner with Dekorlane and Navigate the Future of Design.</h4>
+                      <h4 className='text-center ps-4'>Partner with Decosmith and Navigate the Future of Design.</h4>
                     </div>
                     <div className="item-fade4 inner-fade">
                       <h2>Innovate, Inspire, Partner</h2>
-                      <h4 className='text-center ps-4'>Dekorlane Paves the Way for Design Leadership.</h4>
+                      <h4 className='text-center ps-4'>Decosmith Paves the Way for Design Leadership.</h4>
                     </div>
                     <div className="item-fade5 inner-fade">
                       <h2>Unlock unprecedented growth in the industry </h2>
@@ -101,13 +101,13 @@ const Partners = () => {
               Inviting Business Associates
             </h2>
             <h3 className='pt-0 main-titleSub'> Together shaping the future of interior design! </h3>
-            <p className='partnerpara mb-5'>Partner with DekorLane today and become part of a dynamic community committed to excellence, innovation, and success in the interior design market.Dekorlane offers numerous advantages and opportunities for professionals in the interior design industry. Here's why you should consider partnering with us:</p>
+            <p className='partnerpara mb-5'>Partner with Decosmith today and become part of a dynamic community committed to excellence, innovation, and success in the interior design market.Decosmith offers numerous advantages and opportunities for professionals in the interior design industry. Here's why you should consider partnering with us:</p>
           </div>
           <div className="row justify-content-center">
             <div className="col-md-4 ">
               <div class="book">
                 <h5>
-                  Dekorlane adopts a forward-thinking and innovative approach to interior design, leveraging cutting-edge technologies such as the metaverse to create immersive and transformative experiences for clients.
+                  Decosmith adopts a forward-thinking and innovative approach to interior design, leveraging cutting-edge technologies such as the metaverse to create immersive and transformative experiences for clients.
                 </h5>
                 <div class="cover">
                   <div className='text-center'><GiTargetArrows /> <h3>
@@ -121,7 +121,7 @@ const Partners = () => {
             <div className="col-md-4">
               <div class="book">
                 <h5>
-                  Partners with Dekorlane gain access to a wealth of resources, including state-of-the-art technology, extensive design libraries, and expert guidance from seasoned professionals in the field
+                  Partners with Decosmith gain access to a wealth of resources, including state-of-the-art technology, extensive design libraries, and expert guidance from seasoned professionals in the field
                 </h5>
                 <div class="cover">
                   <div className='text-center'><TbLockAccess /> <h3>
@@ -134,7 +134,7 @@ const Partners = () => {
             <div className="col-md-4">
               <div class="book">
                 <h5>
-                  Partnering with Dekorlane enhances your professional reputation and visibility within the industry. As part of our network, you benefit from the recognition and branding associated with a leading interior design firm.
+                  Partnering with Decosmith enhances your professional reputation and visibility within the industry. As part of our network, you benefit from the recognition and branding associated with a leading interior design firm.
                 </h5>
                 <div class="cover">
                   <div className='text-center'><RiVoiceRecognitionLine /> <h3>
@@ -150,7 +150,7 @@ const Partners = () => {
             <div className="col-md-4">
               <div class="book">
                 <h5>
-                  Dekorlane is committed to the professional growth and development of its partners. We provide comprehensive training programs, mentorship opportunities, and access to advanced skills development resources to help you excel in your career.
+                  Decosmith is committed to the professional growth and development of its partners. We provide comprehensive training programs, mentorship opportunities, and access to advanced skills development resources to help you excel in your career.
                 </h5>
                 <div class="cover">
                   <div className='text-center'><MdModelTraining /> <h3>
@@ -163,7 +163,7 @@ const Partners = () => {
             <div className="col-md-4">
               <div class="book">
                 <h5>
-                  Dekorlane offers a competitive commission structure that rewards partners for their contributions and performance. Our partners enjoy attractive commission rates and incentives for successful project completion and client satisfaction.
+                  Decosmith offers a competitive commission structure that rewards partners for their contributions and performance. Our partners enjoy attractive commission rates and incentives for successful project completion and client satisfaction.
                 </h5>
                 <div class="cover">
                   <div className='text-center'><PiTreeStructureFill /> <h3>
@@ -176,7 +176,7 @@ const Partners = () => {
             <div className="col-md-4">
               <div class="book">
                 <h5>
-                  Partnering with Dekorlane means joining a collaborative and supportive community of like-minded professionals. Our team-oriented approach fosters collaboration, creativity, and mutual success among partners
+                  Partnering with Decosmith means joining a collaborative and supportive community of like-minded professionals. Our team-oriented approach fosters collaboration, creativity, and mutual success among partners
                 </h5>
                 <div class="cover">
                   <div className='text-center'><FaStreetView /><h3>
@@ -192,7 +192,7 @@ const Partners = () => {
             <div className="col-md-4">
               <div class="book">
                 <h5>
-                  With Dekorlane, partners have the opportunity to grow and expand their businesses. Whether you're looking to increase your client base, diversify your portfolio, or expand into new markets, Dekorlane provides the support and resources you need to achieve your goals.
+                  With Decosmith, partners have the opportunity to grow and expand their businesses. Whether you're looking to increase your client base, diversify your portfolio, or expand into new markets, Decosmith provides the support and resources you need to achieve your goals.
                 </h5>
                 <div class="cover">
                   <div className='text-center'><GiGrowth /> <h3>
@@ -205,7 +205,7 @@ const Partners = () => {
             <div className="col-md-4">
               <div class="book">
                 <h5>
-                  Dekorlane adopts a forward-thinking and innovative approach to interior design, leveraging cutting-edge technologies such as the metaverse to create immersive and transformative experiences for clients.
+                  Decosmith adopts a forward-thinking and innovative approach to interior design, leveraging cutting-edge technologies such as the metaverse to create immersive and transformative experiences for clients.
                 </h5>
                 <div class="cover">
                   <div className='text-center'><GiTargetArrows /><h3>
@@ -216,7 +216,7 @@ const Partners = () => {
               </div>
             </div>
           </div>
-          <p className='partnerpara mb-5'>In summary, partnering with Dekorlane opens doors to new opportunities, enhances your professional reputation, and positions you for success in the dynamic and evolving field of interior design.</p>
+          <p className='partnerpara mb-5'>In summary, partnering with Decosmith opens doors to new opportunities, enhances your professional reputation, and positions you for success in the dynamic and evolving field of interior design.</p>
 
           <div className="touchBtn text-center">
             <button className="become-btn mt-0 black" type='button' data-bs-toggle="modal" data-bs-target="#exampleModal">Get In Touch</button>

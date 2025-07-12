@@ -50,7 +50,7 @@ const Header = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-9 d-lg-block col-md-8 d-flex">
+            <div className="col-lg-9 d-lg-block col-md-8 d-flex justify-content-around">
               <div className="main-menu">
                 <nav>
                   <ul>
@@ -79,13 +79,13 @@ const Header = () => {
                       <Link to="/Partners">Partner with us</Link>
                     </li>
 
-                    <li data-bs-dismiss="offcanvas"
+                    {/* <li data-bs-dismiss="offcanvas"
                       aria-label="Close">
                       <HashLink smooth to="/#design-gallery">
                         Design Gallery
                       </HashLink>
 
-                    </li>
+                    </li> */}
                     <li data-bs-dismiss="offcanvas"
                       aria-label="Close">
                       <Link to="/quote">Get a Quote</Link>
@@ -159,13 +159,13 @@ const Header = () => {
                         aria-label="Close">
                         <Link to="/about">About Us</Link>
                       </li>
-
+{/* 
                       <li className="dis-none" data-bs-dismiss="offcanvas"
                         aria-label="Close">
                         <HashLink smooth to="/#design-gallery">
                           Design Gallery
                         </HashLink>
-                      </li>
+                      </li> */}
                       <li className="dis-none" data-bs-dismiss="offcanvas"
                         aria-label="Close">
                         <Link to="/quote">Get a  Quote</Link>

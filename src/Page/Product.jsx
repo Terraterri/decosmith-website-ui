@@ -142,7 +142,7 @@ const Product = () => {
                     <div className="project-details-content mb-4 mb-md-9">
                       <span className="category">Interior</span>
                       <h2 className="title">
-                        Living Room <span className="DekorLane">Gallery</span>
+                        Living Room <span className="Decosmith">Gallery</span>
                       </h2>
                       <p>
                         Explore our living room gallery showcasing sleek and
@@ -244,7 +244,7 @@ const Product = () => {
                       <span className="category">Interior</span>
                       <h2 className="title">
                         Modular Kitchen
-                        <span className="DekorLane"> Gallery</span>
+                        <span className="Decosmith"> Gallery</span>
                       </h2>
                       <p>
                         Welcome to our Modular Kitchen Gallery, where innovation
@@ -343,7 +343,7 @@ const Product = () => {
                     <div className="project-details-content mb-4 mb-md-9">
                       <span className="category">Interior</span>
                       <h2 className="title">
-                        Wardrobe <span className="DekorLane">Gallery</span>
+                        Wardrobe <span className="Decosmith">Gallery</span>
                       </h2>
                       <p>
                         Wardrobe Gallery, where fashion meets function. Explore
@@ -440,7 +440,7 @@ const Product = () => {
                     <div className="project-details-content mb-4 mb-md-9">
                       <span className="category">Interior</span>
                       <h2 className="title">
-                        Bedroom <span className="DekorLane">Gallery</span>
+                        Bedroom <span className="Decosmith">Gallery</span>
                       </h2>
                       <p>
                         Bedroom Gallery, where dreams come to life in style and
@@ -537,7 +537,7 @@ const Product = () => {
                     <div className="project-details-content mb-4 mb-md-9">
                       <span className="category">Interior</span>
                       <h2 className="title">
-                        Home office <span className="DekorLane">Gallery</span>
+                        Home office <span className="Decosmith">Gallery</span>
                       </h2>
                       <p>
                         Gallery, where productivity meets style. Explore our
@@ -638,7 +638,7 @@ const Product = () => {
                     <div className="project-details-content mb-4 mb-md-9">
                       <span className="category">Interior</span>
                       <h2 className="title">
-                        Bathroom <span className="DekorLane">Gallery</span>
+                        Bathroom <span className="Decosmith">Gallery</span>
                       </h2>
                       <p>
                         Bathroom Gallery, where luxury meets functionality.
