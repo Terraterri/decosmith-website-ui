@@ -273,9 +273,9 @@ const Contact = () => {
             {/* Contact Information Card */}
             <div className="col-lg-5 col-md-6">
               <div className="contact-card">
-                <img 
-                  src="assets/images/project/contact.jpg" 
-                  alt="Contact" 
+                <img
+                  src="assets/images/project/contact.jpg"
+                  alt="Contact"
                   className="img-fluid"
                 />
                 <div className="card-cont">
@@ -505,7 +505,7 @@ const Contact = () => {
                         type="submit"
                         disabled={loading}
                       >
-                        {loading ? "Connecting..." : "Contact Now"}
+                        Contact Now
                       </button>
                     </div>
                   </div>
