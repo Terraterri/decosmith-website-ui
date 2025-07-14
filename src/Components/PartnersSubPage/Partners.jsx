@@ -103,7 +103,7 @@ const Partners = () => {
             <h3 className='pt-0 main-titleSub'> Together shaping the future of interior design! </h3>
             <p className='partnerpara mb-5'>Partner with Decosmith today and become part of a dynamic community committed to excellence, innovation, and success in the interior design market.Decosmith offers numerous advantages and opportunities for professionals in the interior design industry. Here's why you should consider partnering with us:</p>
           </div>
-          <div className="row justify-content-center">
+          {/* <div className="row justify-content-center">
             <div className="col-md-4 ">
               <div class="book">
                 <h5>
@@ -160,6 +160,7 @@ const Partners = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-md-4">
               <div class="book">
                 <h5>
@@ -173,6 +174,7 @@ const Partners = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-md-4">
               <div class="book">
                 <h5>
@@ -202,6 +204,7 @@ const Partners = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-md-4">
               <div class="book">
                 <h5>
@@ -215,7 +218,127 @@ const Partners = () => {
                 </div>
               </div>
             </div>
-          </div>
+
+          </div> */}
+
+
+          <main className="main bd-grid mb-3">
+
+            <article className="card">
+              <div className="card-img">
+                <GiTargetArrows />
+              </div>
+
+              <div className="card-name">
+                <p>Decosmith adopts a forward-thinking and innovative approach to interior design, leveraging cutting-edge technologies such as the metaverse to create immersive and transformative experiences for clients.
+                </p>
+              </div>
+
+              <div className="card-prices">
+                <h4>Innovative Approach</h4>
+              </div>
+            </article>
+
+            <article className="card">
+              <div className="card-img">
+                <TbLockAccess />
+              </div>
+
+              <div className="card-name">
+                <p> Partners with Decosmith gain access to a wealth of resources, including state-of-the-art technology, extensive design libraries, and expert guidance from seasoned professionals in the field</p>
+              </div>
+
+              <div className="card-prices">
+                <h4>Access to Resources</h4>
+              </div>
+            </article>
+
+            <article className="card">
+              <div className="card-img">
+                <RiVoiceRecognitionLine />
+              </div>
+
+              <div className="card-name">
+                <p>Partnering with Decosmith enhances your professional reputation and visibility within the industry. As part of our network, you benefit from the recognition and branding associated with a leading interior design firm.</p>
+              </div>
+
+              <div className="card-prices">
+                <h4>  Recognition and Branding</h4>
+              </div>
+            </article>
+
+            <article className="card">
+              <div className="card-img">
+                <MdModelTraining />
+              </div>
+
+              <div className="card-name">
+                <p> Decosmith is committed to the professional growth and development of its partners. We provide comprehensive training programs, mentorship opportunities, and access to advanced skills development resources to help you excel in your career.</p>
+              </div>
+
+              <div className="card-prices">
+                <h4>  Training and Development</h4>
+              </div>
+            </article>
+
+            <article className="card">
+              <div className="card-img">
+                <PiTreeStructureFill />
+              </div>
+
+              <div className="card-name">
+                <p>  Decosmith offers a competitive commission structure that rewards partners for their contributions and performance. Our partners enjoy attractive commission rates and incentives for successful project completion and client satisfaction.</p>
+              </div>
+
+              <div className="card-prices">
+                <h4> Lucrative Commission Structure</h4>
+              </div>
+            </article>
+
+            <article className="card">
+              <div className="card-img">
+                <FaStreetView />
+              </div>
+
+              <div className="card-name">
+                <p> Partnering with Decosmith means joining a collaborative and supportive community of like-minded professionals. Our team-oriented approach fosters collaboration, creativity, and mutual success among partners</p>
+              </div>
+
+              <div className="card-prices">
+                <h4> Collaborative Environment</h4>
+              </div>
+            </article>
+
+            <article className="card">
+              <div className="card-img">
+                <GiGrowth />
+              </div>
+
+              <div className="card-name">
+                <p>  With Decosmith, partners have the opportunity to grow and expand their businesses. Whether you're looking to increase your client base, diversify your portfolio, or expand into new markets, Decosmith provides the support and resources you need to achieve your goals.</p>
+              </div>
+
+              <div className="card-prices">
+                <h4>   Opportunities for Growth</h4>
+              </div>
+            </article>
+
+            <article className="card">
+              <div className="card-img">
+                <GiTargetArrows />
+              </div>
+
+              <div className="card-name">
+                <p>  Decosmith adopts a forward-thinking and innovative approach to interior design, leveraging cutting-edge technologies such as the metaverse to create immersive and transformative experiences for clients..</p>
+              </div>
+
+              <div className="card-prices">
+                <h4>  Innovative Approach</h4>
+              </div>
+            </article>
+
+          </main>
+
           <p className='partnerpara mb-5'>In summary, partnering with Decosmith opens doors to new opportunities, enhances your professional reputation, and positions you for success in the dynamic and evolving field of interior design.</p>
 
           <div className="touchBtn text-center">
@@ -366,6 +489,8 @@ const Partners = () => {
           </div>
         </div>
       </section>
+
+
 
 
     </>
