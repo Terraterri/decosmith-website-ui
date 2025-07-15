@@ -31,13 +31,118 @@ const Services = () => {
             <h2 className="title text-center allTitle text-uppercase">
               Our Services
             </h2>
-            <p className="white text-center pb-2">
+            <p className="text-center pb-2">
               Decosmith offer a range of services to help clients enhance the
               aesthetic appeal, functionality, and overall ambiance of their
               spaces.
             </p>
           </div>
-          <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n6">
+
+          <div class="wrapper">
+            <div class="card">
+              <div class="poster">
+                <h1>Concept Development</h1>
+                <img src="assets/images/service/service1.jpg" alt="Location Unknown" />
+              </div>
+              <div class="details">
+                <h1>Concept Development</h1>
+
+                <p class="desc">
+                  Decosmith offer a range of services to help clients enhance the
+                  aesthetic appeal, functionality, and overall ambiance of their
+                  spaces.
+                </p>
+
+              </div>
+            </div>
+            <div class="card">
+              <div class="poster">
+                 <h1>Project Management</h1>
+                <img src="assets/images/service/service2.jpg" alt="Location Unknown" />
+                </div>
+              <div class="details">
+                <h1>Project Management</h1>
+
+                <p class="desc">
+                  Overseeing and coordinating all aspects of the design process, from concept development to implementation, ensuring timelines and budgets are met.
+                </p>
+
+              </div>
+            </div>
+            <div class="card">
+              <div class="poster">
+                   <h1>Furniture and Fixture Selection</h1>
+                <img src="assets/images/service/service3.jpg" alt="Location Unknown" />
+                </div>
+              <div class="details">
+                <h1>Furniture and Fixture Selection</h1>
+
+                <p class="desc">
+                  Assisting clients in choosing appropriate furniture, fixtures, and accessories that complement the overall design. Designing and creating bespoke furniture pieces tailored to the client's specific needs and style preferences.
+                </p>
+
+              </div>
+            </div>
+            <div class="card">
+              <div class="poster">
+                 <h1>Lighting Design</h1>
+                 <img src="assets/images/service/service4.jpg" alt="Location Unknown" />
+                 </div>
+              <div class="details">
+                <h1>Lighting Design</h1>
+
+                <p class="desc">
+                  Planning and selecting lighting solutions to enhance the functionality and atmosphere of a space.
+                </p>
+
+              </div>
+            </div>
+            <div class="card">
+              <div class="poster">
+                  <h1>Renovation and Remodelling</h1>
+                <img src="assets/images/service/service5.jpg" alt="Location Unknown" />
+                </div>
+              <div class="details">
+                <h1>Renovation and Remodelling</h1>
+
+                <p class="desc">
+                  Managing renovations and remodels, including structural changes, to transform spaces according to the design plan.
+                </p>
+
+              </div>
+            </div>
+            <div class="card">
+              <div class="poster">
+                 <h1>Art and Accessories Procurement</h1>
+                <img src="assets/images/service/service6.jpg" alt="Location Unknown" />
+                </div>
+              <div class="details">
+                <h1>Art and Accessories Procurement</h1>
+
+                <p class="desc">
+                  Assisting in selecting and procuring artwork, decorative items, and accessories to enhance the overall design.
+                </p>
+
+              </div>
+            </div>
+            <div class="card">
+              <div class="poster">
+                <h1>Virtual Design Services</h1>
+                <img src="assets/images/service/service7.jpg" alt="Location Unknown" />
+                </div>
+              <div class="details">
+                <h1>Virtual Design Services</h1>
+
+                <p class="desc">
+                  Providing online design consultations, virtual room planning, and digital design concepts for clients who prefer remote collaboration.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+
+          {/* <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n6">
             <div className="service text-center col-md-6">
               <div className="service-content">
                 <div className="maincontainer">
@@ -95,6 +200,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
+
             <div className="service text-center col-md-6">
               <div className="service-content">
                 <div className="maincontainer">
@@ -125,6 +231,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
+
             <div className="service text-center col-md-6">
               <div className="service-content">
                 <div className="maincontainer">
@@ -152,6 +259,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
+
             <div className="service text-center col-md-6">
               <div className="service-content">
                 <div className="maincontainer">
@@ -179,6 +287,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
+
             <div className="service text-center col-md-6">
               <div className="service-content">
                 <div className="maincontainer">
@@ -206,6 +315,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
+
             <div className="service text-center col-md-6">
               <div className="service-content">
                 <div className="maincontainer">
@@ -234,124 +344,11 @@ const Services = () => {
                 </div>
               </div>
             </div>
-          </div>
-          {/* <div className="pagination-style mt-6 mt-md-8 mt-lg-10">
-            <ul>
-              <li>
-                <a className="active" href="#">
-                  1
-                </a>
-              </li>
-              <li>
-                <Link to="#">2</Link>
-              </li>
-              <li>
-                <Link to="#">3</Link>
-              </li>
-              <li>
-                <a className="next" href="#">
-                  <i className="fa fa-angle-right "></i>
-                </a>
-              </li>
-            </ul>
           </div> */}
         </div>
       </div>
 
-      <div class="wrapper">
-        <div class="card">
-          <div class="poster"><img src="https://i.postimg.cc/jjBSrfnQ/poster1-img.jpg" alt="Location Unknown" /></div>
-          <div class="details">
-            <h1>Location Unknown</h1>
-            <h2>2021 • PG • 1hr 38min</h2>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>4.2/5</span>
-            </div>
-            <div class="tags">
-              <span class="tag">Italian</span>
-              <span class="tag">Drama</span>
-              <span class="tag">Indie</span>
-            </div>
-            <p class="desc">
-              Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search for meaning.
-            </p>
-            <div class="cast">
-              <h3>Cast</h3>
-              <ul>
-                <li><img src="https://i.postimg.cc/jqgkqhSb/cast-11.jpg" alt="Marco Andrews" title="Marco Andrews" /></li>
-                <li><img src="https://i.postimg.cc/8P7X7r7r/cast-12.jpg" alt="Rebecca Floyd" title="Rebecca Floyd" /></li>
-                <li><img src="https://i.postimg.cc/2SvHwRFk/cast-13.jpg
-" alt="Antonio Herrera" title="Antonio Herrera" /></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="poster"><img src="https://i.postimg.cc/GtxLYS7q/poster2-img.jpg" alt="Location Unknown" /></div>
-          <div class="details">
-            <h1>Air</h1>
-            <h2>2020 • PG • 24min</h2>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>4/5</span>
-            </div>
-            <div class="tags">
-              <span class="tag">Romance</span>
-              <span class="tag">Comedy</span>
-              <span class="tag">Short</span>
-            </div>
-            <p class="desc">
-              Two strangers meet together on a plane flying to the alps.
-            </p>
-            <div class="cast">
-              <h3>Cast</h3>
-              <ul>
-                <li><img src="https://i.postimg.cc/yY2QcYRp/cast-21.jpg" alt="Angelina Whyte" title="Angelina Whyte" /></li>
-                <li><img src="https://i.postimg.cc/R0BgpsXc/cast-22.jpg" alt="Ivan Benson" title="Ivan Benson" /></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="poster"><img src="https://i.postimg.cc/yxH6DzPD/poster3-img.jpg" alt="Location Unknown" /></div>
-          <div class="details">
-            <h1>End Credits</h1>
-            <h2>2021 • R • 1hr 41min</h2>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <span>4.7/5</span>
-            </div>
-            <div class="tags">
-              <span class="tag yellow">Teen</span>
-              <span class="tag">Comedy</span>
-              <span class="tag blue">Drama</span>
-            </div>
-            <p class="desc">
-              Alex, together with his best friends, goes on a road trip whilst experiencing friendship, self-discovery, and the bittersweet transition to adulthood.
-            </p>
-            <div class="cast">
-              <h3>Cast</h3>
-              <ul>
-                <li><img src="https://i.postimg.cc/xd3twv4B/cast-31.jpg" alt="Jessica Enduro" title="Jessica Enduro" /></li>
-                <li><img src="https://i.postimg.cc/C1MmSZy5/cast-32.jpg" alt="Charles Garcia" title="Charles Garcia" /></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
     </>
   );

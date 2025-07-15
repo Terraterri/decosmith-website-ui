@@ -95,60 +95,59 @@ const ReferFriend = () => {
                         <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div className="referCard border-r1">
                                 <div className='icon'>
-                                    <BsFillPersonPlusFill />
-
+                                    {/* <BsFillPersonPlusFill /> */}
+                                    <img src="assets/images/slider/slider-1.jpg" alt="" />
                                 </div>
-                                <h3>Referral Reward</h3>
+                                <h3 className='blue'>Referral Reward</h3>
                                 <p className=''>For each successful referral, the referrer earns ₹25,000.</p>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div className="referCard">
                                 <div className='icon'>
-                                    <RiUserStarFill />
+                                     <img src="assets/images/slider/slider-1.jpg" alt="" />
 
                                 </div>
-                                <h3>Eligibility</h3>
+                                <h3 className='green'>Eligibility</h3>
                                 <p className=''>To be eligible for the referral program, the friends you refer must get their home interiors done by Decosmith, with a minimum project value of ₹3 lakh.</p>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12"> <div className="referCard border-r">
-                            <div className='icon'>
-                                <VscServerProcess />
+                            <div className= 'icon'>
+                                 <img src="assets/images/slider/slider-1.jpg" alt="" />
 
                             </div>
-                            <h3>Referral Process</h3>
+                            <h3 className='red'>Referral Process</h3>
                             <p className=''>To refer someone, the referrer fills out a form at Decosmithoffice with their own and their friend's details (name, phone number, and email ID).
                                 - ₹25,000 is rewarded when the referred friend finalizes the order with Decosmithwith 25% payment.
                             </p>
                         </div></div>
                     </div>
-                    <div className="row mt-50 mb-50">
+                    <div className="row  mb-50">
                         <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 "> <div className="referCard border-r1">
                             <div className='icon'>
-                                <IoMdContacts />
+                              <img src="assets/images/slider/slider-1.jpg" alt="" />
 
 
                             </div>
-                            <h3>Number of Referrals</h3>
+                            <h3 className='blue'>Number of Referrals</h3>
                             <p className=''>There is no limit to the number of friends a referrer can refer.</p>
                         </div></div>
                         <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12"> <div className="referCard">
                             <div className='icon'>
-                                <FaCcAmazonPay />
+                                <img src="assets/images/slider/slider-1.jpg" alt="" />
 
 
                             </div>
-                            <h3>Payouts</h3>
+                            <h3 className='green'>Payouts</h3>
                             <p className=''>Payouts are made via bank transfers. They are processed between the 15th and 20th of each month. </p>
                         </div></div>
                         <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12"> <div className="referCard border-r">
                             <div className='icon'>
-                                <SiContactlesspayment />
-
+                                <img src="assets/images/slider/slider-1.jpg" alt="" />
 
                             </div>
-                            <h3>Payout Issues</h3>
+                            <h3 className='red'>Payout Issues</h3>
                             <p className=''>If a referrer hasn't received their referral payouts despite eligibility and a successful referral, they can contact Decosmithcustomer support at care@Decosmith.com for assistance.</p>
                         </div></div>
 
