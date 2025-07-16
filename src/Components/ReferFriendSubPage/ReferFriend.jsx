@@ -96,7 +96,7 @@ const ReferFriend = () => {
                             <div className="referCard border-r1">
                                 <div className='icon'>
                                     {/* <BsFillPersonPlusFill /> */}
-                                    <img src="assets/images/slider/slider-1.jpg" alt="" />
+                                    <img src="assets/images/blog/fa1.jpg" alt="" />
                                 </div>
                                 <h3 className='blue'>Referral Reward</h3>
                                 <p className=''>For each successful referral, the referrer earns ₹25,000.</p>
@@ -105,7 +105,7 @@ const ReferFriend = () => {
                         <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div className="referCard">
                                 <div className='icon'>
-                                     <img src="assets/images/slider/slider-1.jpg" alt="" />
+                                    <img src="assets/images/blog/fa2.jpg" alt="" />
 
                                 </div>
                                 <h3 className='green'>Eligibility</h3>
@@ -113,8 +113,8 @@ const ReferFriend = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12"> <div className="referCard border-r">
-                            <div className= 'icon'>
-                                 <img src="assets/images/slider/slider-1.jpg" alt="" />
+                            <div className='icon'>
+                                <img src="assets/images/blog/fa3.jpg" alt="" />
 
                             </div>
                             <h3 className='red'>Referral Process</h3>
@@ -126,7 +126,7 @@ const ReferFriend = () => {
                     <div className="row  mb-50">
                         <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 "> <div className="referCard border-r1">
                             <div className='icon'>
-                              <img src="assets/images/slider/slider-1.jpg" alt="" />
+                                <img src="assets/images/blog/fa4.jpg" alt="" />
 
 
                             </div>
@@ -135,7 +135,7 @@ const ReferFriend = () => {
                         </div></div>
                         <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12"> <div className="referCard">
                             <div className='icon'>
-                                <img src="assets/images/slider/slider-1.jpg" alt="" />
+                                <img src="assets/images/blog/fa5.jpg" alt="" />
 
 
                             </div>
@@ -144,7 +144,7 @@ const ReferFriend = () => {
                         </div></div>
                         <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12"> <div className="referCard border-r">
                             <div className='icon'>
-                                <img src="assets/images/slider/slider-1.jpg" alt="" />
+                                <img src="assets/images/blog/fa6.jpg" alt="" />
 
                             </div>
                             <h3 className='red'>Payout Issues</h3>

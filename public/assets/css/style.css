@@ -4618,6 +4618,9 @@ select.form-control option {
 .referCard .icon img {
   border-radius: 10px;
   margin-bottom: 15px;
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
 }
 
 .color-white {
