@@ -226,7 +226,8 @@ const Partners = () => {
 
             <article className="card">
               <div className="card-img">
-                <GiTargetArrows />
+                <img src="assets/images/team/1.jpeg" alt="image" />
+                 <h3>Innovative Approach</h3>
               </div>
 
               <div className="card-name">
@@ -241,7 +242,8 @@ const Partners = () => {
 
             <article className="card">
               <div className="card-img">
-                <TbLockAccess />
+                 <img src="assets/images/team/2.jpeg" alt="image" />
+                   <h3>Access to Resources</h3>
               </div>
 
               <div className="card-name">
@@ -255,7 +257,8 @@ const Partners = () => {
 
             <article className="card">
               <div className="card-img">
-                <RiVoiceRecognitionLine />
+                 <img src="assets/images/team/3.jpeg" alt="image" />
+                 <h3>  Recognition and Branding</h3>
               </div>
 
               <div className="card-name">
@@ -269,7 +272,8 @@ const Partners = () => {
 
             <article className="card">
               <div className="card-img">
-                <MdModelTraining />
+                 <img src="assets/images/team/4.jpeg" alt="image" />
+                 <h3>  Training and Development</h3>
               </div>
 
               <div className="card-name">
@@ -283,7 +287,8 @@ const Partners = () => {
 
             <article className="card">
               <div className="card-img">
-                <PiTreeStructureFill />
+                 <img src="assets/images/team/5.jpeg" alt="image" />
+                 <h3>  Lucrative Commission Structure</h3>
               </div>
 
               <div className="card-name">
@@ -297,7 +302,8 @@ const Partners = () => {
 
             <article className="card">
               <div className="card-img">
-                <FaStreetView />
+               <img src="assets/images/team/6.jpeg" alt="image" />
+               <h3>  Collaborative Environment</h3>
               </div>
 
               <div className="card-name">
@@ -311,7 +317,8 @@ const Partners = () => {
 
             <article className="card">
               <div className="card-img">
-                <GiGrowth />
+                   <img src="assets/images/team/7.jpeg" alt="image" />
+                   <h3>  Opportunities for Growth</h3>
               </div>
 
               <div className="card-name">
@@ -323,19 +330,7 @@ const Partners = () => {
               </div>
             </article>
 
-            <article className="card">
-              <div className="card-img">
-                <GiTargetArrows />
-              </div>
-
-              <div className="card-name">
-                <p>  Decosmith adopts a forward-thinking and innovative approach to interior design, leveraging cutting-edge technologies such as the metaverse to create immersive and transformative experiences for clients..</p>
-              </div>
-
-              <div className="card-prices">
-                <h4>  Innovative Approach</h4>
-              </div>
-            </article>
+         
 
           </main>
 

@@ -1406,6 +1406,16 @@
   .leyeroptity {
     height: 80px;
   }
+
+  .poster h1 {
+    font-size: 18px;
+    left: 5px;
+  }
+
+  .wrapper .card {
+    height: 300px;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1059px) {
@@ -1628,6 +1638,9 @@
   .doklogo {
     font-size: 35px;
   }
+  .bd-grid{
+    margin: 0px !important;
+  }
 
   .footer-logo {
     width: 160px;
@@ -1688,13 +1701,13 @@
 
   button.btn-close.text-reset {
     position: absolute;
-    top: 20px;    
+    top: 20px;
     color: #fff !important;
     content: "x";
     right: 20px;
     z-index: 999999;
     width: 10px;
-    height: 10px;    
+    height: 10px;
   }
 
   .header-aside-active {
@@ -1884,6 +1897,12 @@
     font-size: 23px;
   }
 
+  .poster h1 {
+    font-size: 20px;
+    
+  }
+
+
   .col-lg-9.d-lg-block.col-md-8.d-flex {
     width: 50%;
   }
@@ -1982,5 +2001,13 @@
 @media screen and (max-width: 1024px) {
   .about-content.ps-10 {
     padding-left: 0px !important;
+  }
+
+  .wrapper .card {
+    margin-bottom: 25px;
+  }
+  .referCards .card{
+    width: 100%;
+    margin-bottom: 0px !important;
   }
 }

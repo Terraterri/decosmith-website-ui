@@ -39,104 +39,120 @@ const Services = () => {
           </div>
 
           <div class="wrapper">
-            <div class="card">
-              <div class="poster">
-                <h1>Concept Development</h1>
-                <img src="assets/images/service/service1.jpg" alt="Location Unknown" />
-              </div>
-              <div class="details">
-                <h1>Concept Development</h1>
+            <div className="row">
+              <div className="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="poster">
+                    <h1>Concept Development</h1>
+                    <img src="assets/images/service/service1.jpg" alt="Location Unknown" />
+                  </div>
+                  <div class="details">
+                    <h1>Concept Development</h1>
 
-                <p class="desc">
-                  Decosmith offer a range of services to help clients enhance the
-                  aesthetic appeal, functionality, and overall ambiance of their
-                  spaces.
-                </p>
+                    <p class="desc">
+                      Decosmith offer a range of services to help clients enhance the
+                      aesthetic appeal, functionality, and overall ambiance of their
+                      spaces.
+                    </p>
 
-              </div>
-            </div>
-            <div class="card">
-              <div class="poster">
-                 <h1>Project Management</h1>
-                <img src="assets/images/service/service2.jpg" alt="Location Unknown" />
+                  </div>
                 </div>
-              <div class="details">
-                <h1>Project Management</h1>
-
-                <p class="desc">
-                  Overseeing and coordinating all aspects of the design process, from concept development to implementation, ensuring timelines and budgets are met.
-                </p>
-
               </div>
-            </div>
-            <div class="card">
-              <div class="poster">
-                   <h1>Furniture and Fixture Selection</h1>
-                <img src="assets/images/service/service3.jpg" alt="Location Unknown" />
+              <div className="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="poster">
+                    <h1>Project Management</h1>
+                    <img src="assets/images/service/service2.jpg" alt="Location Unknown" />
+                  </div>
+                  <div class="details">
+                    <h1>Project Management</h1>
+
+                    <p class="desc">
+                      Overseeing and coordinating all aspects of the design process, from concept development to implementation, ensuring timelines and budgets are met.
+                    </p>
+
+                  </div>
                 </div>
-              <div class="details">
-                <h1>Furniture and Fixture Selection</h1>
-
-                <p class="desc">
-                  Assisting clients in choosing appropriate furniture, fixtures, and accessories that complement the overall design. Designing and creating bespoke furniture pieces tailored to the client's specific needs and style preferences.
-                </p>
-
               </div>
-            </div>
-            <div class="card">
-              <div class="poster">
-                 <h1>Lighting Design</h1>
-                 <img src="assets/images/service/service4.jpg" alt="Location Unknown" />
-                 </div>
-              <div class="details">
-                <h1>Lighting Design</h1>
+              <div className="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="poster">
+                    <h1>Furniture and Fixture Selection</h1>
+                    <img src="assets/images/service/service3.jpg" alt="Location Unknown" />
+                  </div>
+                  <div class="details">
+                    <h1>Furniture and Fixture Selection</h1>
 
-                <p class="desc">
-                  Planning and selecting lighting solutions to enhance the functionality and atmosphere of a space.
-                </p>
+                    <p class="desc">
+                      Assisting clients in choosing appropriate furniture, fixtures, and accessories that complement the overall design. Designing and creating bespoke furniture pieces tailored to the client's specific needs and style preferences.
+                    </p>
 
-              </div>
-            </div>
-            <div class="card">
-              <div class="poster">
-                  <h1>Renovation and Remodelling</h1>
-                <img src="assets/images/service/service5.jpg" alt="Location Unknown" />
+                  </div>
                 </div>
-              <div class="details">
-                <h1>Renovation and Remodelling</h1>
-
-                <p class="desc">
-                  Managing renovations and remodels, including structural changes, to transform spaces according to the design plan.
-                </p>
-
               </div>
-            </div>
-            <div class="card">
-              <div class="poster">
-                 <h1>Art and Accessories Procurement</h1>
-                <img src="assets/images/service/service6.jpg" alt="Location Unknown" />
+              <div className="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="poster">
+                    <h1>Lighting Design</h1>
+                    <img src="assets/images/service/service4.jpg" alt="Location Unknown" />
+                  </div>
+                  <div class="details">
+                    <h1>Lighting Design</h1>
+
+                    <p class="desc">
+                      Planning and selecting lighting solutions to enhance the functionality and atmosphere of a space.
+                    </p>
+
+                  </div>
                 </div>
-              <div class="details">
-                <h1>Art and Accessories Procurement</h1>
-
-                <p class="desc">
-                  Assisting in selecting and procuring artwork, decorative items, and accessories to enhance the overall design.
-                </p>
-
               </div>
-            </div>
-            <div class="card">
-              <div class="poster">
-                <h1>Virtual Design Services</h1>
-                <img src="assets/images/service/service7.jpg" alt="Location Unknown" />
+              <div className="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="poster">
+                    <h1>Renovation and Remodelling</h1>
+                    <img src="assets/images/service/service5.jpg" alt="Location Unknown" />
+                  </div>
+                  <div class="details">
+                    <h1>Renovation and Remodelling</h1>
+
+                    <p class="desc">
+                      Managing renovations and remodels, including structural changes, to transform spaces according to the design plan.
+                    </p>
+
+                  </div>
                 </div>
-              <div class="details">
-                <h1>Virtual Design Services</h1>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="poster">
+                    <h1>Art and Accessories Procurement</h1>
+                    <img src="assets/images/service/service6.jpg" alt="Location Unknown" />
+                  </div>
+                  <div class="details">
+                    <h1>Art and Accessories Procurement</h1>
 
-                <p class="desc">
-                  Providing online design consultations, virtual room planning, and digital design concepts for clients who prefer remote collaboration.
-                </p>
+                    <p class="desc">
+                      Assisting in selecting and procuring artwork, decorative items, and accessories to enhance the overall design.
+                    </p>
 
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="poster">
+                    <h1>Virtual Design Services</h1>
+                    <img src="assets/images/service/service7.jpg" alt="Location Unknown" />
+                  </div>
+                  <div class="details">
+                    <h1>Virtual Design Services</h1>
+
+                    <p class="desc">
+                      Providing online design consultations, virtual room planning, and digital design concepts for clients who prefer remote collaboration.
+                    </p>
+
+                  </div>
+                </div>
               </div>
             </div>
           </div>

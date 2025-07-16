@@ -5086,7 +5086,7 @@ select.form-control option {
   flex-direction: column;
   align-items: center;
   /* padding: 45px 30px; */
-  border-radius: 1rem;
+  border-radius: 10px;
   height: 230px;
   overflow: hidden;
 }
@@ -5156,9 +5156,8 @@ article:nth-child(8) {
   height: auto;
   padding: 3rem 0; */
   transition: 0.5s;
-  font-size: 45px;
   text-align: center;
-  padding-top: 25px;
+
 }
 
 .card-name {
@@ -5223,16 +5222,16 @@ article:nth-child(8) {
   width: 100%;
   height: 100%;
   padding: 20px;
-  display: flex;
+  /* display: flex;
   align-content: center;
   justify-content: center;
-  /* gap: 24px; */
-  flex-wrap: wrap;
+  gap: 24px;
+  flex-wrap: wrap; */
 }
 
 .wrapper .card {
   position: relative;
-  width: 24%;
+  width: 85%;
   height: 320px;
   background: #000;
   border-radius: 18px;
@@ -5240,6 +5239,8 @@ article:nth-child(8) {
   box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
   margin-right: 10px;
   margin-bottom: 20px;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 .wrapper .card:after {
@@ -5311,7 +5312,7 @@ article:nth-child(8) {
   bottom: -100%;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 10px;
   background: #000a;
   backdrop-filter: blur(16px) saturate(120%);
@@ -5321,7 +5322,8 @@ article:nth-child(8) {
 }
 
 .card:hover .details {
-  bottom: 0;
+  bottom: -75px;
+
 }
 
 .poster h1 {
@@ -5414,3 +5416,167 @@ article:nth-child(8) {
   width: 100%;
   height: 100%;
 }
+
+
+
+
+:root {
+  --white: #efe;
+  --blackish: #23252f;
+  --black-light: #3d3b36;
+  --black-dark: #1c1c1c;
+  --beige-sand-light: #f9eedc;
+  --beige-sand-dark: #d6bb9a;
+  --transparent: rgba(255, 255, 255, 0);
+  --transition-duration: 0.5s;
+  --font-size-p: clamp(1rem, 1.2vw, 1.3rem);
+  --font-size-h2: clamp(1.5rem, (2vw + 1rem), 2rem);
+}
+
+.referCards .card {
+  width: 80%;
+  /* border: green solid; */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  transition: var(--transition-duration);
+  margin-bottom: 40px !important;
+  margin: auto;
+}
+
+.referCards .card:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  transition: var(--transition-duration);
+}
+
+.referCards .img {
+  position: relative;
+  /* border: blue solid; */
+  border-radius: 5px;
+  height: 350px;
+  width: 100%;
+}
+
+.referCards .img::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: var(--transition-duration);
+  background: rgba(0, 0, 0, 0);
+}
+
+.referCards .card:hover .img::before {
+  background: rgba(0, 0, 0, 0.5);
+  transition: var(--transition-duration);
+  border-radius: 5px;
+}
+
+.referCards img {
+  display: block;
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.referCards .img h2 {
+  position: absolute;
+  bottom: 0;
+  background: #000;
+  color: #00ffe3;
+  width: 100%;
+  padding: 7px 10px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+}
+
+.referCards .card:hover .img h2 {
+  visibility: hidden;
+}
+
+.referCards .text-box {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  bottom: -100%;
+  left: 0;
+  padding: 0.4rem 0.8rem;
+  transition: var(--transition-duration);
+  border-radius: 5px 5px 0 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.referCards .card:hover .text-box {
+  transition: var(--transition-duration);
+  bottom: 0;
+}
+
+.referCards .text-box>* {
+  opacity: 0;
+}
+
+.referCards .card:hover .text-box>* {
+  transition: var(--transition-duration);
+
+  animation: fade 1s 0.5s forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.referCards .title {
+  font-size: 23px;
+  margin-bottom: 0px;
+  color: #00ffe3;
+  text-transform: uppercase;
+}
+
+.referCards .description {
+  font-size: var(--font-size-p);
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+  color: var(--beige-sand-light);
+}
+
+.referCards button {
+  width: 100%;
+  background: var(--beige-sand-dark);
+  border-radius: 5px;
+  padding: 0.3rem 0;
+  cursor: pointer;
+  border: var(--transparent);
+}
+
+.referCards button:hover {
+  background: var(--beige-sand-light);
+}
+
+.card-img h3 {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: #000;
+    padding: 10px;
+    justify-content: center;
+    font-size: 17px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #00ffe3;
+    
+} 
