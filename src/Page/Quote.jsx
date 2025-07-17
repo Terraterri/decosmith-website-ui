@@ -141,7 +141,7 @@ const Quote = () => {
                       Add Floor Plan
                     </button>
                   </div>
-                  <input className="submit" type="submit" value="Get Quote" />
+                  <input className="submit w-100" type="submit" value="Get Quote" />
                 </form>
 
                 <ToastContainer position="top-right" autoClose={3000} />

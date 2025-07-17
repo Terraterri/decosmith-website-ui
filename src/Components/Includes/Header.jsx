@@ -100,13 +100,14 @@ const Header = () => {
                 </nav>
               </div>
               <div className="header-action-style">
+                <li> <i className="dlicon ui-3_menu-left disply-bloackkk"></i></li>
                 <button
-                  className="hamburger-menu-btn"
+                  className="hamburger-menu-btn dlicon ui-3_menu-left"
                   data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvasRight"
                   aria-controls="offcanvasRight"
                 >
-                  <i className="dlicon ui-3_menu-left"></i>
+                  {/* <i className="dlicon ui-3_menu-left"></i> */}
                 </button>
               </div>
             </div>
@@ -159,7 +160,7 @@ const Header = () => {
                         aria-label="Close">
                         <Link to="/about">About Us</Link>
                       </li>
-{/* 
+                      {/* 
                       <li className="dis-none" data-bs-dismiss="offcanvas"
                         aria-label="Close">
                         <HashLink smooth to="/#design-gallery">

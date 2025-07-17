@@ -9,6 +9,10 @@ import { IoMdClose } from "react-icons/io";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { apiClient } from '../../Utills/httpClient';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { useMediaQuery } from "react-responsive";
+
 
 
 
@@ -63,6 +67,51 @@ const ReferFriend = () => {
         }
     };
 
+    const referralCards = [
+        {
+            title: "Referral Reward",
+            description: "For each successful referral, the referrer earns ₹25,000.",
+            image: "assets/images/blog/fa1.jpeg",
+        },
+        {
+            title: "Eligibility",
+            description:
+                "To be eligible, friends must do interiors worth ₹3 lakh or more.",
+            image: "assets/images/blog/fa2.jpeg",
+        },
+        {
+            title: "Referral Process",
+            description:
+                "Fill out a form with referrer and friend's details. ₹25,000 rewarded after 25% payment.",
+            image: "assets/images/blog/fa3.jpeg",
+        },
+        {
+            title: "Number of Referrals",
+            description: "There’s no limit to how many friends you can refer.",
+            image: "assets/images/blog/fa4.jpeg",
+        },
+        {
+            title: "Payouts",
+            description:
+                "Payouts are made via bank transfers between 15th and 20th each month.",
+            image: "assets/images/blog/fa5.jpeg",
+        },
+        {
+            title: "Payout Issues",
+            description:
+                "Contact care@Decosmith.com if you haven’t received eligible payouts.",
+            image: "assets/images/blog/fa6.jpeg",
+        },
+    ];
+    const responsive = {
+        mobile: {
+            breakpoint: { max: 767, min: 0 },
+            items: 1,
+            partialVisibilityGutter: 20,
+        },
+    };
+    const isMobile = useMediaQuery({ maxWidth: 767 });
+
     return (
         <>
             <nav aria-label="breadcrumb mt-5 mb-5"><ol class="breadcrumb"></ol></nav>
@@ -88,116 +137,51 @@ const ReferFriend = () => {
                 </div>
 
             </section>
-            <section className='referFriend2 referCards'>
+
+            <section className='referFriend2 referCards wrapper carusel-cards'>
                 <div className="container">
                     <h2 className='text-center text-uppercase main-title'>How it works</h2>
 
-                    <div className="row">
-                        <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-5">
-                            <div class="card flex-center">
-                                <div class="img">
-                                    <img src="assets/images/blog/fa1.jpeg" alt="image" />
-                                    <h2 class="">Referral Reward</h2>
+                    {isMobile ? (
+                        <Carousel responsive={responsive}
+                            infinite={true}
+                            autoPlay={true}
+                            autoPlaySpeed={3000}
+                            arrows={true}>
+                            {referralCards.map((card, index) => (
+                                <div className="card flex-center" key={index}>
+                                    <div className="img">
+                                        <img src={card.image} alt={card.title} />
+                                        <h2>{card.title}</h2>
+                                    </div>
+                                    <div className="text-box">
+                                        <h2 className="title">{card.title}</h2>
+                                        <p className="description">{card.description}</p>
+                                    </div>
                                 </div>
-                                <div class="text-box">
-                                    <h2 class="title">Referral Reward</h2>
-                                    <p class="description">
-                                        For each successful referral, the referrer earns ₹25,000.
-                                    </p>
-                                    {/* <div class="btn">
-                                        <button><a href="#">Read More</a></button>
-                                    </div> */}
+                            ))}
+                        </Carousel>
+                    ) : (
+                        <div className="row mobile-row-sr">
+                            {referralCards.map((card, index) => (
+                                <div
+                                    className="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-5"
+                                    key={index}
+                                >
+                                    <div className="card flex-center">
+                                        <div className="img">
+                                            <img src={card.image} alt={card.title} />
+                                            <h2>{card.title}</h2>
+                                        </div>
+                                        <div className="text-box">
+                                            <h2 className="title">{card.title}</h2>
+                                            <p className="description">{card.description}</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            ))}
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-5">
-                            <div class="card flex-center">
-                                <div class="img">
-                                    <img src="assets/images/blog/fa2.jpeg" alt="image" />
-                                    <h2 class="">Eligibility</h2>
-                                </div>
-                                <div class="text-box">
-                                    <h2 class="title">Eligibility</h2>
-                                    <p class="description">
-                                        To be eligible for the referral program, the friends you refer must get their home interiors done by Decosmith, with a minimum project value of ₹3 lakh.
-                                    </p>
-                                    {/* <div class="btn">
-                                        <button><a href="#">Read More</a></button>
-                                    </div> */}
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-5">
-                            <div class="card flex-center">
-                                <div class="img">
-                                    <img src="assets/images/blog/fa3.jpeg" alt="image" />
-                                     <h2 class="">Referral Process</h2>
-                                </div>
-                                <div class="text-box">
-                                    <h2 class="title">Referral Process</h2>
-                                    <p class="description">
-                                     To refer someone, the referrer fills out a form at Decosmithoffice with their own and their friend's details (name, phone number, and email ID). - ₹25,000 is rewarded when the referred friend finalizes the order with Decosmithwith 25% payment.
-                                    </p>
-                                    {/* <div class="btn">
-                                        <button><a href="#">Read More</a></button>
-                                    </div> */}
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-5">
-                            <div class="card flex-center">
-                                <div class="img">
-                                    <img src="assets/images/blog/fa4.jpeg" alt="image" />
-                                     <h2 class="">Number of Referrals</h2>
-                                </div>
-                                <div class="text-box">
-                                    <h2 class="title">Number of Referrals</h2>
-                                    <p class="description">
-                                      There is no limit to the number of friends a referrer can refer.
-                                    </p>
-                                    {/* <div class="btn">
-                                        <button><a href="#">Read More</a></button>
-                                    </div> */}
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-5">
-                            <div class="card flex-center">
-                                <div class="img">
-                                    <img src="assets/images/blog/fa5.jpeg" alt="image" />
-                                     <h2 class="">Payouts</h2>
-                                </div>
-                                <div class="text-box">
-                                    <h2 class="title">Payouts</h2>
-                                    <p class="description">
-                                     Payouts are made via bank transfers. They are processed between the 15th and 20th of each month.
-                                    </p>
-                                    {/* <div class="btn">
-                                        <button><a href="#">Read More</a></button>
-                                    </div> */}
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-5">
-                            <div class="card flex-center">
-                                <div class="img">
-                                    <img src="assets/images/blog/fa6.jpeg" alt="image" />
-                                     <h2 class="">Payout Issues</h2>
-                                </div>
-                                <div class="text-box">
-                                    <h2 class="title">Payout Issues</h2>
-                                    <p class="description">
-                                     If a referrer hasn't received their referral payouts despite eligibility and a successful referral, they can contact Decosmithcustomer support at care@Decosmith.com for assistance.
-
-
-                                    </p>
-                                    {/* <div class="btn">
-                                        <button><a href="#">Read More</a></button>
-                                    </div> */}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    )}
 
                     <div className="row  text-center  Furnishing-lastText">
 
@@ -205,6 +189,7 @@ const ReferFriend = () => {
                     </div>
                 </div>
             </section>
+
 
             <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered">

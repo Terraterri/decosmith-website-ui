@@ -7,6 +7,10 @@ import { TbLockAccess } from "react-icons/tb";
 import { GiTargetArrows } from "react-icons/gi";
 import { RiVoiceRecognitionLine } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { useMediaQuery } from "react-responsive";
+
 
 // import Swal from 'sweetalert2';
 // import { enviromentUrl } from '../../enviroment/enviromentVariable';
@@ -19,7 +23,63 @@ const Partners = () => {
   const toggleVisible = () => {
     setVisible(!visible);
   }
+
+  const partnerBenefits = [
+    {
+      title: "Innovative Approach",
+      description:
+        "Decosmith adopts a forward-thinking and innovative approach to interior design, leveraging cutting-edge technologies such as the metaverse to create immersive and transformative experiences for clients.",
+      image: "assets/images/team/1.jpeg",
+    },
+    {
+      title: "Access to Resources",
+      description:
+        "Partners with Decosmith gain access to a wealth of resources, including state-of-the-art technology, extensive design libraries, and expert guidance from seasoned professionals in the field.",
+      image: "assets/images/team/2.jpeg",
+    },
+    {
+      title: "Recognition and Branding",
+      description:
+        "Partnering with Decosmith enhances your professional reputation and visibility within the industry. As part of our network, you benefit from the recognition and branding associated with a leading interior design firm.",
+      image: "assets/images/team/3.jpeg",
+    },
+    {
+      title: "Training and Development",
+      description:
+        "Decosmith is committed to the professional growth and development of its partners. We provide comprehensive training programs, mentorship opportunities, and access to advanced skills development resources to help you excel in your career.",
+      image: "assets/images/team/4.jpeg",
+    },
+    {
+      title: "Lucrative Commission Structure",
+      description:
+        "Decosmith offers a competitive commission structure that rewards partners for their contributions and performance. Our partners enjoy attractive commission rates and incentives for successful project completion and client satisfaction.",
+      image: "assets/images/team/5.jpeg",
+    },
+    {
+      title: "Collaborative Environment",
+      description:
+        "Partnering with Decosmith means joining a collaborative and supportive community of like-minded professionals. Our team-oriented approach fosters collaboration, creativity, and mutual success among partners.",
+      image: "assets/images/team/6.jpeg",
+    },
+    {
+      title: "Opportunities for Growth",
+      description:
+        "With Decosmith, partners have the opportunity to grow and expand their businesses. Whether you're looking to increase your client base, diversify your portfolio, or expand into new markets, Decosmith provides the support and resources you need to achieve your goals.",
+      image: "assets/images/team/7.jpeg",
+    },
+  ];
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
+  const responsive = {
+    mobile: {
+      breakpoint: { max: 767, min: 0 },
+      items: 1,
+      partialVisibilityGutter: 20,
+    },
+  };
+
   return (
+
     <>
       <nav aria-label="breadcrumb mt-5 mb-5">
         <ol class="breadcrumb">
@@ -222,117 +282,56 @@ const Partners = () => {
           </div> */}
 
 
-          <main className="main bd-grid mb-3">
+       
 
-            <article className="card">
-              <div className="card-img">
-                <img src="assets/images/team/1.jpeg" alt="image" />
-                 <h3>Innovative Approach</h3>
+          <div className="section wrapper carusel-cards">
+
+            <h2 className="title text-center allTitle text-uppercase">Why Partner with Us</h2>
+
+            {isMobile ? (
+              <Carousel responsive={responsive}
+                infinite={true}
+                // autoPlay={true}
+                autoPlaySpeed={3000}
+                arrows={true}
+                >
+
+                {partnerBenefits.map((item, index) => (
+                  <div className="card" key={index}>
+                    <div className="card-img">
+                      <img src={item.image} alt={item.title} />
+                      <h3>{item.title}</h3>
+                    </div>
+                    <div className="card-name">
+                      <p>{item.description}</p>
+                    </div>
+                    <div className="card-prices">
+                      <h4>{item.title}</h4>
+                    </div>
+                  </div>
+                ))}
+              </Carousel>
+            ) : (
+              <div className="main bd-grid mb-3 mobile-row-sr">
+                {partnerBenefits.map((item, index) => (
+                  <article className="card" key={index}>
+                    <div className="card-img">
+                      <img src={item.image} alt={item.title} />
+                      <h3>{item.title}</h3>
+                    </div>
+                    <div className="card-name">
+                      <p>{item.description}</p>
+                    </div>
+                    <div className="card-prices">
+                      <h4>{item.title}</h4>
+                    </div>
+                  </article>
+                ))}
               </div>
+            )}
 
-              <div className="card-name">
-                <p>Decosmith adopts a forward-thinking and innovative approach to interior design, leveraging cutting-edge technologies such as the metaverse to create immersive and transformative experiences for clients.
-                </p>
-              </div>
+          </div>
 
-              <div className="card-prices">
-                <h4>Innovative Approach</h4>
-              </div>
-            </article>
-
-            <article className="card">
-              <div className="card-img">
-                 <img src="assets/images/team/2.jpeg" alt="image" />
-                   <h3>Access to Resources</h3>
-              </div>
-
-              <div className="card-name">
-                <p> Partners with Decosmith gain access to a wealth of resources, including state-of-the-art technology, extensive design libraries, and expert guidance from seasoned professionals in the field</p>
-              </div>
-
-              <div className="card-prices">
-                <h4>Access to Resources</h4>
-              </div>
-            </article>
-
-            <article className="card">
-              <div className="card-img">
-                 <img src="assets/images/team/3.jpeg" alt="image" />
-                 <h3>  Recognition and Branding</h3>
-              </div>
-
-              <div className="card-name">
-                <p>Partnering with Decosmith enhances your professional reputation and visibility within the industry. As part of our network, you benefit from the recognition and branding associated with a leading interior design firm.</p>
-              </div>
-
-              <div className="card-prices">
-                <h4>  Recognition and Branding</h4>
-              </div>
-            </article>
-
-            <article className="card">
-              <div className="card-img">
-                 <img src="assets/images/team/4.jpeg" alt="image" />
-                 <h3>  Training and Development</h3>
-              </div>
-
-              <div className="card-name">
-                <p> Decosmith is committed to the professional growth and development of its partners. We provide comprehensive training programs, mentorship opportunities, and access to advanced skills development resources to help you excel in your career.</p>
-              </div>
-
-              <div className="card-prices">
-                <h4>  Training and Development</h4>
-              </div>
-            </article>
-
-            <article className="card">
-              <div className="card-img">
-                 <img src="assets/images/team/5.jpeg" alt="image" />
-                 <h3>  Lucrative Commission Structure</h3>
-              </div>
-
-              <div className="card-name">
-                <p>  Decosmith offers a competitive commission structure that rewards partners for their contributions and performance. Our partners enjoy attractive commission rates and incentives for successful project completion and client satisfaction.</p>
-              </div>
-
-              <div className="card-prices">
-                <h4> Lucrative Commission Structure</h4>
-              </div>
-            </article>
-
-            <article className="card">
-              <div className="card-img">
-               <img src="assets/images/team/6.jpeg" alt="image" />
-               <h3>  Collaborative Environment</h3>
-              </div>
-
-              <div className="card-name">
-                <p> Partnering with Decosmith means joining a collaborative and supportive community of like-minded professionals. Our team-oriented approach fosters collaboration, creativity, and mutual success among partners</p>
-              </div>
-
-              <div className="card-prices">
-                <h4> Collaborative Environment</h4>
-              </div>
-            </article>
-
-            <article className="card">
-              <div className="card-img">
-                   <img src="assets/images/team/7.jpeg" alt="image" />
-                   <h3>  Opportunities for Growth</h3>
-              </div>
-
-              <div className="card-name">
-                <p>  With Decosmith, partners have the opportunity to grow and expand their businesses. Whether you're looking to increase your client base, diversify your portfolio, or expand into new markets, Decosmith provides the support and resources you need to achieve your goals.</p>
-              </div>
-
-              <div className="card-prices">
-                <h4>   Opportunities for Growth</h4>
-              </div>
-            </article>
-
-         
-
-          </main>
 
           <p className='partnerpara mb-5'>In summary, partnering with Decosmith opens doors to new opportunities, enhances your professional reputation, and positions you for success in the dynamic and evolving field of interior design.</p>
 
