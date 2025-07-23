@@ -5010,7 +5010,7 @@ select.form-control option {
 }
 
 .addBtn {
-background: linear-gradient(228deg,rgba(4, 27, 122, 1) 0%, rgba(247, 119, 39, 1) 0%, rgba(4, 27, 122, 1) 100%);
+  background: linear-gradient(228deg, rgba(4, 27, 122, 1) 0%, rgba(247, 119, 39, 1) 0%, rgba(4, 27, 122, 1) 100%);
   color: #fff;
   border: none;
   padding: 3px 5px;
@@ -5083,20 +5083,21 @@ background: linear-gradient(228deg,rgba(4, 27, 122, 1) 0%, rgba(247, 119, 39, 1)
 }
 
 .partnersCards .wrapper.carusel-cards .card:after {
-    background: none;
-    opacity: 1;
-   
+  background: none;
+  opacity: 1;
+
 }
+
 .wrapper .card:after {
-    background: #000;
-    opacity: 0.6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    transition: 0.5s;
+  background: #000;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transition: 0.5s;
 }
 
 .main.bd-grid .card {
@@ -5471,16 +5472,17 @@ article:nth-child(8) {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   transition: var(--transition-duration);
 }
+
 .referCards.wrapper.carusel-cards .card:after {
-    background: none;
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    transition: 0.5s;
+  background: none;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transition: 0.5s;
 }
 
 .referCards .img {
@@ -5644,14 +5646,14 @@ i.dlicon.ui-3_menu-left.disply-bloackkk {
   overflow: visible !important;
 }
 
-.carusel-cards .react-multi-carousel-item  .card {
+.carusel-cards .react-multi-carousel-item .card {
   background: #fff !important;
   box-shadow: unset !important;
   border: none;
   display: none;
 }
 
-.carusel-cards .react-multi-carousel-item  .card .poster img {
+.carusel-cards .react-multi-carousel-item .card .poster img {
   display: none;
 }
 
@@ -5659,7 +5661,7 @@ i.dlicon.ui-3_menu-left.disply-bloackkk {
   background: #fff !important;
 } */
 
-.carusel-cards .react-multi-carousel-item.react-multi-carousel-item--active  .card {
+.carusel-cards .react-multi-carousel-item.react-multi-carousel-item--active .card {
   background: #fff !important;
   display: block !important;
 }
@@ -5671,15 +5673,19 @@ i.dlicon.ui-3_menu-left.disply-bloackkk {
 /* .wrapper.carusel-cards .react-multi-carousel-item.react-multi-carousel-item--active  .card:after {
   background: #000 !important;
 } */
-.react-multiple-carousel__arrow{
-  background: linear-gradient(135deg,#0ff,#f0f)  !important;
-}
-.carusel-cards .react-multiple-carousel__arrow--left {
-    left: -100px;
-    bottom: 0;
-}
-.carusel-cards .react-multiple-carousel__arrow--right {
-    right: -100px;
-    bottom: 0;
+.react-multiple-carousel__arrow {
+  background: linear-gradient(135deg, #0ff, #f0f) !important;
 }
 
+.carusel-cards .react-multiple-carousel__arrow--left {
+  left: -100px;
+  bottom: 0;
+}
+
+.carusel-cards .react-multiple-carousel__arrow--right {
+  right: -100px;
+  bottom: 0;
+}
+.nav.nav-tabs.mt-5{
+  margin-top: 90px !important;
+}
