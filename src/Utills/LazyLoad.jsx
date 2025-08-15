@@ -17,6 +17,8 @@ const LazyLoad = () => {
   const DekoMatch = lazy(() => import("../Page/DekoMatchSub"));
   const Partners = lazy(() => import("../Page/PartnersSub"));
   const ReferFriend = lazy(() => import("../Page/ReferSub"));
+  const EstimatePrice = lazy(() => import("../Page/EstimatePrice"));
+  
   return (
     <>
       <Suspense fallback={< WebLoder/>}>
@@ -36,6 +38,7 @@ const LazyLoad = () => {
           <Route path="/DekoMatch" element={<DekoMatch />} />
           <Route path="/Partners" element={<Partners/>} />
           <Route path="/ReferFrined" element={<ReferFriend />} />
+          <Route path="/estimate-price" element={<EstimatePrice />} />
         </Routes>
       </Suspense>
     </>

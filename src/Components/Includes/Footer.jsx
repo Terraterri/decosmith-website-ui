@@ -20,7 +20,7 @@ const Footer = () => {
                   <div className="footer-logo">
                     <Link to="/">
                       <img
-                        src="assets/images/work/main-logo1.png"
+                        src="assets/images/main-logo1.png"
                         alt="DECOSMITH-Logo"
                       />
                       {/* <img

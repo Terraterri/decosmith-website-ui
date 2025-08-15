@@ -42,7 +42,7 @@ const Header = () => {
               <div className="logo">
                 <Link to="/">
                   <img
-                    src="assets/images/work/main-logo1.png"
+                    src="assets/images/main-logo1.png"
                     alt="DECOSMITH-Logo"
                   />
                   {/* <img src="assets/images/work/logo-text.png" className="logText" alt="DECOSMITH-Logo" /> */}
@@ -72,7 +72,7 @@ const Header = () => {
                     </li> */}
                     <li className="sideLi" data-bs-dismiss="offcanvas"
                       aria-label="Close">
-                      <Link to="/ReferFrined">Refer A frined</Link>
+                      <Link to="/ReferFrined">Refer A Friend</Link>
                     </li>
                     <li className="sideLi" data-bs-dismiss="offcanvas"
                       aria-label="Close">
@@ -100,15 +100,12 @@ const Header = () => {
                 </nav>
               </div>
               <div className="header-action-style">
-                <li> <i className="dlicon ui-3_menu-left disply-bloackkk"></i></li>
-                <button
-                  className="hamburger-menu-btn dlicon ui-3_menu-left"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasRight"
-                  aria-controls="offcanvasRight"
-                >
-                  {/* <i className="dlicon ui-3_menu-left"></i> */}
+                {/* <li> <i className="dlicon ui-3_menu-left disply-bloackkk"></i></li> */}
+                <Link to="/estimate-price">
+                <button  className="hamburger-menu-btn" >
+                Get Free Estimate
                 </button>
+                </Link>
               </div>
             </div>
             {/* <div className="col-lg-1 col-md-6 col-8">

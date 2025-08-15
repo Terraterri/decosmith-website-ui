@@ -54,6 +54,65 @@ const About = () => {
           </div>
         </div>
       </div>
+        <div className="section section-padding">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="title white text-center">
+                  <h2><span>Get the estimate for your</span></h2>
+                  <p>Calculate the approximate cost of doing up your home interiors. Transform your space with our expert interior<br></br> design services provided by the best Hyderabad interior designers. Get a complete estimate for your entire home’s redesign today!</p>
+                </div>
+              </div>
+            </div>
+            <div className="row mt-5">
+                      <div className="col-lg-4 col-md-4 col-sm-4">
+              <div className="estimate_out">
+                <img src="https://audentiaspace.com/wp-content/uploads/2024/07/kitchen-1.png" />
+                <h3>Full Home Interior</h3>
+              <p>Give your home a fresh look with our full luxury interior design services, making it both stylish and practical. </p>
+              </div>
+              </div>
+              <div className="col-lg-4 col-md-4 col-sm-4">
+               <div className="estimate_out">
+                <img src="https://audentiaspace.com/wp-content/uploads/2024/07/kitchen-1.png" />
+                <h3>Kitchen</h3>
+              <p>Give your home a fresh look with our full luxury interior design services, making it both stylish and practical.</p>
+              </div>
+              </div>
+              <div className="col-lg-4 col-md-4 col-sm-4">
+               <div className="estimate_out">
+                <img src="https://audentiaspace.com/wp-content/uploads/2024/07/kitchen-1.png" />
+                <h3>Living Room</h3>
+              <p>Give your home a fresh look with our full luxury interior design services, making it both stylish and practical.</p>
+              </div>
+              </div>
+              <div className="col-lg-4 col-md-4 col-sm-4 mt-5">
+               <div className="estimate_out">
+                <img src="https://audentiaspace.com/wp-content/uploads/2024/07/kitchen-1.png" />
+                <h3>Dining</h3>
+              <p>Give your home a fresh look with our full luxury interior design services, making it both stylish and practical.</p>
+              </div>
+              </div>
+              <div className="col-lg-4 col-md-4 col-sm-4 mt-5">
+               <div className="estimate_out">
+                <img src="https://audentiaspace.com/wp-content/uploads/2024/07/kitchen-1.png" />
+                <h3>Bed Room</h3>
+              <p>Give your home a fresh look with our full luxury interior design services, making it both stylish and practical.</p>
+              </div>
+              </div>
+              <div className="col-lg-4 col-md-4 col-sm-4 mt-5">
+               <div className="estimate_out">
+                <img src="https://audentiaspace.com/wp-content/uploads/2024/07/kitchen-1.png" />
+                <h3>Bath Room</h3>
+              <p>Give your home a fresh look with our full luxury interior design services, making it both stylish and practical.</p>
+              </div>
+              </div>
+           
+            </div>
+          </div>
+        </div>
+
+      
     </>
   );
 };

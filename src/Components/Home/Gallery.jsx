@@ -12,7 +12,7 @@ const Gallery = () => {
   const residentialItems = [
     {
       id: "living-room",
-      title: "Living Room Interior Design",
+      title: "Living Room",
       image: "assets/images/project/living.jpg",
       tab: "nav-home"
     },
