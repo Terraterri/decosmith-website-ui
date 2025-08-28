@@ -6,6 +6,8 @@ import Gallery from "../Components/Home/Gallery";
 import Choose from "../Components/Home/Choose";
 import Recent from "../Components/Home/Recent";
 import Blog from "../Components/Home/Blog";
+import CaseStudies from "../Components/Home/CaseStudies";
+
 
 const Home = () => {
   return (
@@ -17,6 +19,7 @@ const Home = () => {
       <Choose />
       <Recent />
       <Blog />
+      <CaseStudies />
     </>
   );
 };

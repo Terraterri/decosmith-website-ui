@@ -67,42 +67,60 @@ const About = () => {
             <div className="row mt-5">
                       <div className="col-lg-4 col-md-4 col-sm-4">
               <div className="estimate_out">
-                <img src="https://audentiaspace.com/wp-content/uploads/2024/07/kitchen-1.png" />
+                <img
+                  src="assets/images/staircase.png"
+                  alt="banner"
+                />
                 <h3>Full Home Interior</h3>
               <p>Give your home a fresh look with our full luxury interior design services, making it both stylish and practical. </p>
               </div>
               </div>
               <div className="col-lg-4 col-md-4 col-sm-4">
                <div className="estimate_out">
-                <img src="https://audentiaspace.com/wp-content/uploads/2024/07/kitchen-1.png" />
+                 <img
+                  src="assets/images/kitchen.png"
+                  alt="banner"
+                />
                 <h3>Kitchen</h3>
               <p>Give your home a fresh look with our full luxury interior design services, making it both stylish and practical.</p>
               </div>
               </div>
               <div className="col-lg-4 col-md-4 col-sm-4">
                <div className="estimate_out">
-                <img src="https://audentiaspace.com/wp-content/uploads/2024/07/kitchen-1.png" />
+                 <img
+                  src="assets/images/living.png"
+                  alt="banner"
+                />
                 <h3>Living Room</h3>
               <p>Give your home a fresh look with our full luxury interior design services, making it both stylish and practical.</p>
               </div>
               </div>
               <div className="col-lg-4 col-md-4 col-sm-4 mt-5">
                <div className="estimate_out">
-                <img src="https://audentiaspace.com/wp-content/uploads/2024/07/kitchen-1.png" />
+                 <img
+                  src="assets/images/dinner-table.png"
+                  alt="banner"
+                />
                 <h3>Dining</h3>
               <p>Give your home a fresh look with our full luxury interior design services, making it both stylish and practical.</p>
               </div>
               </div>
               <div className="col-lg-4 col-md-4 col-sm-4 mt-5">
                <div className="estimate_out">
-                <img src="https://audentiaspace.com/wp-content/uploads/2024/07/kitchen-1.png" />
+                 <img
+                  src="assets/images/hotel.png"
+                  alt="banner"
+                />
                 <h3>Bed Room</h3>
               <p>Give your home a fresh look with our full luxury interior design services, making it both stylish and practical.</p>
               </div>
               </div>
               <div className="col-lg-4 col-md-4 col-sm-4 mt-5">
                <div className="estimate_out">
-                <img src="https://audentiaspace.com/wp-content/uploads/2024/07/kitchen-1.png" />
+                 <img
+                  src="assets/images/bathroom.png"
+                  alt="banner"
+                />
                 <h3>Bath Room</h3>
               <p>Give your home a fresh look with our full luxury interior design services, making it both stylish and practical.</p>
               </div>

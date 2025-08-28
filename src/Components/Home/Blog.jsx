@@ -10,6 +10,7 @@ const Blog = () => {
             <h2 className="title text-uppercase">
              Interior Insights
             </h2>
+          
             {/* <p>
               Don’t let another year pass by without getting on top of your
               content creation for your interior design business.
@@ -87,6 +88,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
+     
     </>
   );
 };

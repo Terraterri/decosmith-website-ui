@@ -106,8 +106,8 @@ const Choose = () => {
            <div className="row">
               <div className="col-md-12">
                 <div className="title white text-center">
-                  <h2><span>Our Clients</span></h2>
-                  <p>Our clients are at the heart of everything we do. From young families starting their <br></br>first home to busy professionals redesigning their workspace</p>
+                  <h2><span>Our Valued Partners</span></h2>
+                  <p>Where great partnerships create exceptional designs.</p>
                 </div>
               </div>
             </div>
